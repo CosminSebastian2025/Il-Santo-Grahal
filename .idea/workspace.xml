@@ -6,15 +6,56 @@
   <component name="BackgroundAgentGlobalSettings">
     <option name="selectedModelId" value="auto" />
   </component>
-  <component name="CargoProjects">
-    <cargoProject FILE="$PROJECT_DIR$/il-santo-grahal/src-tauri/Cargo.toml">
-      <package file="$PROJECT_DIR$/il-santo-grahal/src-tauri">
-        <feature name="default" enabled="true" />
-      </package>
-    </cargoProject>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a52fe53-799a-4f69-a0da-b394733cc811" name="Changes" comment="" />
+    <list default="true" id="1a52fe53-799a-4f69-a0da-b394733cc811" name="Changes" comment="second commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/.github/workflows/release.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/eslint.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/next.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/public/file.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/public/globe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/public/next.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/public/window.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/Cargo.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/Cargo.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/build.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/capabilities/default.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/128x128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/128x128@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/Square107x107Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/Square142x142Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/Square150x150Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/Square284x284Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/Square30x30Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/Square310x310Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/Square44x44Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/Square71x71Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/Square89x89Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/StoreLogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/icon.icns" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/icon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/src/lib.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/src/main.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/tauri.conf.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src/app/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src/app/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src/app/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src/app/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/tauri-keys/il-santo-grahal.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/tauri-keys/il-santo-grahal.key.pub" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/il-santo-grahal/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tauri-keys/il-santo-grahal.key" beforeDir="false" afterPath="$PROJECT_DIR$/tauri-keys/il-santo-grahal.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tauri-keys/il-santo-grahal.key.pub" beforeDir="false" afterPath="$PROJECT_DIR$/tauri-keys/il-santo-grahal.key.pub" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +81,21 @@
       </mcp-server-settings>
     </assistant-settings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "CosminSebastian2025"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/CosminSebastian2025/Il-Santo-Grahal.git",
+    "accountId": "8382c6a1-987f-4ff4-bea9-e19e95395fc2"
+  }
+}]]></component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="rq0ctmOk" />
   </component>
@@ -82,17 +138,26 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "CidrDebugProfileConversion": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.rust.reset.selective.auto.import": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "copilot.chat.legacySessionMetadata.migrated": "true",
+    "git-widget-placeholder": "main",
+    "js.debugger.nextJs.config.created.client": "true",
+    "js.debugger.nextJs.config.created.server": "true",
     "last_opened_file_path": "C:/Users/cosmi/RustRoverProjects/Il-Santo-Grahal",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
@@ -100,9 +165,31 @@
     "org.rust.first.attach.projects": "true",
     "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
     "settings.editor.selected.configurable": "language.rust",
-    "ts.external.directory.path": "C:\\Users\\cosmi\\RustRoverProjects\\Il-Santo-Grahal\\il-santo-grahal\\node_modules\\typescript\\lib"
+    "ts.external.directory.path": "C:\\Users\\cosmi\\RustRoverProjects\\Il-Santo-Grahal\\node_modules\\typescript\\lib"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cosmi\RustRoverProjects\Il-Santo-Grahal" />
+      <recent name="C:\Users\cosmi\RustRoverProjects\Il-Santo-Grahal\" />
+      <recent name="C:\Users\cosmi\RustRoverProjects\Il-Santo-Grahal\il-santo-grahal" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Next.js: server-side">
+    <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
+      <method v="2" />
+    </configuration>
+    <configuration name="Next.js: server-side" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.rustup/toolchains/stable-x86_64-pc-windows-msvc/bin" />
   </component>
@@ -121,6 +208,10 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="next.config.ts" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

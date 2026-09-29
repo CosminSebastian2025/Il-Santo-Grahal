@@ -1,0 +1,31 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Next.js
+.next/
+out/
+build/
+
+# Tauri
+src-tauri/target/
+src-tauri/gen/schemas
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Keys - MAI COMMITARE CHIAVI PRIVATE
+*.key
+*.pem
+keys/
+tauri-keys/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
