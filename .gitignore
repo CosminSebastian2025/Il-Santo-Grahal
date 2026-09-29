@@ -22,7 +22,7 @@ src-tauri/gen/schemas
 *.key
 *.pem
 keys/
-tauri-keys/
+tauri-keys-privati/
 
 # IDE
 .idea/

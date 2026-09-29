@@ -1,18 +1,18 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
-  "productName": "il-Santo-Grahal",
+  "productName": "il Santo Grahal",
   "version": "0.1.0",
-  "identifier": "com.tauri.dev",
+  "identifier": "com.cosminsebastian.ilsantograhal",
   "build": {
     "frontendDist": "../out",
-    "devUrl": "http://localhost:1420",
+    "devUrl": "http://localhost:3000",
     "beforeDevCommand": "npm run dev",
     "beforeBuildCommand": "npm run build"
   },
   "app": {
     "windows": [
       {
-        "title": "Il-Santo-Grahal",
+        "title": "Il-Santo Grahal",
         "width": 1000,
         "height": 800,
         "resizable": true,
@@ -25,6 +25,7 @@
   },
   "bundle": {
     "active": true,
+    "createUpdaterArtifacts": true,
     "targets": [
       "nsis",
       "msi",
@@ -48,9 +49,9 @@
     "updater": {
       "active": true,
       "endpoints": [
-        "https://github.com/CosminSebastian2025/il-santo-grahal/releases/latest/download/latest.json"
+        "https://github.com/CosminSebastian2025/Il-Santo-Grahal/releases/latest/download/latest.json"
       ],
-      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDMxQzFDOTUyNkZBNjNGN0EKUldSNlA2WnZVc25CTVN0UmxpWDJCS0ZoU1JpbUlFQ2hyTWl2bHlJTmRYMW9ySjBlWnpSVmpnODYK"
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDM4QTYxRUIwMzMwNEY3QTYKUldTbTl3UXpzQjZtT0E3RG5jaXZiSU13aUtlWEM2Zm9WRzAyQUNQWisxb1p3S2pxZmtWdGlwaW4K"
     }
   }
 }

@@ -1,7 +1,5 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
-use tauri::Manager;
-
 #[tauri::command]
 fn ping() -> String {
     "Il Santo Grahal è pronto!".to_string()
