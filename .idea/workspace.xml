@@ -6,55 +6,15 @@
   <component name="BackgroundAgentGlobalSettings">
     <option name="selectedModelId" value="auto" />
   </component>
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/src-tauri/Cargo.toml" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a52fe53-799a-4f69-a0da-b394733cc811" name="Changes" comment="second commit">
+    <list default="true" id="1a52fe53-799a-4f69-a0da-b394733cc811" name="Changes" comment="security: remove private key from repository">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/.github/workflows/release.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/eslint.config.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/next.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/public/file.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/public/globe.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/public/next.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/public/vercel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/public/window.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/Cargo.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/Cargo.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/build.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/capabilities/default.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/128x128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/128x128@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/Square107x107Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/Square142x142Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/Square150x150Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/Square284x284Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/Square30x30Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/Square310x310Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/Square44x44Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/Square71x71Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/Square89x89Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/StoreLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/icon.icns" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/icon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/icons/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/src/lib.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/src/main.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/tauri.conf.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src/app/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src/app/globals.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src/app/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src/app/page.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src/app/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/tauri-keys/il-santo-grahal.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/tauri-keys/il-santo-grahal.key.pub" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tauri-keys/il-santo-grahal.key" beforeDir="false" afterPath="$PROJECT_DIR$/tauri-keys/il-santo-grahal.key" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tauri-keys/il-santo-grahal.key.pub" beforeDir="false" afterPath="$PROJECT_DIR$/tauri-keys/il-santo-grahal.key.pub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src-tauri/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src-tauri/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src-tauri/tauri.conf.json" beforeDir="false" afterPath="$PROJECT_DIR$/src-tauri/tauri.conf.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +171,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
+    <MESSAGE value="security: remove private key from repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="security: remove private key from repository" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
