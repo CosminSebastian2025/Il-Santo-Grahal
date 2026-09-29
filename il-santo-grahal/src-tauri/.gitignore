@@ -6,6 +6,3 @@
 #Chiavi
 *.key
 *.pem
-
-/Il-Santo-Grahal/tauri-keys/*
-/Il-Santo-Grahal/il-santo-grahal/tauri-keys/*

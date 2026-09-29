@@ -14,11 +14,7 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a52fe53-799a-4f69-a0da-b394733cc811" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Il-Santo-Grahal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Il-Santo-Grahal.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/il-santo-grahal/src-tauri/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/il-santo-grahal/src-tauri/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="1a52fe53-799a-4f69-a0da-b394733cc811" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,21 +40,6 @@
       </mcp-server-settings>
     </assistant-settings>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "CosminSebastian2025"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/CosminSebastian2025/Il-Santo-Grahal.git",
-    "accountId": "8382c6a1-987f-4ff4-bea9-e19e95395fc2"
-  }
-}]]></component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="rq0ctmOk" />
   </component>
@@ -108,7 +89,6 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/cosmi/RustRoverProjects/Il-Santo-Grahal",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
