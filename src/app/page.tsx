@@ -58,17 +58,17 @@ export default function Home () {
 
     if(selectedSection) {
         return (
-            <main className={"min-h-screen bg-gradient-to-br from-gray-50 to-gray-100"}>
+            <main className={"max-h-screen bg-gradient-to-br from-gray-50 to-gray-100"}>
                 <DocViewer section={selectedSection} onBack={handleBack} />
             </main>
         );
     }
 
     return (
-        <main className={"min-h-screen bg-gradient-to-br from-gray-50 to-gray-100"}>
+        <main className={"max-h-screen bg-gradient-to-br from-gray-50 to-gray-100"}>
             {/* Header */}
-            <header className={"bg-white shadow"}>
-                <div className={"max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8"}>
+            <header className={"bg-white shadow items-center"}>
+                <div className={"max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 items-center text-center"}>
                     <h1 className={"text-3xl font-bold text-gray-900"}>Il Santo Grahal</h1>
                     <p className={"mt-2 text-lg text-gray-600"}>Biblioteca offline per informatica generale</p>
                 </div>
@@ -77,20 +77,20 @@ export default function Home () {
             {/* Grid Card */}
             <div className={"max-w-7xl mx-auto px-6 py-12"}>
                 <div className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"}>
-                    {
-                        sections.map((section) => (
-                            <SectionCard
-                                key={section.id}
-                                section={section}
-                                onClick={() => handleSectionClick(section)}
-                            />
-                        ))
-                    }
+                    {/*{*/}
+                    {/*    sections.map((section) => (*/}
+                    {/*        <SectionCard*/}
+                    {/*            key={section.id}*/}
+                    {/*            section={section}*/}
+                    {/*            onClick={() => handleSectionClick(section)}*/}
+                    {/*        />*/}
+                    {/*    ))*/}
+                    {/*}*/}
                 </div>
             </div>
 
             {/* Footer */}
-            <footer className="max-w-7xl mx-auto px-6 py-8 text-center text-sm text-gray-500">
+            <footer className="max-w-7xl mx-auto px-6 py-8 text-center text-sm text-gray-500 p">
                 <p>Funziona 100% offline • Creato con Tauri + Next.js</p>
             </footer>
         </main>

@@ -14,10 +14,16 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a52fe53-799a-4f69-a0da-b394733cc811" name="Changes" comment="security: remove private key from repository">
+    <list default="true" id="1a52fe53-799a-4f69-a0da-b394733cc811" name="Changes" comment="fix: correggere tutti gli errori critici">
+      <change afterPath="$PROJECT_DIR$/public/docs/1-C/intro_c.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/informatica/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/informatica/img_1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src-tauri/tauri.conf.json" beforeDir="false" afterPath="$PROJECT_DIR$/src-tauri/tauri.conf.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/sections.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/sections.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

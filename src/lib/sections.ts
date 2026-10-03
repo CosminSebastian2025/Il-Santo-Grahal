@@ -25,7 +25,16 @@ export const sections: Section[] = [
         icon: "c",
         color: "blue",
         filePath: "/docs/1-C",
-        pages: []
+        pages: [
+            {
+                id: "c-introduction",
+                title: "Introduzione al C",
+                description: "Scopri le basi del linguaggio C e come iniziare a programmare.",
+                icon: "c-introduction",
+                filePath: "/docs/1-C/intro_c.MD",
+                order: 1
+            }
+        ]
     }
 ]
 
