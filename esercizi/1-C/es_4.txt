@@ -1,0 +1,21 @@
+ESERCIZIO 4 - CONTARE DA 1 A 5
+
+Obiettivo
+Scrivi un programma in C che usi un ciclo for per stampare i numeri da 1 a 5,
+uno per riga.
+
+Istruzioni
+1. Dichiara una variabile intera chiamata numero.
+2. Usa un ciclo for che parta da 1 e arrivi fino a 5.
+3. A ogni ripetizione, stampa il valore di numero.
+
+Esempio di risultato
+
+1
+2
+3
+4
+5
+
+Suggerimento
+Nel ciclo for, aumenta numero di 1 a ogni ripetizione usando numero++.

@@ -1,0 +1,20 @@
+ESERCIZIO 2 - NUMERO POSITIVO O NEGATIVO
+
+Obiettivo
+Scrivi un programma in C che chieda all'utente un numero intero e usi if-else
+per dire se il numero e' positivo oppure negativo o zero.
+
+Istruzioni
+1. Dichiara una variabile intera chiamata numero.
+2. Chiedi all'utente di inserire un numero.
+3. Usa if-else per controllare il numero:
+   - se numero e' maggiore o uguale a zero, stampa "Il numero e' positivo o zero.";
+   - altrimenti, stampa "Il numero e' negativo.".
+
+Esempio di esecuzione
+
+Inserisci un numero: 5
+Il numero e' positivo o zero.
+
+Suggerimento
+La condizione da controllare e' numero >= 0.

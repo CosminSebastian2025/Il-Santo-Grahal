@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./global.css";
 
 export const metadata: Metadata = {
-  title: "IL Santo Grahal",
+  title: "Il Santo Grahal",
   description: "Una biblioteca offline per imparare informatica, un argomento alla volta.",
 };
 

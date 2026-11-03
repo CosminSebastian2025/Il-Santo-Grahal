@@ -1,0 +1,23 @@
+ESERCIZIO 5 - TABELLA DELLA MOLTIPLICAZIONE
+
+Obiettivo
+Scrivi un programma in C che chieda un numero intero e ne stampi la tabella
+della moltiplicazione da 1 a 10 usando un ciclo for.
+
+Istruzioni
+1. Dichiara due variabili intere: numero e contatore.
+2. Chiedi all'utente di inserire un numero.
+3. Usa un ciclo for per far variare contatore da 1 a 10.
+4. A ogni ripetizione, stampa il numero, il contatore e il loro prodotto.
+
+Esempio di esecuzione
+
+Inserisci un numero: 7
+7 x 1 = 7
+7 x 2 = 14
+7 x 3 = 21
+...
+7 x 10 = 70
+
+Suggerimento
+Per stampare ogni riga puoi usare printf con il formato "%d x %d = %d\n".

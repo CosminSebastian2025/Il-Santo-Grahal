@@ -1,0 +1,51 @@
+ESERCIZIO 1 - LA MIA CARTA D'IDENTITA'
+
+Obiettivo
+Realizza un programma in C che chieda all'utente alcune informazioni e le mostri a
+schermo sotto forma di una semplice carta d'identita'.
+
+Dati da usare
+Dichiara nel programma queste variabili:
+
+    char nome[50];
+    int eta;
+    double altezza;
+    char iniziale;
+
+Per questo esercizio, considera nome come una sola parola e iniziale come la prima
+lettera del cognome. Inserisci l'altezza in metri, usando il punto per i decimali
+(per esempio: 1.72).
+
+Istruzioni
+1. Chiedi all'utente il nome.
+2. Chiedi l'eta' in anni.
+3. Chiedi l'altezza in metri.
+4. Chiedi l'iniziale del cognome.
+5. Stampa una carta d'identita' che mostri tutti i dati inseriti.
+
+Esempio di esecuzione
+
+Inserisci il tuo nome: Giulia
+Inserisci la tua eta': 20
+Inserisci la tua altezza in metri: 1.68
+Inserisci l'iniziale del cognome: R
+
+----- CARTA D'IDENTITA' -----
+Nome: Giulia R.
+Eta': 20 anni
+Altezza: 1.68 m
+----------------------------
+
+Suggerimenti
+- Per leggere un nome di una sola parola puoi usare scanf("%49s", nome).
+- Per leggere un int si usa lo specificatore %d.
+- Per leggere un double con scanf si usa %lf; per stamparlo con printf puoi usare
+  %.2f, così l'altezza viene mostrata con due cifre decimali.
+- Per leggere un singolo char usa scanf(" %c", &iniziale). Lo spazio prima di %c
+  serve a ignorare gli spazi e gli invii lasciati dalle letture precedenti.
+- Per nome, scanf riceve nome senza &; per le altre variabili, passa il loro
+  indirizzo usando &.
+
+Sfida facoltativa
+Aggiungi un controllo con if-else: se l'eta' e' almeno 18, stampa anche
+"Maggiorenne"; altrimenti stampa "Minorenne".

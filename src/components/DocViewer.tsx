@@ -81,6 +81,10 @@ export default function DocViewer({ section, initialPage, onBack }: DocViewerPro
                             <p className="text-sm text-gray-500">{currentpage?.title}</p>
                         </div>
                     </div>
+                    
+                    <div>
+                    
+                    </div>
                 </header>
 
                 {/* Contenuto scrollabile */}

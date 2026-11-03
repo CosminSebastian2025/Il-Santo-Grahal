@@ -1,0 +1,37 @@
+ESERCIZIO 3 - SOMMA NELL'INTERVALLO
+
+Obiettivo
+Scrivi un programma in C che chieda due numeri interi, ne calcoli la somma e
+controlli con if-else se il risultato e' compreso tra 10 e 20, estremi inclusi.
+
+Istruzioni
+1. Dichiara tre variabili intere: numero1, numero2 e somma.
+2. Chiedi all'utente di inserire due numeri.
+3. Calcola la somma dei due numeri usando l'operatore aritmetico +.
+4. Usa if-else e l'operatore logico && per controllare se somma e' almeno 10
+   e al massimo 20.
+5. Se entrambe le condizioni sono vere, stampa "La somma e' tra 10 e 20.";
+   altrimenti, stampa "La somma e' fuori dall'intervallo.".
+
+Esempio 1
+
+Inserisci il primo numero: 6
+Inserisci il secondo numero: 7
+La somma e' tra 10 e 20.
+
+La somma e' 13: e' almeno 10 e al massimo 20, quindi entrambe le condizioni
+collegate da && sono vere.
+
+Esempio 2
+
+Inserisci il primo numero: 4
+Inserisci il secondo numero: 3
+La somma e' fuori dall'intervallo.
+
+La somma e' 7: non e' almeno 10, quindi la condizione completa e' falsa e viene
+eseguito il blocco else.
+
+Suggerimento
+La condizione da usare e':
+
+    somma >= 10 && somma <= 20
