@@ -1,0 +1,51 @@
+ESERCIZIO 8.1 - STAMPA UNA STRINGA
+
+Obiettivo
+Leggi una stringa e stampala a schermo.
+
+Istruzioni
+1. Dichiara char parola[50].
+2. Chiedi all'utente di inserire una parola.
+3. Usa printf per stamparla.
+
+ESERCIZIO 8.2 - CONTA VOCALE
+
+Obiettivo
+Conta quante vocali contiene una parola.
+
+Istruzioni
+1. Dichiara una stringa.
+2. Usa un ciclo for per scorrere ogni carattere.
+3. Se il carattere è una vocale, aumenta il contatore.
+4. Stampa il risultato.
+
+ESERCIZIO 8.3 - PAROLA PALINDROMA
+
+Obiettivo
+Controlla se una parola è palindroma.
+
+Istruzioni
+1. Inserisci una parola.
+2. Confronta i caratteri iniziali con quelli finali.
+3. Se sono uguali in tutte le posizioni, stampa che è palindroma.
+
+ESERCIZIO 8.4 - CONFRONTA DUE STRINGHE
+
+Obiettivo
+Confronta due parole e stampa quale è più grande alfabeticamente.
+
+Istruzioni
+1. Dichiara due stringhe.
+2. Usa strcmp.
+3. Stampa il confronto.
+
+ESERCIZIO 8.5 - CONTA PAROLE IN UNA FRASE
+
+Obiettivo
+Leggi una frase e conta quante parole contiene.
+
+Istruzioni
+1. Dichiara char frase[200].
+2. Chiedi di inserire una frase.
+3. Scorri la stringa e conta gli spazi per determinare le parole.
+4. Stampa il numero totale di parole.

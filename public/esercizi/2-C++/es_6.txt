@@ -1,0 +1,14 @@
+ESERCIZIO 6 - FUNZIONI
+
+Obiettivo
+Scrivi una funzione che calcoli il prodotto di due numeri interi.
+
+Istruzioni
+1. Crea una funzione int prodotto(int a, int b).
+2. Restituisci a * b.
+3. Chiedi all'utente due numeri.
+4. Stampa il risultato.
+
+Esempio di output
+Inserisci due numeri: 4 5
+Il prodotto e': 20

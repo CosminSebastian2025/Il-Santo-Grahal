@@ -1,0 +1,15 @@
+ESERCIZIO 3 - INPUT E OUTPUT
+
+Obiettivo
+Scrivi un programma che chieda all'utente nome ed eta e poi li mostri.
+
+Istruzioni
+1. Dichiara una variabile std::string nome.
+2. Dichiara una variabile int eta.
+3. Chiedi all'utente di inserire nome e eta.
+4. Stampali insieme in una frase finale.
+
+Esempio di output
+Inserisci il tuo nome: Luca
+Inserisci la tua eta: 18
+Ciao Luca, hai 18 anni.

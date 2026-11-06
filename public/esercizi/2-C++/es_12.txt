@@ -1,0 +1,18 @@
+ESERCIZIO 12 - PROGETTO FINALE
+
+Obiettivo
+Crea un programma che gestisce una rubrica telefonica semplice.
+
+Istruzioni
+1. Definisci una struct Contatto con nome e numero.
+2. Usa un vector per memorizzare i contatti.
+3. Permetti all'utente di inserire 3 contatti.
+4. Stampa la rubrica a schermo.
+
+Esempio di output
+Nome: Marco
+Numero: 333123456
+Nome: Luca
+Numero: 333654321
+Nome: Anna
+Numero: 333987654

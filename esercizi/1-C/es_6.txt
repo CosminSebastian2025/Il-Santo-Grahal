@@ -1,0 +1,50 @@
+ESERCIZIO 6.1 - SOMMA DI DUE NUMERI
+
+Obiettivo
+Scrivi una funzione che sommi due numeri interi e la richiami nel main.
+
+Istruzioni
+1. Dichiara una funzione int somma(int a, int b).
+2. La funzione deve restituire la somma dei due parametri.
+3. Nel main chiedi all'utente due numeri.
+4. Stampa il risultato.
+
+ESERCIZIO 6.2 - FUNZIONE DI SALUTO
+
+Obiettivo
+Scrivi una funzione che stampi un messaggio a schermo.
+
+Istruzioni
+1. Crea una funzione void saluta(void).
+2. All'interno della funzione stampa "Buongiorno!".
+3. Chiama la funzione nel main.
+
+ESERCIZIO 6.3 - DOPPIO DI UN NUMERO
+
+Obiettivo
+Scrivi una funzione che restituisca il doppio del valore passato come parametro.
+
+Istruzioni
+1. Crea int doppio(int n).
+2. La funzione deve restituire n * 2.
+3. Inserisci un numero e stampa il risultato.
+
+ESERCIZIO 6.4 - NUMERO PARI
+
+Obiettivo
+Scrivi una funzione che verifica se un numero è pari.
+
+Istruzioni
+1. Crea int pari(int n).
+2. Se n % 2 == 0, restituisci 1; altrimenti 0.
+3. Chiedi un numero e stampa se è pari o dispari.
+
+ESERCIZIO 6.5 - MASSIMO TRA TRE NUMERI
+
+Obiettivo
+Scrivi una funzione che restituisca il maggiore tra tre numeri.
+
+Istruzioni
+1. Crea int massimoTre(int a, int b, int c).
+2. Confronta i tre valori.
+3. Stampa il numero maggiore.

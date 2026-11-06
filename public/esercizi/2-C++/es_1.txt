@@ -1,0 +1,14 @@
+ESERCIZIO 1 - PRIMO PROGRAMMA IN C++
+
+Obiettivo
+Scrivi un programma in C++ che stampa a schermo il messaggio:
+"Ciao, sto imparando C++".
+
+Istruzioni
+1. Includi la libreria <iostream>.
+2. Scrivi la funzione main().
+3. Usa std::cout per stampare il messaggio.
+4. Termina con return 0;
+
+Esempio di output
+Ciao, sto imparando C++

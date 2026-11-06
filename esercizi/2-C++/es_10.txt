@@ -1,0 +1,14 @@
+ESERCIZIO 10 - PUNTATORI
+
+Obiettivo
+Scrivi un programma che dichiara una variabile, crea un puntatore e stampa il valore e l'indirizzo.
+
+Istruzioni
+1. Dichiara int numero = 42.
+2. Dichiara int* ptr = &numero.
+3. Stampa numero, ptr e *ptr.
+
+Esempio di output
+Valore: 42
+Indirizzo: 0x...
+Valore puntato: 42

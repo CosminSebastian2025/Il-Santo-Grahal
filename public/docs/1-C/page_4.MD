@@ -1,5 +1,34 @@
 # Operazioni e condizioni
 
+<div class="not-prose">
+  <aside style="position: sticky; top: 1rem; margin-bottom: 1.5rem; padding: 1rem; border: 1px solid #e2e8f0; border-radius: 12px; background: #f8fafc; max-width: 260px;">
+    <p style="margin: 0 0 0.75rem; font-weight: 700; color: #0f172a;">Menu del corso C</p>
+    <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 0.35rem; font-size: 0.92rem;">
+      <li><a href="./intro_c.MD">Introduzione</a></li>
+      <li><a href="./page_1.MD">1. Variabili e tipi</a></li>
+      <li><a href="./page_2.MD">2. Librerie</a></li>
+      <li><a href="./page_3.MD">3. Input/Output</a></li>
+      <li><a href="./page_4.MD">4. Operazioni e condizioni</a></li>
+      <li><a href="./page_5.MD">5. Cicli</a></li>
+      <li><a href="./page_6.MD">6. Funzioni</a></li>
+      <li><a href="./page_7.MD">7. Array</a></li>
+      <li><a href="./page_8.MD">8. Stringhe</a></li>
+      <li><a href="./page_9.MD">9. Puntatori</a></li>
+      <li><a href="./page_10.MD">10. Memoria dinamica</a></li>
+      <li><a href="./page_11.MD">11. File</a></li>
+      <li><a href="./page_12.MD">12. Progetto finale</a></li>
+      <li><a href="./page_13.MD">13. Indice conclusivo</a></li>
+    </ul>
+  </aside>
+</div>
+
+## Obiettivi di apprendimento
+
+- capire come si costruisce una condizione in C
+- usare correttamente gli operatori di confronto e logici
+- distinguere tra `=` e `==`
+- scrivere `if`, `else` e combinare più condizioni in una sola verifica
+
 Un programma può controllare una condizione e scegliere quali istruzioni eseguire. In C si usa `if-else`: il blocco dopo `if` viene eseguito quando la condizione è vera; il blocco dopo `else` viene eseguito quando è falsa.
 
 ```c
@@ -167,6 +196,4 @@ Se `giorno` vale `6`, la prima condizione è vera; se vale `7`, è vera la secon
 
 In sintesi, il programma valuta la condizione nell'`if` e ne esegue un solo ramo: quello di `if` se è vera, oppure quello di `else` se è falsa. I calcoli possono produrre i valori da confrontare e gli operatori logici possono combinare più confronti.
 
-<a href="/esercizi/1-C/es_2.txt" download class="inline-block rounded-lg bg-blue-600 px-4 py-2 font-semibold text-white no-underline hover:bg-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">Scarica il primo esercizio</a>
-
-<a href="/esercizi/1-C/es_3.txt" download class="inline-block rounded-lg bg-blue-600 px-4 py-2 font-semibold text-white no-underline hover:bg-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">Scarica il secondo esercizio</a>
+<a href="./page_5.MD" class="inline-block rounded-lg bg-blue-600 px-4 py-2 font-semibold text-white no-underline hover:bg-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">Vai alla prossima lezione</a>

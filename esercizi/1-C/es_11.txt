@@ -1,0 +1,52 @@
+ESERCIZIO 11.1 - SCRIVI IN UN FILE
+
+Obiettivo
+Scrivi una frase in un file di testo.
+
+Istruzioni
+1. Apri un file in modalità w.
+2. Scrivi una riga di testo.
+3. Chiudi il file.
+
+ESERCIZIO 11.2 - LEGGI UN FILE
+
+Obiettivo
+Leggi il contenuto di un file e stampalo a schermo.
+
+Istruzioni
+1. Apri il file in modalità r.
+2. Usa fgets per leggere le righe.
+3. Stampa ogni riga.
+
+ESERCIZIO 11.3 - SOMMA NUMERI DA FILE
+
+Obiettivo
+Leggi un file contenente numeri e calcola la somma.
+
+Istruzioni
+1. Crea un file con alcuni numeri.
+2. Apri il file in modalità r.
+3. Leggi i numeri con fscanf.
+4. Calcola la somma e stampala.
+
+ESERCIZIO 11.4 - COPIA FILE
+
+Obiettivo
+Copia il contenuto di un file in un altro file.
+
+Istruzioni
+1. Apri un file sorgente in modalità r.
+2. Apri un file destinazione in modalità w.
+3. Leggi e riscrivi i dati.
+4. Chiudi entrambi i file.
+
+ESERCIZIO 11.5 - CONTA RIGHE DI UN FILE
+
+Obiettivo
+Conta quante righe contiene un file.
+
+Istruzioni
+1. Apri il file in modalità r.
+2. Leggi linea per linea.
+3. Incrementa un contatore per ogni riga.
+4. Stampa il totale.

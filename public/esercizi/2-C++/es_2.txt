@@ -1,0 +1,15 @@
+ESERCIZIO 2 - VARIABILI E TIPI
+
+Obiettivo
+Crea un programma che dichiari variabili per nome, eta, altezza e le stampi.
+
+Istruzioni
+1. Usa std::string per il nome.
+2. Usa int per l'eta.
+3. Usa double per l'altezza.
+4. Stampa tutti i valori a schermo.
+
+Esempio di output
+Nome: Marco
+Eta: 20
+Altezza: 1.75

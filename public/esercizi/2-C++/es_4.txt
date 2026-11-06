@@ -1,0 +1,13 @@
+ESERCIZIO 4 - PARI O DISPARI
+
+Obiettivo
+Scrivi un programma che verifica se un numero inserito dall'utente e pari o dispari.
+
+Istruzioni
+1. Chiedi all'utente un numero intero.
+2. Usa if e l'operatore %.
+3. Stampa "Pari" oppure "Dispari".
+
+Esempio di output
+Inserisci un numero: 7
+Dispari

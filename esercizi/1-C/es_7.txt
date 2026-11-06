@@ -1,0 +1,53 @@
+ESERCIZIO 7.1 - SOMMA DEGLI ELEMENTI DI UN ARRAY
+
+Obiettivo
+Scrivi un programma che contenga un array di 5 numeri e ne calcoli la somma.
+
+Istruzioni
+1. Dichiara un array int numeri[5].
+2. Inserisci 5 valori.
+3. Usa un ciclo for per sommare tutti gli elementi.
+4. Stampa il risultato finale.
+
+ESERCIZIO 7.2 - NUMERO MAGGIORE
+
+Obiettivo
+Trova il numero maggiore all'interno di un array.
+
+Istruzioni
+1. Dichiara un array di 5 numeri.
+2. Inizializza il valore massimo con il primo elemento.
+3. Usa un ciclo per confrontare gli altri elementi.
+4. Stampa il numero maggiore.
+
+ESERCIZIO 7.3 - ARRAY INVERTITO
+
+Obiettivo
+Inverti l'ordine degli elementi di un array.
+
+Istruzioni
+1. Dichiara un array di 5 numeri.
+2. Salva i valori.
+3. Scrivi un ciclo che scambia i valori in ordine inverso.
+4. Stampa il nuovo array.
+
+ESERCIZIO 7.4 - MATRICE 2x3
+
+Obiettivo
+Crea una matrice 2x3 e stampala a schermo.
+
+Istruzioni
+1. Dichiara int matrice[2][3].
+2. Inserisci i valori.
+3. Usa due cicli for annidati per stamparla.
+
+ESERCIZIO 7.5 - SOMMA DI UNA MATRICE
+
+Obiettivo
+Calcola la somma di tutti gli elementi di una matrice 2x3.
+
+Istruzioni
+1. Crea una matrice 2x3.
+2. Inserisci i valori.
+3. Usa due cicli annidati e somma tutti gli elementi.
+4. Stampa il totale.

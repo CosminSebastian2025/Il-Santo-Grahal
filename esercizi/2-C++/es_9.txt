@@ -1,0 +1,14 @@
+ESERCIZIO 9 - CLASSI
+
+Obiettivo
+Crea una classe Contatore con un metodo per incrementare e un metodo per leggere il valore.
+
+Istruzioni
+1. Crea una classe Contatore.
+2. Aggiungi un membro privato int valore.
+3. Implementa un metodo incrementa() che aumenta valore di 1.
+4. Implementa un metodo getValore() che lo restituisce.
+5. Nel main crea un oggetto e richiama il metodo.
+
+Esempio di output
+1

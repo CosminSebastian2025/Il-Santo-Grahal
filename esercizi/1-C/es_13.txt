@@ -1,0 +1,76 @@
+ESERCIZIO EXTRA 1 - ORDINAMENTO DI NUMERI
+
+Obiettivo
+Scrivi un programma che ordina 10 numeri inseriti dall'utente in ordine crescente.
+
+Istruzioni
+1. Dichiara un array di 10 interi.
+2. Chiedi all'utente di inserire i valori.
+3. Usa un algoritmo di ordinamento semplice (es. bubble sort).
+4. Stampa l'array ordinato.
+
+ESERCIZIO EXTRA 2 - RICERCA IN UN ARRAY
+
+Obiettivo
+Scrivi un programma che cerca un numero all'interno di un array e stampa la posizione.
+
+Istruzioni
+1. Dichiara un array di 10 numeri.
+2. Chiedi all'utente il numero da cercare.
+3. Scorri l'array con un ciclo.
+4. Se lo trovi, stampa la sua posizione; altrimenti stampa "Non trovato".
+
+ESERCIZIO EXTRA 3 - PASSWORD SEMPLICE
+
+Obiettivo
+Implementa un semplice controllo password.
+
+Istruzioni
+1. Imposta una password segreta.
+2. Chiedi all'utente di inserirla.
+3. Confronta la stringa inserita con quella corretta.
+4. Stampa "Accesso consentito" oppure "Accesso negato".
+
+ESERCIZIO EXTRA 4 - MEDIA E MEDIANA
+
+Obiettivo
+Calcola la media e la mediana di 5 numeri.
+
+Istruzioni
+1. Inserisci 5 numeri.
+2. Calcola la somma e la media.
+3. Ordina i numeri e trova il valore centrale.
+4. Stampa i risultati.
+
+ESERCIZIO EXTRA 5 - LISTA DINAMICA
+
+Obiettivo
+Crea una lista dinamica di numeri interi.
+
+Istruzioni
+1. Usa malloc per allocare memoria.
+2. Inserisci valori finché l'utente vuole continuare.
+3. Stampa tutti i valori.
+4. Libera la memoria con free.
+
+ESERCIZIO EXTRA 6 - FILE CON RECORD
+
+Obiettivo
+Scrivi un programma che salva dati in un file con più campi.
+
+Istruzioni
+1. Crea un file di testo.
+2. Salva informazioni come nome, cognome, eta e voto.
+3. Leggi il file e stampa i dati salvati.
+4. Usa funzioni per organizzare il codice.
+
+SFIDA FINALE
+
+Obiettivo
+Unisci tutti i concetti del corso in un progetto completo.
+
+Istruzioni
+1. Crea un menu con diverse opzioni.
+2. Usa array, stringhe, funzioni e file.
+3. Permetti di inserire, cercare e salvare i dati.
+4. Testa il programma con più casi d'uso.

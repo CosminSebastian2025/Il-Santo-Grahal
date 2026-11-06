@@ -1,0 +1,15 @@
+ESERCIZIO 8 - STRUCT
+
+Obiettivo
+Crea una struct Persona con nome, eta e citta e stampala.
+
+Istruzioni
+1. Definisci la struct Persona.
+2. Aggiungi tre campi: nome, eta, citta.
+3. Crea un oggetto Persona.
+4. Stampa i dati.
+
+Esempio di output
+Nome: Marco
+Eta: 21
+Citta: Roma

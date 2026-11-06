@@ -1,0 +1,51 @@
+ESERCIZIO 9.1 - INDIRIZZO DI UNA VARIABILE
+
+Obiettivo
+Crea una variabile intera e stampa il suo indirizzo tramite un puntatore.
+
+Istruzioni
+1. Dichiara int numero.
+2. Dichiara int *p = &numero.
+3. Stampa il valore e l'indirizzo.
+
+ESERCIZIO 9.2 - SCAMBIO DI DUE VARIABILI
+
+Obiettivo
+Scrivi una funzione che scambi due valori tramite puntatori.
+
+Istruzioni
+1. Crea void scambia(int *a, int *b).
+2. Usa una variabile temporanea.
+3. Stampa i valori dopo lo scambio.
+
+ESERCIZIO 9.3 - MODIFICA VALORE TRAMITE PUNTATORE
+
+Obiettivo
+Usa un puntatore per modificare una variabile.
+
+Istruzioni
+1. Dichiara int x = 10.
+2. Crea un puntatore int *p = &x.
+3. Modifica x tramite *p = 25.
+4. Stampa il nuovo valore.
+
+ESERCIZIO 9.4 - SOMMA CON PUNTATORE
+
+Obiettivo
+Usa un array e un puntatore per sommare i valori.
+
+Istruzioni
+1. Dichiara un array di 5 numeri.
+2. Crea un puntatore all'array.
+3. Usa il puntatore per sommarli.
+4. Stampa la somma.
+
+ESERCIZIO 9.5 - STAMPA ELEMENTI CON PUNTATORE
+
+Obiettivo
+Accedi a tutti gli elementi di un array tramite puntatore.
+
+Istruzioni
+1. Dichiara un array di 5 elementi.
+2. Usa un puntatore per scorrerlo.
+3. Stampa ogni valore.

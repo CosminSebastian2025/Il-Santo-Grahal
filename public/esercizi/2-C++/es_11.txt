@@ -1,0 +1,14 @@
+ESERCIZIO 11 - FILE DI TESTO
+
+Obiettivo
+Scrivi un programma che salva una frase in un file di testo.
+
+Istruzioni
+1. Includi <fstream>.
+2. Crea un oggetto ofstream.
+3. Apri un file chiamato dati.txt.
+4. Scrivi una frase nel file.
+5. Chiudi il file.
+
+Esempio di output
+Il file dati.txt e' stato creato correttamente.

@@ -1,0 +1,50 @@
+ESERCIZIO 12.1 - RUBRICA TELEFONICA
+
+Obiettivo
+Crea un piccolo programma per gestire una rubrica telefonica.
+
+Istruzioni
+1. Salva almeno 5 contatti con nome e numero.
+2. Mostra il menù con opzioni: inserisci, stampa, cerca, esci.
+3. Usa array e funzioni per organizzare il programma.
+
+ESERCIZIO 12.2 - GESTIONE STUDENTI
+
+Obiettivo
+Crea un programma che gestisca nome, voto e media degli studenti.
+
+Istruzioni
+1. Salva i nomi e i voti degli studenti in array.
+2. Calcola la media del gruppo.
+3. Stampa i risultati.
+
+ESERCIZIO 12.3 - LIBRERIA PERSONALE
+
+Obiettivo
+Crea un programma per gestire libri con titolo, autore e anno.
+
+Istruzioni
+1. Inserisci almeno 5 libri.
+2. Permetti la ricerca per titolo.
+3. Stampa la lista dei libri.
+
+ESERCIZIO 12.4 - GESTIONE FILE
+
+Obiettivo
+Salva i dati del tuo progetto in un file.
+
+Istruzioni
+1. Apri un file in modalità w.
+2. Scrivi i dati inseriti dall'utente.
+3. Leggi i dati dal file e stampali.
+
+ESERCIZIO 12.5 - PROGETTO FINALE
+
+Obiettivo
+Unisci tutte le abilità apprese nel corso: funzioni, array, stringhe, file e menu.
+
+Istruzioni
+1. Realizza un programma completo con più funzioni.
+2. Permetti l'inserimento e la visualizzazione dei dati.
+3. Salva e carica i dati da file.
+4. Testa il programma con diversi casi.

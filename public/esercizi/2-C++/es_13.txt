@@ -1,0 +1,16 @@
+ESERCIZI EXTRA - RIPASSO C++
+
+1. Calcolatrice con funzioni
+Scrivi quattro funzioni per sommare, sottrarre, moltiplicare e dividere due numeri. Gestisci il caso in cui il divisore sia zero.
+
+2. Media dei voti
+Inserisci cinque voti in un std::vector, calcola la media e stampa i voti superiori alla media.
+
+3. Ricerca di una persona
+Crea una struct Persona e un vector di persone. Chiedi un nome e cerca la persona corrispondente.
+
+4. Ordinamento
+Chiedi cinque numeri, salvali in un vector e ordinali usando std::sort.
+
+5. Rubrica su file
+Estendi la rubrica del progetto finale salvando i contatti in un file di testo e rileggendoli all'avvio.

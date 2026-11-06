@@ -1,0 +1,57 @@
+ESERCIZIO 10.1 - ALLOCAZIONE DI 5 NUMERI
+
+Obiettivo
+Alloca dinamicamente un array di 5 numeri interi.
+
+Istruzioni
+1. Usa malloc per allocare 5 elementi di tipo int.
+2. Inserisci i valori.
+3. Stampa i valori.
+4. Libera la memoria con free.
+
+ESERCIZIO 10.2 - SOMMA VETTORE DINAMICO
+
+Obiettivo
+Calcola la somma di un array allocato dinamicamente.
+
+Istruzioni
+1. Alloca un array di N elementi.
+2. Chiedi all'utente N.
+3. Inserisci i valori.
+4. Calcola la somma e la stampa.
+5. Libera la memoria.
+
+ESERCIZIO 10.3 - CALLOC
+
+Obiettivo
+Usa calloc per creare un array inizializzato a zero.
+
+Istruzioni
+1. Alloca usando calloc.
+2. Stampa i valori iniziali.
+3. Modifica alcuni valori.
+4. Libera la memoria.
+
+ESERCIZIO 10.4 - REALLOC
+
+Obiettivo
+Aumenta la dimensione di un array allocato dinamicamente.
+
+Istruzioni
+1. Alloca un array di 3 valori.
+2. Inserisci i valori iniziali.
+3. Usa realloc per aumentarne la dimensione a 5.
+4. Aggiungi due valori.
+5. Stampa il risultato.
+6. Libera la memoria.
+
+ESERCIZIO 10.5 - MEMORIA LIBERATA
+
+Obiettivo
+Verifica il corretto utilizzo di free in un programma semplice.
+
+Istruzioni
+1. Alloca memoria per un array.
+2. Inserisci alcuni valori.
+3. Stampa i valori.
+4. Libera la memoria e termina il programma.

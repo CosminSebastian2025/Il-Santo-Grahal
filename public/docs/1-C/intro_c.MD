@@ -44,6 +44,27 @@ Se installate CLio vi chiederà se volete usare la Licenza *Free for Non-commerc
 
 ---
 
+### Navigazione rapida
+
+Se vuoi muoverti velocemente nel corso, ecco il percorso completo:
+
+- [Introduzione](./intro_c.MD)
+- [1. Variabili e tipi](./page_1.MD)
+- [2. Librerie](./page_2.MD)
+- [3. Acquisizione e restituzione dati](./page_3.MD)
+- [4. Operazioni e condizioni](./page_4.MD)
+- [5. Cicli](./page_5.MD)
+- [6. Funzioni](./page_6.MD)
+- [7. Array](./page_7.MD)
+- [8. Stringhe](./page_8.MD)
+- [9. Puntatori](./page_9.MD)
+- [10. Memoria dinamica](./page_10.MD)
+- [11. File](./page_11.MD)
+- [12. Progetto finale](./page_12.MD)
+- [13. Indice conclusivo](./page_13.MD)
+
+---
+
 ### Che cosa si andrà a programmare?
 
 In questo corso si andrà a programmare principalmente in C, le cose principali saranno:
@@ -54,15 +75,16 @@ In questo corso si andrà a programmare principalmente in C, le cose principali 
 3. [**Acquisizione e Restituzione dati**](./page_3.MD): capire come acquisire dati dal terminale e stampare dei messaggi all'utente.
 4. [**Operazioni e condizioni**](./page_4.MD): si entra nella logica della programmazione
 5. [**Cicli**](./page_5.MD):il programma deve ripetere le stesse operazioni all'infinito
-6. **Definizione di Funzione**: cos'è una funzione e che tipi di funzioni esistono
-7. **Array**: come gestire due flussi insieme che vengono chiamate righe e colonne.
-8. **Stringhe**:gestire non più parole ma frase molto lunghe all'interno del programmare
-9. **Puntatori**: è il punto forte di C su cui si può gestire la memoria
-10. **Memora Dinamica**: dove vengono scambiate le informazioni con altri file c
-11. **File**: gestione di file.txt devi leggere e scrivere dei dati al suo interno
-12. **Progetto finale**: le competenze acquisite dopo aver completato il percorso
+6. [**Definizione di Funzione**](./page_6.MD): cos'è una funzione e che tipi di funzioni esistono
+7. [**Array**](./page_7.MD): come gestire insiemi di valori dello stesso tipo.
+8. [**Stringhe**](./page_8.MD): gestire parole e frasi all'interno del programma.
+9. [**Puntatori**](./page_9.MD): è il punto forte di C su cui si può gestire la memoria.
+10. [**Memoria Dinamica**](./page_10.MD): dove vengono allocate e liberate le informazioni in modo flessibile.
+11. [**File**](./page_11.MD): gestione di file `.txt` per leggere e scrivere dati.
+12. [**Progetto finale**](./page_12.MD): le competenze acquisite dopo aver completato il percorso.
+13. [**Indice conclusivo del percorso C**](./page_13.MD): riepilogo completo delle lezioni e delle sfide.
 
 ---
 
 
-E ora passiamo alla prossiam lezione e inizieremo ad aprire le porte verso nuovi mondi
+E ora passiamo alla prossima lezione e inizieremo ad aprire le porte verso nuovi mondi

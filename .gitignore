@@ -29,3 +29,6 @@ tauri-keys-privati/
 .vscode/
 *.swp
 *.swo
+
+# SIG
+*.sig

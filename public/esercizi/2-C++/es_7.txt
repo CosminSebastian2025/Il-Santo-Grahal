@@ -1,0 +1,13 @@
+ESERCIZIO 7 - VETTORI E STRINGHE
+
+Obiettivo
+Scrivi un programma che legge una parola e ne conta i caratteri.
+
+Istruzioni
+1. Dichiara una variabile std::string parola.
+2. Chiedi all'utente di inserirla.
+3. Usa size() per stampare la lunghezza.
+
+Esempio di output
+Inserisci una parola: C++
+Lunghezza: 3
