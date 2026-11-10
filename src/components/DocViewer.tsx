@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { Section, SubSection, getSortedPages } from "@/lib/sections";
+import { loadDocument } from "@/lib/docs";
+import { getCacheHealth } from "@/lib/cache";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeHighlight from "rehype-highlight";
@@ -16,36 +18,58 @@ interface DocViewerProps {
 }
 
 export default function DocViewer({ section, initialPage, onBack }: DocViewerProps) {
-    const [currentpage, setCurrentPage] = useState<SubSection | null>(initialPage || getSortedPages(section)[0]);
+    const [currentPage, setCurrentPage] = useState<SubSection | null>(initialPage || getSortedPages(section)[0]);
     const [content, setContent] = useState<string>("");
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string>("");
 
+    const filePath = currentPage?.filePath || section.filePath;
+
     useEffect(() => {
+        let cancelled = false;
+
         async function loadDoc() {
             try {
                 setLoading(true);
                 setError("");
+                setContent("");
 
-                const response = await fetch(currentpage?.filePath || section.filePath);
+                const text = await loadDocument(filePath);
 
-                if (!response.ok) {
-                    throw new Error(`File non trovato: ${currentpage?.filePath || section.filePath}`);
+                if (!cancelled) {
+                    setContent(text);
                 }
-
-                const text = await response.text();
-                setContent(text);
             } catch (err) {
-                setError(
-                    err instanceof Error ? err.message : "Errore nel caricamento"
-                );
+                if (!cancelled) {
+                    setError(
+                        err instanceof Error ? err.message : "Errore nel caricamento"
+                    );
+                }
             } finally {
-                setLoading(false);
+                if (!cancelled) {
+                    setLoading(false);
+                }
             }
         }
 
         loadDoc();
-    }, [currentpage?.filePath]);
+
+        return () => {
+            cancelled = true;
+        };
+    }, [filePath]);
+
+    useEffect(() => {
+        if (process.env.NODE_ENV !== "development") {
+            return;
+        }
+
+        void getCacheHealth().then((health) => {
+            if (health) {
+                console.info(`[cache] backend: ${health.backend}`, health);
+            }
+        });
+    }, []);
 
     const handlePage = (subsection: SubSection) => {
         setCurrentPage(subsection)
@@ -56,7 +80,7 @@ export default function DocViewer({ section, initialPage, onBack }: DocViewerPro
             {/* Sidebar */}
             <SectionBar
                 section={section}
-                currentSubSectionPath={currentpage?.filePath}
+                currentSubSectionPath={currentPage?.filePath}
                 onPageSelect={handlePage}
             />
 
@@ -78,7 +102,7 @@ export default function DocViewer({ section, initialPage, onBack }: DocViewerPro
                             <h1 className="text-lg font-bold text-gray-900">
                                 {section.title}
                             </h1>
-                            <p className="text-sm text-gray-500">{currentpage?.title}</p>
+                            <p className="text-sm text-gray-500">{currentPage?.title}</p>
                         </div>
                     </div>
                     

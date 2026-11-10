@@ -20,6 +20,34 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Cache (Redis opzionale)
+
+I documenti Markdown vengono caricati con una cache a due livelli:
+
+1. cache in memoria nel processo Rust (sempre attiva, con TTL e limite di 512 voci);
+2. Redis, se configurato, come cache condivisa e persistente tra sessioni.
+
+Senza Redis l'app funziona allo stesso modo: la connessione è lazy, ha un timeout di 2 secondi e in caso di errore si torna automaticamente alla cache in memoria. Redis viene usato solo dal processo Rust: la webview non riceve mai credenziali o connessioni dirette.
+
+Configurazione tramite variabili d'ambiente prima di avviare Tauri:
+
+```bash
+# macOS/Linux
+ILSG_REDIS_URL=redis://127.0.0.1:6379 npm run tauri:dev
+```
+
+```powershell
+# Windows (PowerShell)
+$env:ILSG_REDIS_URL="redis://127.0.0.1:6379"; npm run tauri:dev
+```
+
+Variabili supportate:
+
+- `ILSG_REDIS_URL` (accetta anche `rediss://` per TLS); in alternativa viene letto `REDIS_URL`;
+- `ILSG_REDIS_PREFIX` (default `ilsg:v1:`).
+
+Su Windows Redis non è distribuito ufficialmente: servono Docker Desktop, WSL2, Memurai o Valkey. I comandi IPC esposti sono `cache_get`, `cache_set`, `cache_del` e `cache_health`.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

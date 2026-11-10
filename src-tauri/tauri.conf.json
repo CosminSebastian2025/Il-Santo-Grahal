@@ -1,7 +1,7 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
   "productName": "Il Santo Grahal",
-  "version": "0.2.6",
+  "version": "0.3.1",
   "identifier": "com.cosminsebastian.ilsantograhal",
   "build": {
     "frontendDist": "../out",

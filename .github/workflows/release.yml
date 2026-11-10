@@ -75,7 +75,6 @@ jobs:
           prerelease: false
           args: --target ${{ matrix.target }}
           updaterJsonPreferNsis: true
-          uploadUpdaterJson: true
 
   publish:
     needs: release
