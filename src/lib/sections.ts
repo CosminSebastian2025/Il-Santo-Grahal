@@ -17,6 +17,51 @@ export interface Section {
 	pages: SubSection[];
 }
 
+const javaLessons: { title: string; description: string }[] = [
+	{ title: "Lezione 1: Primo programma", description: "Struttura di una classe, main, stampa, variabili e tipi primitivi." },
+	{ title: "Lezione 2: Input e stringhe", description: "Scanner, operatori, metodi delle stringhe e conversioni." },
+	{ title: "Lezione 3: Condizioni", description: "if/else, operatori logici, switch e switch expression." },
+	{ title: "Lezione 4: Cicli", description: "for, while, do-while, break, continue e cicli annidati." },
+	{ title: "Lezione 5: Array e metodi", description: "Array, for-each, parametri, valori di ritorno e overload; progetti della fase 1." },
+	{ title: "Lezione 6: Classi e oggetti", description: "Attributi, metodi, riferimenti, toString e membri static." },
+	{ title: "Lezione 7: Costruttori e incapsulamento", description: "Costruttori, this, validazione, campi final e composizione." },
+	{ title: "Lezione 8: Ereditarietà e polimorfismo", description: "extends, super, override, polimorfismo e instanceof." },
+	{ title: "Lezione 9: Classi astratte e interfacce", description: "Astrazione, interfacce, default method e scelta tra i due strumenti." },
+	{ title: "Lezione 10: Static, enum e record", description: "Membri statici, enum con campi e record; progetti della fase 2." },
+	{ title: "Lezione 11: String, StringBuilder e wrapper", description: "Immutabilità, StringBuilder, autoboxing e formattazione." },
+	{ title: "Lezione 12: Eccezioni", description: "try/catch/finally, eccezioni checked, custom e try-with-resources." },
+	{ title: "Lezione 13: Liste, set e code", description: "ArrayList, LinkedList, HashSet, Deque e iterazione." },
+	{ title: "Lezione 14: Map, generics e ordinamento", description: "HashMap, generics, Comparable e Comparator." },
+	{ title: "Lezione 15: File, date, Stream e Optional", description: "NIO, java.time, lambda, Stream e Optional; progetti della fase 3." },
+	{ title: "Lezione 16: Git e GitHub", description: "Commit, branch, merge, conflitti e repository remoti." },
+	{ title: "Lezione 17: Maven e Gradle", description: "pom.xml, dipendenze, ciclo di vita e build con Gradle." },
+	{ title: "Lezione 18: JUnit 5", description: "Test, asserzioni, eccezioni attese e test parametrizzati." },
+	{ title: "Lezione 19: Debugging e logging", description: "Errori del compilatore, debugger, log e analisi delle eccezioni." },
+	{ title: "Lezione 20: Struttura dei progetti", description: "Package, stratificazione, configurazione e TDD; progetti della fase 4." },
+	{ title: "Lezione 21: SQL e PostgreSQL", description: "Tabelle, tipi, vincoli, INSERT, SELECT, UPDATE e indici." },
+	{ title: "Lezione 22: JOIN, aggregazioni e transazioni", description: "JOIN, GROUP BY, sottoquery, transazioni e isolamento." },
+	{ title: "Lezione 23: JDBC e pool di connessioni", description: "Driver, PreparedStatement, transazioni e HikariCP." },
+	{ title: "Lezione 24: Spring Boot e API REST", description: "Controller, routing, codici di stato e JSON." },
+	{ title: "Lezione 25: JPA, validazione e sicurezza", description: "Entity, repository, validazione, errori e password; progetti della fase 5." },
+	{ title: "Lezione 26: Thread e concorrenza", description: "Thread, race condition, synchronized, AtomicInteger e deadlock." },
+	{ title: "Lezione 27: ExecutorService e CompletableFuture", description: "Pool di thread, Future, catene asincrone e virtual thread." },
+	{ title: "Lezione 28: JVM e prestazioni", description: "Stack, heap, garbage collector, benchmark e strumenti di analisi." },
+	{ title: "Lezione 29: Pattern, Clean Code e SOLID", description: "Singleton, Factory, Builder, Strategy, Observer e principi SOLID." },
+	{ title: "Lezione 30: Cache, Docker e CI/CD", description: "Cache, code, Docker, pipeline e monitoraggio; progetti della fase 6." }
+];
+
+const javaLessonPages: SubSection[] = javaLessons.map((lesson, index) => {
+	const n = String(index + 1).padStart(2, "0");
+	return {
+		id: `java-lezione-${n}`,
+		title: lesson.title,
+		description: lesson.description,
+		icon: `lezione_${n}`,
+		filePath: `/docs/4-Java/lezione_${n}.MD`,
+		order: index + 2
+	};
+});
+
 export const sections: Section[] = [
 	{
 		id: "c",
@@ -493,6 +538,173 @@ export const sections: Section[] = [
 				icon: "settimana_12",
 				filePath: "/docs/3-C%23/settimana_12.MD",
 				order: 13
+			}
+		]
+	},
+	{
+		id: "java",
+		title: "Imparare Java",
+		description: "Percorso in 30 lezioni, dalle basi al codice in produzione con database, Spring Boot e Docker.",
+		icon: "Java",
+		color: "blue",
+		filePath: "/docs/4-Java",
+		pages: [
+			{
+				id: "java-introduction",
+				title: "Introduzione a Java",
+				description: "Obiettivo del percorso, metodo, strumenti e organizzazione delle lezioni.",
+				icon: "java-introduction",
+				filePath: "/docs/4-Java/intro_java.MD",
+				order: 1
+			},
+			...javaLessonPages
+		]
+	},
+	{
+		id: "kotlin",
+		title: "Imparare Kotlin",
+		description: "Percorso in 8 settimane: basi, oggetti, coroutine, file e un progetto completo.",
+		icon: "Kotlin",
+		color: "blue",
+		filePath: "/docs/5-Kotlin",
+		pages: [
+			{
+				id: "kotlin-introduction",
+				title: "Introduzione a Kotlin",
+				description: "Obiettivo del percorso, metodo, strumenti e organizzazione delle settimane.",
+				icon: "kotlin-introduction",
+				filePath: "/docs/5-Kotlin/intro_kotlin.MD",
+				order: 1
+			},
+			{
+				id: "kotlin-settimana-1",
+				title: "Settimana 1: basi",
+				description: "Primo programma, val e var, tipi, stringhe, input, condizioni e cicli.",
+				icon: "settimana_01",
+				filePath: "/docs/5-Kotlin/settimana_01.MD",
+				order: 2
+			},
+			{
+				id: "kotlin-settimana-2",
+				title: "Settimana 2: funzioni e collezioni",
+				description: "Funzioni, liste, set, mappe, when e lambda semplici.",
+				icon: "settimana_02",
+				filePath: "/docs/5-Kotlin/settimana_02.MD",
+				order: 3
+			},
+			{
+				id: "kotlin-settimana-3",
+				title: "Settimana 3: oggetti e null safety",
+				description: "Classi, proprietà, data class, enum e tipi nullable.",
+				icon: "settimana_03",
+				filePath: "/docs/5-Kotlin/settimana_03.MD",
+				order: 4
+			},
+			{
+				id: "kotlin-settimana-4",
+				title: "Settimana 4: Kotlin moderno",
+				description: "Funzioni di ordine superiore, scope functions, sealed class ed errori.",
+				icon: "settimana_04",
+				filePath: "/docs/5-Kotlin/settimana_04.MD",
+				order: 5
+			},
+			{
+				id: "kotlin-settimana-5",
+				title: "Settimana 5: coroutine",
+				description: "launch, async, funzioni suspend, dispatcher e concorrenza strutturata.",
+				icon: "settimana_05",
+				filePath: "/docs/5-Kotlin/settimana_05.MD",
+				order: 6
+			},
+			{
+				id: "kotlin-settimana-6",
+				title: "Settimana 6: file, JSON e dipendenze",
+				description: "Lettura e scrittura file, serializzazione JSON, HTTP e Gradle.",
+				icon: "settimana_06",
+				filePath: "/docs/5-Kotlin/settimana_06.MD",
+				order: 7
+			},
+			{
+				id: "kotlin-settimana-7",
+				title: "Settimana 7: progetto, prima parte",
+				description: "Scelta del progetto, MVP, architettura e sviluppo del flusso principale.",
+				icon: "settimana_07",
+				filePath: "/docs/5-Kotlin/settimana_07.MD",
+				order: 8
+			},
+			{
+				id: "kotlin-settimana-8",
+				title: "Settimana 8: test e consegna",
+				description: "Test, rifinitura, README, consegna e idee per continuare.",
+				icon: "settimana_08",
+				filePath: "/docs/5-Kotlin/settimana_08.MD",
+				order: 9
+			}
+		]
+	},
+	{
+		id: "compose",
+		title: "Imparare Jetpack Compose",
+		description: "Percorso in 6 livelli: dalla prima schermata a runtime, performance e Compose Multiplatform.",
+		icon: "Compose",
+		color: "blue",
+		filePath: "/docs/6-Compose",
+		pages: [
+			{
+				id: "compose-introduction",
+				title: "Introduzione a Compose",
+				description: "Obiettivo del percorso, metodo, strumenti, versioni e organizzazione dei livelli.",
+				icon: "compose-introduction",
+				filePath: "/docs/6-Compose/intro_compose.MD",
+				order: 1
+			},
+			{
+				id: "compose-livello-1",
+				title: "Livello 1: fondamenta",
+				description: "Progetto, Text, Button, TextField, layout, Modifier, stato con remember e anteprime.",
+				icon: "livello_01",
+				filePath: "/docs/6-Compose/livello_01.MD",
+				order: 2
+			},
+			{
+				id: "compose-livello-2",
+				title: "Livello 2: UI reale",
+				description: "Scaffold, Material 3, TopAppBar, LazyColumn, Card, immagini con Coil, dialog e bottom sheet.",
+				icon: "livello_02",
+				filePath: "/docs/6-Compose/livello_02.MD",
+				order: 3
+			},
+			{
+				id: "compose-livello-3",
+				title: "Livello 3: stato serio e architettura",
+				description: "State hoisting, ViewModel, StateFlow, UiState, effetti e stati di caricamento.",
+				icon: "livello_03",
+				filePath: "/docs/6-Compose/livello_03.MD",
+				order: 4
+			},
+			{
+				id: "compose-livello-4",
+				title: "Livello 4: animazioni, navigazione e componenti avanzati",
+				description: "Navigation Compose, route tipizzate, animazioni, rememberSaveable, Paging e deep link.",
+				icon: "livello_04",
+				filePath: "/docs/6-Compose/livello_04.MD",
+				order: 5
+			},
+			{
+				id: "compose-livello-5",
+				title: "Livello 5: livello avanzato vero",
+				description: "Composable personalizzati, Layout, Canvas, gesti, stabilità, test UI e accessibilità.",
+				icon: "livello_05",
+				filePath: "/docs/6-Compose/livello_05.MD",
+				order: 6
+			},
+			{
+				id: "compose-livello-6",
+				title: "Livello 6: oltre i limiti",
+				description: "Runtime, slot table, compilatore, misurazione, Macrobenchmark, baseline profile e Multiplatform.",
+				icon: "livello_06",
+				filePath: "/docs/6-Compose/livello_06.MD",
+				order: 7
 			}
 		]
 	}
