@@ -1,3 +1,4 @@
+// Manifest statico dei percorsi: ogni sezione elenca le pagine Markdown da mostrare.
 export interface SubSection {
 	id: string;
 	title: string;
@@ -7,6 +8,7 @@ export interface SubSection {
 	order: number;
 }
 
+// Un percorso completo con titolo, icona e pagine ordinate.
 export interface Section {
 	id: string;
 	title: string;
@@ -17,6 +19,7 @@ export interface Section {
 	pages: SubSection[];
 }
 
+// Titoli e descrizioni delle 30 lezioni Java, riusati per generare le pagine.
 const javaLessons: { title: string; description: string }[] = [
 	{ title: "Lezione 1: Primo programma", description: "Struttura di una classe, main, stampa, variabili e tipi primitivi." },
 	{ title: "Lezione 2: Input e stringhe", description: "Scanner, operatori, metodi delle stringhe e conversioni." },
@@ -50,6 +53,7 @@ const javaLessons: { title: string; description: string }[] = [
 	{ title: "Lezione 30: Cache, Docker e CI/CD", description: "Cache, code, Docker, pipeline e monitoraggio; progetti della fase 6." }
 ];
 
+// Genera le pagine Java con id, percorso e ordinamento coerenti.
 const javaLessonPages: SubSection[] = javaLessons.map((lesson, index) => {
 	const n = String(index + 1).padStart(2, "0");
 	return {
@@ -62,7 +66,9 @@ const javaLessonPages: SubSection[] = javaLessons.map((lesson, index) => {
 	};
 });
 
+// Elenco dei percorsi mostrati nella home, nell'ordine in cui compaiono.
 export const sections: Section[] = [
+	// Percorso C.
 	{
 		id: "c",
 		title: "Imparare il C",
@@ -169,6 +175,7 @@ export const sections: Section[] = [
 			}
 		]
 	},
+	// Percorso C++.
 	{
 		id: "cpp",
 		title: "Imparare il C++",
@@ -427,6 +434,7 @@ export const sections: Section[] = [
 			}
 		]
 	},
+	// Percorso C#.
 	{
 		id: "csharp",
 		title: "Imparare il C#",
@@ -541,6 +549,7 @@ export const sections: Section[] = [
 			}
 		]
 	},
+	// Percorso Java: le pagine sono generate da javaLessonPages.
 	{
 		id: "java",
 		title: "Imparare Java",
@@ -560,6 +569,7 @@ export const sections: Section[] = [
 			...javaLessonPages
 		]
 	},
+	// Percorso Kotlin.
 	{
 		id: "kotlin",
 		title: "Imparare Kotlin",
@@ -642,6 +652,7 @@ export const sections: Section[] = [
 			}
 		]
 	},
+	// Percorso Jetpack Compose.
 	{
 		id: "compose",
 		title: "Imparare Jetpack Compose",
@@ -707,13 +718,74 @@ export const sections: Section[] = [
 				order: 7
 			}
 		]
+	},
+	// Percorso Kotlin Multiplatform, con piano di 90 giorni.
+	{
+		id: "kmp",
+		title: "Imparare Kotlin Multiplatform",
+		description: "Percorso in 4 settimane più un piano di 90 giorni: Kotlin, architettura e primo modulo condiviso Android/iOS.",
+		icon: "KMP",
+		color: "blue",
+		filePath: "/docs/7-KMP",
+		pages: [
+			{
+				id: "kmp-introduction",
+				title: "Introduzione a Kotlin Multiplatform",
+				description: "Obiettivo del percorso, tre fasi, metodo, strumenti, versioni e organizzazione.",
+				icon: "kmp-introduction",
+				filePath: "/docs/7-KMP/intro_kmp.MD",
+				order: 1
+			},
+			{
+				id: "kmp-settimana-1",
+				title: "Settimana 1: Kotlin base",
+				description: "Variabili, tipi, funzioni, condizioni, cicli, classi, null safety e calcolatrice testuale.",
+				icon: "settimana_01",
+				filePath: "/docs/7-KMP/settimana_01.MD",
+				order: 2
+			},
+			{
+				id: "kmp-settimana-2",
+				title: "Settimana 2: Kotlin serio",
+				description: "Collezioni, lambda, funzioni di ordine superiore, extension functions, data class e progetti.",
+				icon: "settimana_02",
+				filePath: "/docs/7-KMP/settimana_02.MD",
+				order: 3
+			},
+			{
+				id: "kmp-settimana-3",
+				title: "Settimana 3: app, stato e dati",
+				description: "UI e logica, stato, eventi, coroutine, Ktor, JSON, repository e dependency injection.",
+				icon: "settimana_03",
+				filePath: "/docs/7-KMP/settimana_03.MD",
+				order: 4
+			},
+			{
+				id: "kmp-settimana-4",
+				title: "Settimana 4: primo modulo KMP",
+				description: "Progetto shared e androidApp, expect/actual, validazione, sconto, valute, repository JSON e test comuni.",
+				icon: "settimana_04",
+				filePath: "/docs/7-KMP/settimana_04.MD",
+				order: 5
+			},
+			{
+				id: "kmp-piano-90-giorni",
+				title: "Piano di 90 giorni",
+				description: "Tre mesi, progetto finale, milestone, catalogo di idee, consegna e passi successivi.",
+				icon: "piano_90_giorni",
+				filePath: "/docs/7-KMP/piano_90_giorni.MD",
+				order: 6
+			}
+		]
 	}
 ]
 
+// Cerca un percorso tramite il suo id.
 export function getSectionById(id: string): Section | undefined {
 	return sections.find(section => section.id === id);
 }
 
+// Trova percorso e pagina a partire dal percorso file Markdown.
 export function getSubSectionById(filePath: string): { section: Section; subSection: SubSection } | undefined {
 	for (const section of sections) {
 		for (const subSection of section.pages) {
@@ -725,6 +797,7 @@ export function getSubSectionById(filePath: string): { section: Section; subSect
 	return undefined;
 }
 
+// Copia delle pagine ordinate per il campo order, senza mutare il manifest.
 export function getSortedPages(sections: Section): SubSection[] {
 	return [...sections.pages].sort((a, b) => a.order - b.order);
 }

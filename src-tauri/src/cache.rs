@@ -1,3 +1,4 @@
+// Cache a due livelli: Redis (se configurato) con fallback in memoria per processo.
 use std::{
     collections::HashMap,
     sync::Mutex,
@@ -7,12 +8,14 @@ use std::{
 use redis::{aio::ConnectionManager, AsyncCommands};
 use serde::Serialize;
 
+// Scadenze predefinite e limiti di sicurezza della cache.
 const DEFAULT_TTL_SECONDS: u64 = 24 * 60 * 60;
 const MEMORY_MAX_ENTRIES: usize = 512;
 const REDIS_CONNECT_TIMEOUT: Duration = Duration::from_secs(2);
 const REDIS_RETRY_COOLDOWN: Duration = Duration::from_secs(30);
 const MAX_KEY_LEN: usize = 512;
 
+// Voce della cache in memoria con scadenza e momento di inserimento.
 struct MemoryEntry {
     value: String,
     expires_at: Option<Instant>,
@@ -20,18 +23,21 @@ struct MemoryEntry {
 }
 
 impl MemoryEntry {
+    // Una voce è scaduta quando il deadline è stato superato.
     fn is_expired(&self) -> bool {
         self.expires_at
             .is_some_and(|deadline| deadline <= Instant::now())
     }
 }
 
+// Stato della connessione Redis: condivisa, con cooldown dopo un errore.
 struct RedisSlot {
     connection: Option<ConnectionManager>,
     retry_at: Option<Instant>,
     last_error: Option<String>,
 }
 
+// Informazioni restituite al frontend per diagnosticare la cache.
 #[derive(Serialize)]
 #[serde(rename_all = "camelCase")]
 pub struct CacheHealth {
@@ -42,6 +48,7 @@ pub struct CacheHealth {
     last_error: Option<String>,
 }
 
+// Stato globale gestito da Tauri: prefisso chiavi, URL Redis e cache in memoria.
 pub struct CacheState {
     prefix: String,
     redis_url: Option<String>,
@@ -50,6 +57,7 @@ pub struct CacheState {
 }
 
 impl CacheState {
+    // Legge la configurazione dalle variabili d'ambiente, con fallback alla sola memoria.
     pub fn from_env() -> Self {
         let redis_url = ["ILSG_REDIS_URL", "REDIS_URL"]
             .iter()
@@ -81,6 +89,7 @@ impl CacheState {
         }
     }
 
+    // Legge prima da Redis, poi dalla memoria; un errore Redis non blocca la lettura.
     pub async fn get(&self, key: &str) -> Option<String> {
         if let Some(mut connection) = self.redis_connection().await {
             match connection
@@ -101,6 +110,7 @@ impl CacheState {
         self.memory_get(key)
     }
 
+    // Scrive in memoria e, se disponibile, anche su Redis con TTL.
     pub async fn set(&self, key: &str, value: &str, ttl_seconds: Option<u64>) {
         let ttl = ttl_seconds.unwrap_or(DEFAULT_TTL_SECONDS).max(1);
         self.memory_set(key, value, Some(ttl));
@@ -117,6 +127,7 @@ impl CacheState {
         }
     }
 
+    // Elimina la chiave da entrambi i livelli di cache.
     pub async fn delete(&self, key: &str) {
         self.memory_remove(key);
 
@@ -129,6 +140,7 @@ impl CacheState {
         }
     }
 
+    // Stato sintetico: backend attivo, configurazione, numero di voci e ultimo errore.
     pub async fn health(&self) -> CacheHealth {
         self.redis_connection().await;
 
@@ -152,6 +164,7 @@ impl CacheState {
         }
     }
 
+    // Restituisce la connessione Redis, riconnettendosi con timeout e cooldown.
     async fn redis_connection(&self) -> Option<ConnectionManager> {
         let url = self.redis_url.as_deref()?;
         let mut slot = self.redis.lock().await;
@@ -208,10 +221,12 @@ impl CacheState {
         }
     }
 
+    // Applica il prefisso configurato alle chiavi Redis.
     fn namespaced(&self, key: &str) -> String {
         format!("{}{}", self.prefix, key)
     }
 
+    // Lettura dalla memoria: rimuove le voci scadute incontrate.
     fn memory_get(&self, key: &str) -> Option<String> {
         let mut memory = self.memory.lock().ok()?;
 
@@ -225,6 +240,7 @@ impl CacheState {
         }
     }
 
+    // Scrittura in memoria con limite di voci; se pieno elimina le scadute o la più vecchia.
     fn memory_set(&self, key: &str, value: &str, ttl_seconds: Option<u64>) {
         let Ok(mut memory) = self.memory.lock() else {
             return;
@@ -254,6 +270,7 @@ impl CacheState {
         );
     }
 
+    // Rimuove una voce dalla cache in memoria.
     fn memory_remove(&self, key: &str) {
         if let Ok(mut memory) = self.memory.lock() {
             memory.remove(key);
@@ -261,6 +278,7 @@ impl CacheState {
     }
 }
 
+// Valida le chiavi in arrivo dal frontend: niente stringhe vuote, caratteri strani o "..".
 fn validate_key(key: &str) -> Result<(), String> {
     if key.is_empty() {
         return Err("la chiave di cache non può essere vuota".to_string());
@@ -282,6 +300,7 @@ fn validate_key(key: &str) -> Result<(), String> {
     Ok(())
 }
 
+// Comandi IPC esposti al frontend: validano sempre la chiave prima di usarla.
 #[tauri::command]
 pub async fn cache_get(
     state: tauri::State<'_, CacheState>,
@@ -291,6 +310,7 @@ pub async fn cache_get(
     Ok(state.get(&key).await)
 }
 
+// Salva un valore con TTL opzionale (secondi).
 #[tauri::command]
 pub async fn cache_set(
     state: tauri::State<'_, CacheState>,
@@ -303,6 +323,7 @@ pub async fn cache_set(
     Ok(())
 }
 
+// Elimina una chiave dalla cache.
 #[tauri::command]
 pub async fn cache_del(state: tauri::State<'_, CacheState>, key: String) -> Result<(), String> {
     validate_key(&key)?;
@@ -310,11 +331,13 @@ pub async fn cache_del(state: tauri::State<'_, CacheState>, key: String) -> Resu
     Ok(())
 }
 
+// Restituisce lo stato del backend per la diagnostica del frontend.
 #[tauri::command]
 pub async fn cache_health(state: tauri::State<'_, CacheState>) -> Result<CacheHealth, String> {
     Ok(state.health().await)
 }
 
+// Test unitari della cache in memoria e della validazione delle chiavi.
 #[cfg(test)]
 mod tests {
     use super::*;

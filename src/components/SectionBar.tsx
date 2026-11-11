@@ -1,14 +1,16 @@
+// Barra laterale con l'elenco ordinato degli argomenti di un percorso.
 import React from 'react'
 import {Section, SubSection, getSortedPages} from "@/lib/sections";
 
 interface SectionBarProps {
-    // Define any props you want to pass to the SectionBar component here
+    // Percorso corrente, file attivo e callback per cambiare pagina.
     section: Section;
     currentSubSectionPath?: string;
     onPageSelect: (subSection: SubSection) => void;
 }
 
 function SectionBar({ section, currentSubSectionPath, onPageSelect }: SectionBarProps) {
+    // Le pagine vengono ordinate secondo il manifest del percorso.
     const pages = getSortedPages(section);
 
     return (
@@ -20,6 +22,7 @@ function SectionBar({ section, currentSubSectionPath, onPageSelect }: SectionBar
                 <nav className="space-y-1">
                     {
                         pages.map((page) => {
+                        // Evidenzia la pagina attualmente aperta.
                         const isActive = page.filePath === currentSubSectionPath;
 
                         return (

@@ -1,5 +1,6 @@
 "use client";
 
+// Visualizzatore Markdown di un percorso: sidebar, caricamento documento, errori e cache.
 import { useEffect, useState } from "react";
 import { Section, SubSection, getSortedPages } from "@/lib/sections";
 import { loadDocument } from "@/lib/docs";
@@ -12,19 +13,23 @@ import "highlight.js/styles/github.css";
 import SectionBar from "@/components/SectionBar";
 
 interface DocViewerProps {
+    // Percorso aperto, eventuale pagina iniziale e ritorno alla home.
     section: Section;
     initialPage?: SubSection;
     onBack: () => void;
 }
 
 export default function DocViewer({ section, initialPage, onBack }: DocViewerProps) {
+    // Pagina corrente: quella richiesta oppure la prima del percorso.
     const [currentPage, setCurrentPage] = useState<SubSection | null>(initialPage || getSortedPages(section)[0]);
     const [content, setContent] = useState<string>("");
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string>("");
 
+    // File da caricare: pagina selezionata o documento unico del percorso.
     const filePath = currentPage?.filePath || section.filePath;
 
+    // Carica il Markdown a ogni cambio pagina, ignorando risposte obsolete.
     useEffect(() => {
         let cancelled = false;
 
@@ -55,10 +60,12 @@ export default function DocViewer({ section, initialPage, onBack }: DocViewerPro
         loadDoc();
 
         return () => {
+            // Evita aggiornamenti di stato dopo lo smontaggio.
             cancelled = true;
         };
     }, [filePath]);
 
+    // In sviluppo stampa lo stato del backend cache (Redis o memoria).
     useEffect(() => {
         if (process.env.NODE_ENV !== "development") {
             return;
@@ -71,13 +78,14 @@ export default function DocViewer({ section, initialPage, onBack }: DocViewerPro
         });
     }, []);
 
+    // Cambia la pagina mostrata nella sidebar.
     const handlePage = (subsection: SubSection) => {
         setCurrentPage(subsection)
     }
 
     return (
         <div className="flex h-screen bg-white">
-            {/* Sidebar */}
+            {/* Barra laterale con gli argomenti del percorso */}
             <SectionBar
                 section={section}
                 currentSubSectionPath={currentPage?.filePath}
@@ -86,7 +94,7 @@ export default function DocViewer({ section, initialPage, onBack }: DocViewerPro
 
             {/* Contenuto principale */}
             <div className="flex-1 flex flex-col overflow-hidden">
-                {/* Header */}
+                {/* Intestazione con pulsante Home e titolo del percorso */}
                 <header className="border-b border-gray-200 bg-white px-6 py-4 flex items-center gap-4">
                     <button
                         onClick={onBack}
@@ -111,7 +119,7 @@ export default function DocViewer({ section, initialPage, onBack }: DocViewerPro
                     </div>
                 </header>
 
-                {/* Contenuto scrollabile */}
+                {/* Area scrollabile: caricamento, errore o Markdown renderizzato */}
                 <div className="flex-1 overflow-y-auto">
                     <div className="max-w-4xl mx-auto px-8 py-8">
                         {loading && (

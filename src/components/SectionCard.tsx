@@ -1,6 +1,8 @@
+// Scheda cliccabile che rappresenta un percorso nella home.
 import type { Section } from "@/lib/sections";
 
 interface SectionCardProps {
+    // Dati del percorso e gestore del click.
     section: Section;
     onClick: (section: Section) => void;
 }
@@ -13,6 +15,7 @@ export default function SectionCard({ section, onClick }: SectionCardProps) {
             aria-label={`Apri il percorso ${section.title}`}
         >
             <div className="flex w-full items-start justify-between gap-4">
+                {/* Icona del percorso e freccia decorativa */}
                 <span className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-xl font-bold uppercase text-blue-800 ring-1 ring-inset ring-blue-100 transition-colors group-hover:bg-blue-100" aria-hidden="true">
                     {section.icon}
                 </span>

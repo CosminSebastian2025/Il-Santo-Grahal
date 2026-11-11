@@ -1,5 +1,7 @@
+// Ponte verso la cache Rust di Tauri: Redis se configurato, altrimenti memoria.
 import { invoke, isTauri } from "@tauri-apps/api/core";
 
+// Stato del backend restituito dal comando cache_health.
 export interface CacheHealth {
   backend: "redis" | "memory";
   redisConfigured: boolean;
@@ -8,6 +10,7 @@ export interface CacheHealth {
   lastError: string | null;
 }
 
+// Legge un valore dalla cache; null se assente o fuori dal runtime Tauri.
 export async function cacheGet(key: string): Promise<string | null> {
   if (!isTauri()) {
     return null;
@@ -21,6 +24,7 @@ export async function cacheGet(key: string): Promise<string | null> {
   }
 }
 
+// Salva un valore con scadenza; nel web non fa nulla.
 export async function cacheSet(
   key: string,
   value: string,
@@ -37,6 +41,7 @@ export async function cacheSet(
   }
 }
 
+// Elimina una chiave dalla cache.
 export async function cacheDelete(key: string): Promise<void> {
   if (!isTauri()) {
     return;
@@ -49,6 +54,7 @@ export async function cacheDelete(key: string): Promise<void> {
   }
 }
 
+// Chiede al backend Rust lo stato della cache (usato in sviluppo).
 export async function getCacheHealth(): Promise<CacheHealth | null> {
   if (!isTauri()) {
     return null;
