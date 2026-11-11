@@ -381,6 +381,120 @@ export const sections: Section[] = [
 				order: 31
 			}
 		]
+	},
+	{
+		id: "csharp",
+		title: "Imparare il C#",
+		description: "Percorso di 12 settimane per imparare il C# e la programmazione a oggetti.",
+		icon: "C#",
+		color: "blue",
+		filePath: "/docs/3-C%23",
+		pages: [
+			{
+				id: "csharp-introduction",
+				title: "Introduzione al C#",
+				description: "Obiettivo del percorso, metodo, strumenti e organizzazione delle settimane.",
+				icon: "csharp-introduction",
+				filePath: "/docs/3-C%23/intro_csharp.MD",
+				order: 1
+			},
+			{
+				id: "csharp-settimana-1",
+				title: "Settimana 1: Variabili e input/output",
+				description: "Primi programmi, tipi, lettura da tastiera e operatori.",
+				icon: "settimana_01",
+				filePath: "/docs/3-C%23/settimana_01.MD",
+				order: 2
+			},
+			{
+				id: "csharp-settimana-2",
+				title: "Settimana 2: Condizioni e cicli",
+				description: "if, switch, while, for e foreach con esercizi progressivi.",
+				icon: "settimana_02",
+				filePath: "/docs/3-C%23/settimana_02.MD",
+				order: 3
+			},
+			{
+				id: "csharp-settimana-3",
+				title: "Settimana 3: Metodi",
+				description: "Parametri, valori di ritorno, overload e metodi di validazione.",
+				icon: "settimana_03",
+				filePath: "/docs/3-C%23/settimana_03.MD",
+				order: 4
+			},
+			{
+				id: "csharp-settimana-4",
+				title: "Settimana 4: Array, liste e stringhe",
+				description: "Collezioni, ricerca dei massimi e manipolazione del testo.",
+				icon: "settimana_04",
+				filePath: "/docs/3-C%23/settimana_04.MD",
+				order: 5
+			},
+			{
+				id: "csharp-settimana-5",
+				title: "Settimana 5: Classi e proprietà",
+				description: "Oggetti, proprietà, incapsulamento e proprietà calcolate.",
+				icon: "settimana_05",
+				filePath: "/docs/3-C%23/settimana_05.MD",
+				order: 6
+			},
+			{
+				id: "csharp-settimana-6",
+				title: "Settimana 6: Eredità e polimorfismo",
+				description: "Costruttori, classi astratte, interfacce e polimorfismo.",
+				icon: "settimana_06",
+				filePath: "/docs/3-C%23/settimana_06.MD",
+				order: 7
+			},
+			{
+				id: "csharp-settimana-7",
+				title: "Settimana 7: Eccezioni e file",
+				description: "Gestire gli errori, leggere e scrivere file di testo e CSV.",
+				icon: "settimana_07",
+				filePath: "/docs/3-C%23/settimana_07.MD",
+				order: 8
+			},
+			{
+				id: "csharp-settimana-8",
+				title: "Settimana 8: CSV, JSON, Dictionary e LINQ",
+				description: "Dati strutturati, serializzazione e query sulle collezioni.",
+				icon: "settimana_08",
+				filePath: "/docs/3-C%23/settimana_08.MD",
+				order: 9
+			},
+			{
+				id: "csharp-settimana-9",
+				title: "Settimana 9: Generics, delegates ed eventi",
+				description: "Codice riutilizzabile e comunicazione tra oggetti.",
+				icon: "settimana_09",
+				filePath: "/docs/3-C%23/settimana_09.MD",
+				order: 10
+			},
+			{
+				id: "csharp-settimana-10",
+				title: "Settimana 10: Lambda, async/await e HTTP",
+				description: "Lambda, operazioni asincrone e chiamate a API web.",
+				icon: "settimana_10",
+				filePath: "/docs/3-C%23/settimana_10.MD",
+				order: 11
+			},
+			{
+				id: "csharp-settimana-11",
+				title: "Settimana 11: Testing, debugging e refactoring",
+				description: "Test con xUnit, uso del debugger e codice più pulito.",
+				icon: "settimana_11",
+				filePath: "/docs/3-C%23/settimana_11.MD",
+				order: 12
+			},
+			{
+				id: "csharp-settimana-12",
+				title: "Settimana 12: Progetto finale",
+				description: "Organizzazione del codice e rubrica contatti completa.",
+				icon: "settimana_12",
+				filePath: "/docs/3-C%23/settimana_12.MD",
+				order: 13
+			}
+		]
 	}
 ]
 
