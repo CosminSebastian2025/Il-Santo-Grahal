@@ -731,7 +731,7 @@ export const sections: Section[] = [
 			{
 				id: "kmp-introduction",
 				title: "Introduzione a Kotlin Multiplatform",
-				description: "Obiettivo del percorso, tre fasi, metodo, strumenti, versioni e organizzazione.",
+				description: "Obiettivo del percorso, tre fasi, metodo, strumenti, versioni ed esercizi su tre livelli.",
 				icon: "kmp-introduction",
 				filePath: "/docs/7-KMP/intro_kmp.MD",
 				order: 1
@@ -739,7 +739,7 @@ export const sections: Section[] = [
 			{
 				id: "kmp-settimana-1",
 				title: "Settimana 1: Kotlin base",
-				description: "Variabili, tipi, funzioni, condizioni, cicli, classi, null safety e calcolatrice testuale.",
+				description: "Variabili, tipi, funzioni, cicli, null safety e calcolatrice, con 20 esercizi progressivi.",
 				icon: "settimana_01",
 				filePath: "/docs/7-KMP/settimana_01.MD",
 				order: 2
@@ -747,7 +747,7 @@ export const sections: Section[] = [
 			{
 				id: "kmp-settimana-2",
 				title: "Settimana 2: Kotlin serio",
-				description: "Collezioni, lambda, funzioni di ordine superiore, extension functions, data class e progetti.",
+				description: "Collezioni, lambda, extension functions, data class, 20 esercizi e progetti.",
 				icon: "settimana_02",
 				filePath: "/docs/7-KMP/settimana_02.MD",
 				order: 3
@@ -755,7 +755,7 @@ export const sections: Section[] = [
 			{
 				id: "kmp-settimana-3",
 				title: "Settimana 3: app, stato e dati",
-				description: "UI e logica, stato, eventi, coroutine, Ktor, JSON, repository e dependency injection.",
+				description: "UI e logica, stato, eventi, Ktor, JSON, repository, DI e 20 esercizi.",
 				icon: "settimana_03",
 				filePath: "/docs/7-KMP/settimana_03.MD",
 				order: 4
@@ -763,7 +763,7 @@ export const sections: Section[] = [
 			{
 				id: "kmp-settimana-4",
 				title: "Settimana 4: primo modulo KMP",
-				description: "Progetto shared e androidApp, expect/actual, validazione, sconto, valute, repository JSON e test comuni.",
+				description: "Progetto shared e androidApp, expect/actual, validazione, valute, repository JSON, test e 20 esercizi.",
 				icon: "settimana_04",
 				filePath: "/docs/7-KMP/settimana_04.MD",
 				order: 5
@@ -771,7 +771,7 @@ export const sections: Section[] = [
 			{
 				id: "kmp-piano-90-giorni",
 				title: "Piano di 90 giorni",
-				description: "Tre mesi, progetto finale, milestone, catalogo di idee, consegna e passi successivi.",
+				description: "Tre fasi, tre mesi, progetto finale, milestone, esercizi di fase, consegna e passi successivi.",
 				icon: "piano_90_giorni",
 				filePath: "/docs/7-KMP/piano_90_giorni.MD",
 				order: 6

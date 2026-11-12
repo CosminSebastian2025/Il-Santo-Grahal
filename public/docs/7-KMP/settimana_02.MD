@@ -361,33 +361,47 @@ La stessa logica, senza `println`, è ciò che nella settimana 4 finirà dentro 
 
 ## Esercizi progressivi
 
-**Esercizio 1.** Crea una lista di cinque nomi e stampali in maiuscolo con `map`.
+**Esercizio 1.** Crea una lista di cinque nomi e stampali in maiuscolo con `map`. L'output deve essere una sola riga con i nomi separati da virgola.
 
-**Esercizio 2.** Data una lista di numeri, stampa solo quelli maggiori di 10.
+**Esercizio 2.** Data `listOf(4, 12, 7, 18, 3, 25)`, stampa solo i numeri maggiori di 10. L'output deve essere `12, 18, 25`.
 
-**Esercizio 3.** Data una lista di prodotti, estrai i nomi con `map` e ordinali alfabeticamente.
+**Esercizio 3.** Data una lista di prodotti, estrai i nomi con `map` e ordinali alfabeticamente. Se due prodotti hanno lo stesso nome, non devono comparire duplicati.
 
-**Esercizio 4.** Calcola il valore totale di un magazzino con `sumOf`.
+**Esercizio 4.** Calcola il valore totale di un magazzino con `sumOf`. Con `Penna` 1,50 × 20, `Quaderno` 3,00 × 10 e `Zaino` 25,00 × 2 l'output deve essere `Valore totale: 110.0`.
 
-**Esercizio 5.** Raggruppa i prodotti per categoria e stampa quanti prodotti ci sono per gruppo.
+**Esercizio 5.** Raggruppa i prodotti per categoria e stampa quanti prodotti ci sono per gruppo. L'output deve essere ordinato per categoria, per esempio `Elettronica: 2`, `Libri: 3`.
 
-**Esercizio 6.** Ordina i prodotti per prezzo decrescente e mostra i primi tre.
+**Esercizio 6.** Ordina i prodotti per prezzo decrescente e mostra i primi tre. A parità di prezzo ordina per nome: il risultato non deve cambiare tra due esecuzioni.
 
-**Esercizio 7.** Separa i prodotti costosi da quelli economici con `partition` e stampa i due gruppi.
+**Esercizio 7.** Separa i prodotti costosi da quelli economici con `partition`, usando una soglia scelta da una costante. Stampa quanti elementi contiene ciascun gruppo e il nome del più caro.
 
-**Esercizio 8.** Data una lista di parole con duplicati, crea un `Set` e stampa quante parole uniche ci sono.
+**Esercizio 8.** Data una lista di parole con duplicati, crea un `Set` e stampa quante parole uniche ci sono. Con `listOf("casa", "auto", "casa", "sole")` l'output deve essere `Parole uniche: 3`.
 
-**Esercizio 9.** Crea una mappa nome → prezzo e cerca un prodotto assente con `?:`.
+**Esercizio 9.** Crea una mappa nome → prezzo e cerca un prodotto assente con `?:`. Per una chiave mancante l'output deve essere `Prezzo non disponibile`, non un'eccezione.
 
-**Esercizio 10.** Aggiorna il prezzo di un prodotto con `copy` senza modificare la lista originale.
+**Esercizio 10.** Aggiorna il prezzo di un prodotto con `copy` senza modificare la lista originale. Stampa prezzo vecchio e nuovo e verifica che la lista originale sia invariata.
 
-**Esercizio 11.** Itera una mappa con destrutturazione e stampa chiave e valore.
+**Esercizio 11.** Itera una mappa con destrutturazione e stampa chiave e valore. L'ordine di stampa deve essere stabile: ordina le chiavi prima di iterare.
 
-**Esercizio 12.** Scrivi un'estensione `List<Int>.media()` che restituisce `Double` e gestisce la lista vuota.
+**Esercizio 12.** Scrivi un'estensione `List<Int>.media()` che restituisce `Double` e gestisce la lista vuota restituendo `0.0`. Con `listOf(6, 7, 8)` l'output deve essere `Media: 7.0`.
 
-**Esercizio 13.** Scrivi una funzione di ordine superiore `trasformaLista(valori, trasforma)` e usala con due lambda diverse.
+**Esercizio 13.** Scrivi una funzione di ordine superiore `trasformaLista(valori, trasforma)` e usala con due lambda diverse: una che raddoppia e una che converte in stringa con prefisso.
 
-**Esercizio 14.** Crea una lista di attività con un campo `completata` e filtra quelle da fare.
+**Esercizio 14.** Crea una lista di attività con un campo `completata` e filtra quelle da fare. Stampa prima le attività aperte, poi il conteggio `Da fare: X, Completate: Y`.
+
+### Consolidamento (livello avanzato)
+
+**Esercizio 15.** Crea `data class Vendita(prodotto: String, categoria: String, prezzo: Double, quantita: Int)` e calcola il ricavo per categoria con `groupBy` e `sumOf`. Stampa le categorie in ordine di ricavo decrescente e il prodotto con il ricavo maggiore. Verifica il caso con una sola vendita e quello con lista vuota.
+
+**Esercizio 16.** Gestisci un elenco di `Attivita(id, titolo, completata)` con funzioni pure: `aggiungi`, `completa`, `elimina`, `filtra(completata: Boolean?)`. Ogni funzione restituisce una nuova lista e non modifica quella ricevuta. Con tre attività e una completata l'output deve essere `Aperte: 2, Completate: 1`.
+
+**Esercizio 17.** Crea `data class Utente(id, nome, email, attivo)` e `data class Prodotto(id, nome, categoria, prezzo, quantita)`. Stampa utenti attivi, prodotti sotto scorta (quantità < 5), valore del magazzino e conteggio delle email non valide. Usa un'estensione per la validazione dell'email.
+
+**Esercizio 18.** Leggi righe nel formato `nome;categoria;prezzo;quantita`. Ignora righe vuote e malformate con un messaggio, costruisci una lista di prodotti e stampa un report ordinato per valore decrescente. Con una riga malformata il programma deve continuare e riportare `Righe ignorate: 1`.
+
+**Esercizio 19.** Scrivi tre estensioni su `List<Prodotto>`: `valoreTotale()`, `sottoScorta(soglia: Int)` e `raggruppaPerCategoria()`. Verifica ciascuna con `check` o `require` su una lista di prova e stampa `Tutti i controlli superati`.
+
+**Esercizio 20.** Data una lista di parole, calcola le frequenze con `groupBy`, ordina per frequenza decrescente e stampa le prime tre. A parità di frequenza ordina alfabeticamente, così l'output è deterministico. Con `listOf("a", "b", "a", "c", "b", "a")` la prima riga deve essere `a: 3`.
 
 ### Varianti
 

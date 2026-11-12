@@ -341,31 +341,69 @@ fun leggiNumero(messaggio: String): Double? {
 
 **Esercizio 1.** Stampa il tuo nome e la tua età con una stringa template.
 
-**Esercizio 2.** Leggi due numeri e stampa somma, differenza, prodotto e quoziente.
+**Esercizio 2.** Leggi due numeri e stampa somma, differenza, prodotto e quoziente. Con `8` e `3` l'output deve essere:
 
-**Esercizio 3.** Chiedi un numero e stampa se è pari o dispari.
+```text
+Somma: 11
+Differenza: 5
+Prodotto: 24
+Quoziente: 2.67
+```
 
-**Esercizio 4.** Chiedi un voto da 0 a 30 e descrivilo con `when`.
+Il quoziente è decimale: converti almeno un operando in `Double` e formatta con due cifre.
 
-**Esercizio 5.** Chiedi un numero da 1 a 7 e stampa il giorno della settimana; gestisci il valore fuori intervallo.
+**Esercizio 3.** Chiedi un numero e stampa se è pari o dispari. Con `7` stampa `7 è dispari`; con `10` stampa `10 è pari`.
 
-**Esercizio 6.** Calcola la somma dei numeri da 1 a 100 con un ciclo `for`.
+**Esercizio 4.** Chiedi un voto da 0 a 30 e descrivilo con `when`: insufficiente sotto 18, sufficiente fino a 23, buono fino a 27, ottimo da 28. Un voto fuori intervallo deve produrre un messaggio, non un crash.
 
-**Esercizio 7.** Stampa la tabellina di un numero scelto dall'utente.
+**Esercizio 5.** Chiedi un numero da 1 a 7 e stampa il giorno della settimana; gestisci il valore fuori intervallo. Con `0` stampa `Giorno non valido: 0`.
 
-**Esercizio 8.** Scrivi una funzione `massimo(a, b, c)` che restituisce il maggiore.
+**Esercizio 6.** Calcola la somma dei numeri da 1 a 100 con un ciclo `for`. L'output deve essere `Somma: 5050`.
 
-**Esercizio 9.** Scrivi una funzione `saluta(nome, saluto = "Ciao")` e prova le due forme di chiamata.
+**Esercizio 7.** Stampa la tabellina di un numero scelto dall'utente. Con `5` l'output inizia così:
 
-**Esercizio 10.** Crea una classe `Persona` con nome ed età, un metodo `presentati()` e una proprietà calcolata `maggiorenne`.
+```text
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+...
+5 x 10 = 50
+```
 
-**Esercizio 11.** Crea una classe `ContoBancario` con `saldo` in sola lettura, `versa` e `preleva`; rifiuta importi negativi e prelievi superiori al saldo.
+**Esercizio 8.** Scrivi una funzione `massimo(a, b, c)` che restituisce il maggiore. Verificala con `massimo(3, 9, 4)` → `9` e con tre valori uguali.
 
-**Esercizio 12.** Chiedi un nome e stampalo solo se non è vuoto, usando una variabile nullable e l'operatore `?.`.
+**Esercizio 9.** Scrivi una funzione `saluta(nome, saluto = "Ciao")` e prova le due forme di chiamata. `saluta("Anna")` deve restituire `Ciao, Anna!`; `saluta("Anna", saluto = "Buongiorno")` deve restituire `Buongiorno, Anna!`.
 
-**Esercizio 13.** Scrivi una funzione `dividi(a, b)` che restituisce `Double?`: `null` se `b` è zero.
+**Esercizio 10.** Crea una classe `Persona` con nome ed età, un metodo `presentati()` e una proprietà calcolata `maggiorenne`. Con `Persona("Marco", 17)` la proprietà deve valere `false`.
 
-**Esercizio 14.** Estendi la calcolatrice: conta quante operazioni sono state eseguite e mostra il totale quando l'utente esce.
+**Esercizio 11.** Crea una classe `ContoBancario` con `saldo` in sola lettura, `versa` e `preleva`; rifiuta importi negativi e prelievi superiori al saldo. Dopo `versa(50.0)` e `preleva(20.0)` il saldo deve essere `30.0`; un prelievo di `100.0` deve restituire `false` e lasciare il saldo invariato.
+
+**Esercizio 12.** Chiedi un nome e stampalo solo se non è vuoto, usando una variabile nullable e l'operatore `?.`. Con input vuoto non deve comparire nessuna riga oltre al messaggio iniziale.
+
+**Esercizio 13.** Scrivi una funzione `dividi(a, b)` che restituisce `Double?`: `null` se `b` è zero. `dividi(7.0, 2.0)` vale `3.5`; `dividi(1.0, 0.0)` vale `null` e il chiamante deve stampare `Divisione non possibile`.
+
+**Esercizio 14.** Estendi la calcolatrice: conta quante operazioni sono state eseguite e mostra il totale quando l'utente esce. Dopo tre operazioni valide l'output finale deve essere `Operazioni eseguite: 3`.
+
+### Consolidamento (livello avanzato)
+
+**Esercizio 15.** Scrivi `validaPassword(password: String): String?` che restituisce il primo errore trovato o `null` se la password è valida. Regole: almeno 8 caratteri, almeno una maiuscola, almeno un numero. Con `"ciao"` deve restituire `Almeno 8 caratteri`; con `"CiaoMondo"` deve restituire `Manca un numero`; con `"CiaoMondo1"` deve restituire `null`.
+
+**Esercizio 16.** Leggi una riga nel formato `nome;età;città` e stampa una scheda. Se mancano campi o l'età non è numerica, stampa un errore e non interrompere il programma. Con `Anna;20;Roma` l'output deve essere:
+
+```text
+Nome: Anna
+Età: 20
+Città: Roma
+Categoria: adulto
+```
+
+**Esercizio 17.** Convertitore di temperature con menu: Celsius, Fahrenheit, Kelvin. Rifiuta valori sotto lo zero assoluto e accetta sia la virgola sia il punto. Con `100` in Celsius l'output deve includere `212.0 °F` e `373.15 K`.
+
+**Esercizio 18.** Indovina il numero: numero casuale da 1 a 100, massimo sette tentativi, suggerimenti "più alto" e "più basso", possibilità di rigiocare. Alla fine mostra il numero segreto se i tentativi finiscono.
+
+**Esercizio 19.** Estendi `ContoBancario` con `ultimaOperazione: String?` e un metodo `riepilogo()` che restituisce saldo e ultima operazione, oppure `Nessuna operazione` se non ce ne sono. Verifica il caso senza operazioni e quello dopo un prelievo rifiutato.
+
+**Esercizio 20.** Rifattorizza la calcolatrice in tre funzioni: `leggiOperazione()`, `leggiNumero(messaggio)` e `calcola(operazione, primo, secondo): Double?`. `calcola` restituisce `null` per divisione per zero e per operazione sconosciuta; il `main` decide solo cosa stampare. A fine sessione mostra operazioni eseguite ed errori conteggiati.
 
 ### Varianti
 

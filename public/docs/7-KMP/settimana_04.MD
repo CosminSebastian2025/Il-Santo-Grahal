@@ -867,33 +867,47 @@ La configurazione (JSON, timeout, gestione errori) è scritta una volta sola; ca
 
 ## Esercizi progressivi
 
-**Esercizio 1.** Crea un progetto con due moduli, `shared` e `androidApp`, e fai comparire a schermo una stringa letta da `shared`.
+**Esercizio 1.** Crea un progetto con due moduli, `shared` e `androidApp`, e fai comparire a schermo una stringa letta da `shared`. All'avvio l'app deve mostrare `Messaggio dal modulo condiviso`.
 
-**Esercizio 2.** Aggiungi `nomePiattaforma()` con `expect`/`actual` e mostrala nell'app Android.
+**Esercizio 2.** Aggiungi `nomePiattaforma()` con `expect`/`actual` e mostrala nell'app Android. Su Android l'output deve essere `Piattaforma: Android`.
 
-**Esercizio 3.** Implementa `Validatore.email` e verificala con tre indirizzi validi e tre non validi.
+**Esercizio 3.** Implementa `Validatore.email` e verificala con tre indirizzi validi e tre non validi. L'output dei test deve essere `Validi: 3, Non validi: 3`.
 
-**Esercizio 4.** Implementa `Validatore.password` con almeno tre regole e altrettanti test.
+**Esercizio 4.** Implementa `Validatore.password` con almeno tre regole e altrettanti test. Ogni regola deve avere un messaggio distinto, non un generico `Password non valida`.
 
-**Esercizio 5.** Aggiungi `Validatore.importo` e usala in un campo numerico Android.
+**Esercizio 5.** Aggiungi `Validatore.importo` e usala in un campo numerico Android. Con `-5` deve comparire `L'importo deve essere positivo`; con `12,50` deve essere accettato.
 
-**Esercizio 6.** Crea `Sconto` e `CalcolatoreSconto` con soglia minima e arrotondamento a due decimali.
+**Esercizio 6.** Crea `Sconto` e `CalcolatoreSconto` con soglia minima e arrotondamento a due decimali. Con soglia 50 e sconto 10%, `80` deve diventare `72.00`; `40` deve restare `40.00`.
 
-**Esercizio 7.** Scrivi due test per lo sconto: sopra e sotto la soglia.
+**Esercizio 7.** Scrivi due test per lo sconto: sopra e sotto la soglia. Aggiungi il caso esattamente uguale alla soglia e decidi nel test se lo sconto si applica.
 
-**Esercizio 8.** Crea `TabellaTassi` e converti 100 EUR in USD e in GBP.
+**Esercizio 8.** Crea `TabellaTassi` e converti 100 EUR in USD e in GBP. Con tassi 1.08 e 0.85 l'output deve essere `108.00 USD` e `85.00 GBP`.
 
-**Esercizio 9.** Gestisci la valuta sconosciuta con un'eccezione e verificala con `assertFailsWith`.
+**Esercizio 9.** Gestisci la valuta sconosciuta con un'eccezione e verificala con `assertFailsWith`. Il messaggio deve contenere il codice della valuta non supportata.
 
-**Esercizio 10.** Definisci `Prodotto`, il DTO e la funzione di mappatura; carica una lista da una stringa JSON.
+**Esercizio 10.** Definisci `Prodotto`, il DTO e la funzione di mappatura; carica una lista da una stringa JSON. Con due prodotti l'output deve essere `Prodotti: 2` e il nome del primo.
 
-**Esercizio 11.** Aggiungi al JSON un campo che il DTO non conosce e verifica che il parsing funzioni.
+**Esercizio 11.** Aggiungi al JSON un campo che il DTO non conosce e verifica che il parsing funzioni. La configurazione deve usare `ignoreUnknownKeys = true`; senza di essa il test deve fallire.
 
-**Esercizio 12.** Crea `RepositoryProdottiJson` e mostrala in una `LazyColumn` Android.
+**Esercizio 12.** Crea `RepositoryProdottiJson` e mostrala in una `LazyColumn` Android. Ogni riga deve mostrare nome, prezzo e categoria; con lista vuota deve comparire `Nessun prodotto`.
 
-**Esercizio 13.** Sposta un controllo di business dalla schermata Android al modulo `shared` e aggiorna i test.
+**Esercizio 13.** Sposta un controllo di business dalla schermata Android al modulo `shared` e aggiorna i test. Dopo lo spostamento la schermata non deve contenere condizioni su prezzi, sconti o validazione.
 
-**Esercizio 14.** Esegui `:shared:testDebugUnitTest` e `:androidApp:assembleDebug`; se hai un Mac, genera anche il framework iOS.
+**Esercizio 14.** Esegui `:shared:testDebugUnitTest` e `:androidApp:assembleDebug`; se hai un Mac, genera anche il framework iOS. L'esito atteso è `BUILD SUCCESSFUL` per entrambi i comandi.
+
+### Consolidamento (livello avanzato)
+
+**Esercizio 15.** Crea `ValidatoreForm` in `commonMain` che riceve email, password e importo e restituisce una `List<String>` di errori. Con tutti i campi vuoti deve restituire tre errori distinti; con dati validi una lista vuota. Scrivi test comuni per entrambi i casi.
+
+**Esercizio 16.** Aggiungi una cache al convertitore valute: la seconda conversione della stessa coppia non deve rileggere la tabella. Con un contatore nella tabella finta l'output dopo due conversioni EUR→USD deve essere `Letture tabella: 1`.
+
+**Esercizio 17.** Crea uno sconto per categoria e scegli il migliore tra due sconti applicabili. Con `Elettronica` 15% e `Buono` 10% su un prodotto da 200 deve vincere lo sconto di categoria; il risultato deve essere `170.00` e il test deve dire quale sconto ha vinto.
+
+**Esercizio 18.** Aggiungi al modulo condiviso uno `ProdottiStore` con `StateFlow` e usalo da Android. Con repository finto lo store deve passare da `Caricamento` a `Successo`; con repository che lancia un errore deve passare a `Errore`, senza crash dell'app.
+
+**Esercizio 19.** Aggiungi al repository JSON un metodo `cerca(testo)` e gestisci lo stato vuoto. Con `"xyz"` la UI deve mostrare `Nessun prodotto trovato`; con `"pen"` solo i prodotti corrispondenti. Il filtro deve stare in `commonMain` e avere un test.
+
+**Esercizio 20.** Costruisci una demo Android con due schermate che usano lo stesso modulo: una per la validazione del form e una per il catalogo prodotti. Esegui i test comuni, genera l'APK e scrivi nel README quali classi vivono in `shared`, quali in `androidApp` e perché. Criterio: una persona esterna riesce a eseguire la demo seguendo il README.
 
 ### Varianti
 

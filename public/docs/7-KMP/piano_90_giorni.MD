@@ -14,6 +14,28 @@ Il piano copre **12 settimane**, circa 60 minuti al giorno per 5-6 giorni a sett
 
 Se hai già seguito il percorso **Imparare Kotlin**, comprimi le settimane 1-2 in una sola e usa il tempo per il progetto.
 
+### Le tre fasi del percorso
+
+| Fase | Dove | Cosa impari | Obiettivo pratico | Tempo |
+| --- | --- | --- | --- | --- |
+| 1 — Kotlin base | settimane 1-2, mese 1 | variabili, tipi, funzioni, condizioni, cicli, classi, null safety, collezioni, lambda, extension functions, data class | piccoli programmi da console senza aiuto | 2-4 settimane da zero |
+| 2 — App moderne | settimana 3, mese 2 | UI separata dalla logica, stato, eventi, API, JSON, architettura minima, repository, dependency injection, coroutine | capire che un'app ha stato, logica, fonte dati e presentazione | 1-2 settimane |
+| 3 — KMP leggero | settimana 4, mese 3 | modulo `shared`, codice comune, `expect`/`actual`, uso da Android e iOS | logica scritta una volta e usata da più piattaforme | 1 settimana per il primo modulo |
+
+**Esempi guida:**
+
+- **Fase 1:** calcolatrice testuale, gestore di una lista di task, programma che legge dati e li filtra, piccolo sistema di utenti e prodotti.
+- **Fase 2:** catalogo prodotti con repository finto, login con validazione, convertitore valute con API simulata.
+- **Fase 3:** validazione di un form, conversione valute, calcolo di uno sconto, gestione di una lista di prodotti, repository che legge dati da un JSON.
+
+**Esercizi di fase.** Ogni settimana del corso contiene 20 esercizi progressivi: i primi 14 accompagnano gli argomenti, gli ultimi 6 (15-20) sono di consolidamento e combinano più concetti. Usali come checkpoint:
+
+| Fase | Esercizi | Checkpoint |
+| --- | --- | --- |
+| 1 | settimana 1 (1-20) e settimana 2 (1-20) | calcolatrice senza crash, task manager, report filtrato |
+| 2 | settimana 3 (1-20) | tre stati dello store, JSON/DTO, retry, quattro test con `runTest` |
+| 3 | settimana 4 (1-20) | modulo `shared` usato da Android, test comuni verdi |
+
 ### Ritmo settimanale
 
 | Giorno | Attività | Tempo |

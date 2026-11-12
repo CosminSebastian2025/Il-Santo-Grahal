@@ -400,33 +400,47 @@ Senza UI, il comportamento è già completo: caricamento, successo, errore. La s
 
 ## Esercizi progressivi
 
-**Esercizio 1.** Modella `StatoLogin` con email, password, invio, errore e completato.
+**Esercizio 1.** Modella `StatoLogin` con email, password, invio, errore e completato. Deve essere immutabile e aggiornabile solo con `copy`.
 
-**Esercizio 2.** Scrivi un reducer `riduci(stato, evento)` per il login e verificalo con tre casi.
+**Esercizio 2.** Scrivi un reducer `riduci(stato, evento)` per il login e verificalo con tre casi: modifica email, invio con campi vuoti, invio valido. Nel terzo caso lo stato deve passare a `invio = true` senza perdere i dati inseriti.
 
-**Esercizio 3.** Crea `ContatoreStore` con `StateFlow<Int>` e i metodi `incrementa`, `decrementa`, `azzera`.
+**Esercizio 3.** Crea `ContatoreStore` con `StateFlow<Int>` e i metodi `incrementa`, `decrementa`, `azzera`. L'output deve essere `0 → 1 → 0`, senza esporre il `MutableStateFlow`.
 
-**Esercizio 4.** Avvia una coroutine con `delay(1000)` e cancellala prima che finisca; osserva il comportamento.
+**Esercizio 4.** Avvia una coroutine con `delay(1000)` e cancellala prima che finisca; osserva il comportamento. La stampa finale deve essere `Annullata`, non `Completata`.
 
-**Esercizio 5.** Carica due liste in parallelo con `async` e `await`, poi combinale.
+**Esercizio 5.** Carica due liste in parallelo con `async` e `await`, poi combinale. Con 300 ms e 500 ms di ritardo il totale deve arrivare in circa 500 ms, non 800: stampa il tempo misurato.
 
-**Esercizio 6.** Deserializza una stringa JSON che contiene una lista di prodotti.
+**Esercizio 6.** Deserializza una stringa JSON che contiene una lista di prodotti. Con due prodotti l'output deve essere `Prodotti caricati: 2` e il nome del primo prodotto.
 
-**Esercizio 7.** Serializza un oggetto in JSON e stampalo.
+**Esercizio 7.** Serializza `Prodotto(1, "Penna", 1.5)` in JSON e stampalo. L'output deve contenere `"id":1`, `"nome":"Penna"` e `"prezzo":1.5`.
 
-**Esercizio 8.** Crea un DTO con `@SerialName` e una funzione di conversione al modello di dominio.
+**Esercizio 8.** Crea un DTO con `@SerialName` e una funzione di conversione al modello di dominio. Il JSON usa `product_name` e `unit_price`; il dominio usa `nome` e `prezzo`. Verifica la mappatura con un test.
 
-**Esercizio 9.** Definisci `ProdottiRepository` e due implementazioni: una finta e una che lancia un errore.
+**Esercizio 9.** Definisci `ProdottiRepository` e due implementazioni: una finta e una che lancia un errore. Entrambe devono rispettare la stessa interfaccia e restituire una lista immutabile.
 
-**Esercizio 10.** Configura un client Ktor con `ContentNegotiation` e `HttpTimeout`.
+**Esercizio 10.** Configura un client Ktor con `ContentNegotiation` e `HttpTimeout`. Il timeout deve essere esplicito e la configurazione comune a tutti i client, non duplicata nel repository.
 
-**Esercizio 11.** Gestisci un errore HTTP mostrando uno stato `Errore` con messaggio leggibile.
+**Esercizio 11.** Gestisci un errore HTTP mostrando uno stato `Errore` con messaggio leggibile. Con risposta 503 l'output deve essere `Errore: servizio non disponibile`, non lo stack trace.
 
-**Esercizio 12.** Aggiungi un metodo `riprova()` allo store e verifica che riparta dal caricamento.
+**Esercizio 12.** Aggiungi un metodo `riprova()` allo store e verifica che riparta dallo stato di caricamento. Dopo un errore la sequenza degli stati deve essere `Errore → Caricamento → Successo`.
 
-**Esercizio 13.** Scrivi un test con `runTest` e un repository finto per lo stato di successo e di errore.
+**Esercizio 13.** Scrivi un test con `runTest` e un repository finto per lo stato di successo e di errore. I due test devono essere indipendenti e non usare ritardi reali.
 
-**Esercizio 14.** Scrivi un composition root che colleghi client, repository e store senza usare singleton nascosti.
+**Esercizio 14.** Scrivi un composition root che colleghi client, repository e store senza usare singleton nascosti. Deve essere possibile sostituire il repository con un fake cambiando una sola funzione.
+
+### Consolidamento (livello avanzato)
+
+**Esercizio 15.** Aggiungi una cache in memoria al repository: la prima chiamata interroga la fonte, la seconda restituisce i dati salvati. Con un contatore nella fonte finta l'output dopo due caricamenti deve essere `Chiamate alla fonte: 1`.
+
+**Esercizio 16.** Avvolgi una chiamata lenta in `withTimeout(500)` e gestisci il caso di superamento. Con un ritardo di 1000 ms lo stato deve diventare `Errore: timeout`, senza crash e senza lasciare coroutine attive.
+
+**Esercizio 17.** Definisci `sealed interface ProdottiUiState` con `Caricamento`, `Successo`, `Vuoto` ed `Errore`. Con una lista vuota lo store deve passare a `Vuoto`, non a `Successo`; stampa la sequenza degli stati.
+
+**Esercizio 18.** Aggiungi allo store un metodo `cerca(testo)` che filtra i prodotti già caricati senza nuove chiamate di rete. Con `"pen"` deve restituire solo i prodotti il cui nome contiene il testo, ignorando maiuscole e minuscole.
+
+**Esercizio 19.** Crea un composition root con due configurazioni: `fake` e `api`. Con `fake` l'app parte senza rete e stampa `Repository: fake`; con `api` usa il client Ktor e stampa `Repository: api`. La scelta arriva da un parametro, non da un `if` sparso nella UI.
+
+**Esercizio 20.** Scrivi quattro test con `runTest` per lo store: successo, vuoto, errore e retry. Ogni test usa un repository finto dedicato; a fine esecuzione l'output deve essere `4 test superati`.
 
 ### Varianti
 
