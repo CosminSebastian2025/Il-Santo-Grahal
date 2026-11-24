@@ -1,37 +1,19 @@
 "use client";
 
-// Home: elenco dei percorsi, vista impostazioni nell'app e banner degli aggiornamenti.
+// Home: elenco dei percorsi, accesso al catalogo, vista impostazioni e banner aggiornamenti.
 import Link from "next/link";
 import { useState } from "react";
-import { sections, type Section } from "@/lib/sections";
+import { getSortedPages, sections } from "@/lib/sections";
 import SectionCard from "@/components/SectionCard";
-import DocViewer from "@/components/DocViewer";
 import SettingsView from "@/components/SettingsView";
 import UpdateBanner from "@/components/UpdateBanner";
 import { useIsTauri } from "@/hooks/useIsTauri";
 
 export default function Home() {
-    const [selectedSection, setSelectedSection] = useState<Section | null>(null);
     // "settings" sostituisce la home nell'app desktop, senza cambiare rotta.
     const [view, setView] = useState<"home" | "settings">("home");
     // Nel web mostra il link Download, nel desktop il pulsante Impostazioni.
     const isDesktopApp = useIsTauri();
-
-    const handleSectionClick = (section: Section) => {
-        setSelectedSection(section);
-    };
-
-    const handleBack = () => {
-        setSelectedSection(null);
-    };
-
-    if (selectedSection) {
-        return (
-            <main className="min-h-screen bg-slate-50">
-                <DocViewer section={selectedSection} onBack={handleBack}/>
-            </main>
-        );
-    }
 
     // La vista impostazioni prende il posto della home mantenendo lo stesso layout.
     if (view === "settings") {
@@ -85,6 +67,23 @@ export default function Home() {
                         )}
                     </div>
                 </div>
+                <div className="mx-auto max-w-6xl px-5 sm:px-8">
+                    <nav aria-label="Catalogo" className="flex gap-1 overflow-x-auto pb-2 text-sm font-medium text-slate-600">
+                        <span className="rounded-lg px-3 py-2 text-slate-900">Corsi</span>
+                        <Link href="/argomenti/" className="rounded-lg px-3 py-2 transition-colors hover:bg-slate-100 hover:text-slate-900">
+                            Argomenti
+                        </Link>
+                        <Link href="/percorsi/" className="rounded-lg px-3 py-2 transition-colors hover:bg-slate-100 hover:text-slate-900">
+                            Percorsi guidati
+                        </Link>
+                        <Link href="/glossario/" className="rounded-lg px-3 py-2 transition-colors hover:bg-slate-100 hover:text-slate-900">
+                            Glossario
+                        </Link>
+                        <Link href="/copertura/" className="rounded-lg px-3 py-2 transition-colors hover:bg-slate-100 hover:text-slate-900">
+                            Copertura
+                        </Link>
+                    </nav>
+                </div>
             </header>
 
             <div id="home" className="mx-auto w-full max-w-6xl flex-1 px-5 pb-16 pt-12 sm:px-8 sm:pt-20">
@@ -107,6 +106,12 @@ export default function Home() {
                         >
                             Esplora i percorsi
                         </a>
+                        <Link
+                            href="/argomenti/"
+                            className="inline-flex items-center justify-center rounded-xl border border-blue-200 bg-blue-50 px-5 py-3 text-sm font-semibold text-blue-800 transition-colors hover:bg-blue-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                        >
+                            Sfoglia il catalogo
+                        </Link>
                         {isDesktopApp ? (
                             <button
                                 type="button"
@@ -135,13 +140,19 @@ export default function Home() {
                         <span className="shrink-0 text-sm font-medium text-slate-500">{sections.length} {sections.length === 1 ? "percorso" : "percorsi"}</span>
                     </div>
                     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                        {sections.map((section) => (
-                            <SectionCard
-                                key={section.id}
-                                section={section}
-                                onClick={handleSectionClick}
-                            />
-                        ))}
+                        {sections.map((section) => {
+                            const firstPage = getSortedPages(section)[0];
+                            if (!firstPage) {
+                                return null;
+                            }
+                            return (
+                                <SectionCard
+                                    key={section.id}
+                                    section={section}
+                                    href={`/documenti/${section.id}/${firstPage.id}/`}
+                                />
+                            );
+                        })}
                     </div>
                 </section>
             </div>

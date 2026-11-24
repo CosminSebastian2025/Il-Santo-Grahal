@@ -1,0 +1,133 @@
+// Le 18 aree della tassonomia, nell'ordine richiesto dall'audit.
+import type { Category } from "./types";
+
+export const categories: Category[] = [
+	{
+		id: "linguaggi",
+		slug: "linguaggi",
+		title: "Linguaggi di programmazione",
+		order: 1,
+		description: "Sintassi, ecosistemi e percorsi dei linguaggi.",
+	},
+	{
+		id: "fondamenti",
+		slug: "fondamenti",
+		title: "Fondamenti di informatica",
+		order: 2,
+		description: "Algoritmi, complessità e basi teoriche.",
+	},
+	{
+		id: "web-frontend",
+		slug: "web-frontend",
+		title: "Web development e frontend",
+		order: 3,
+		description: "HTML, CSS, framework e interfacce web.",
+	},
+	{
+		id: "backend",
+		slug: "backend",
+		title: "Backend development",
+		order: 4,
+		description: "Server applicativi, framework e servizi.",
+	},
+	{
+		id: "mobile",
+		slug: "mobile",
+		title: "Mobile development",
+		order: 5,
+		description: "Android, iOS e sviluppo cross-platform.",
+	},
+	{
+		id: "desktop",
+		slug: "desktop",
+		title: "Desktop development",
+		order: 6,
+		description: "Applicazioni native e multipiattaforma.",
+	},
+	{
+		id: "database",
+		slug: "database",
+		title: "Database e dati",
+		order: 7,
+		description: "Modellazione, SQL, ORM e basi non relazionali.",
+	},
+	{
+		id: "api",
+		slug: "api",
+		title: "API e comunicazione",
+		order: 8,
+		description: "HTTP, REST, WebSocket e integrazione.",
+	},
+	{
+		id: "sistemi-operativi",
+		slug: "sistemi-operativi",
+		title: "Sistemi operativi",
+		order: 9,
+		description: "Processi, memoria, filesystem e shell.",
+	},
+	{
+		id: "networking",
+		slug: "networking",
+		title: "Networking e telecomunicazioni",
+		order: 10,
+		description: "Protocolli, indirizzamento e reti.",
+	},
+	{
+		id: "cybersecurity",
+		slug: "cybersecurity",
+		title: "Cybersecurity e crittografia",
+		order: 11,
+		description: "Difesa applicativa, identità e crittografia.",
+	},
+	{
+		id: "devops",
+		slug: "devops",
+		title: "DevOps e infrastruttura",
+		order: 12,
+		description: "Container, CI/CD, IaC e osservabilità.",
+	},
+	{
+		id: "server-proxy",
+		slug: "server-proxy",
+		title: "Server e reverse proxy",
+		order: 13,
+		description: "Server web, proxy, gateway e service discovery.",
+	},
+	{
+		id: "cloud",
+		slug: "cloud",
+		title: "Cloud e architetture distribuite",
+		order: 14,
+		description: "Modelli cloud, consenso e streaming.",
+	},
+	{
+		id: "ai-data",
+		slug: "ai-data",
+		title: "AI e data science",
+		order: 15,
+		description: "Intelligenza artificiale e analisi dei dati.",
+	},
+	{
+		id: "game-grafica",
+		slug: "game-grafica",
+		title: "Game development e grafica",
+		order: 16,
+		description: "Motori, API grafiche e pipeline video.",
+	},
+	{
+		id: "automazione",
+		slug: "automazione",
+		title: "Automazione e strumenti",
+		order: 17,
+		description: "Git, shell, workflow e strumenti operativi.",
+	},
+	{
+		id: "formati",
+		slug: "formati",
+		title: "Formati e documentazione tecnica",
+		order: 18,
+		description: "JSON, YAML, Markdown e formati tecnici.",
+	},
+];
+
+export const categoriesById = new Map(categories.map((category) => [category.id, category]));

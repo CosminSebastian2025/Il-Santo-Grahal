@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-11-24T12:31:12.877Z",
+  "topics": 218,
+  "coverage": {
+    "presente": 13,
+    "parziale": 21,
+    "assente": 184
+  },
+  "categories": 18,
+  "documentSections": 10,
+  "documentPages": 137,
+  "learningPaths": 10,
+  "glossaryTerms": 55,
+  "topicsWithDocuments": 12,
+  "topicsWithoutDocuments": 206,
+  "searchIndexBytes": 85383,
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,3142 @@
+[
+  {
+    "id": "ling-c",
+    "title": "C",
+    "slug": "c",
+    "summary": "12 documenti, 2.073 righe, 11 lezioni",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [],
+    "type": "linguaggio",
+    "difficulty": "base",
+    "coverageStatus": "presente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-cpp",
+    "title": "C++",
+    "slug": "cpp",
+    "summary": "31 documenti, 4.637 righe, 30 giorni",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "fondamenti"
+    ],
+    "type": "linguaggio",
+    "difficulty": "intermedio",
+    "coverageStatus": "presente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-c-sharp",
+    "title": "C#",
+    "slug": "c-sharp",
+    "summary": "13 documenti, 2.942 righe, 12 settimane",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "backend",
+      "desktop",
+      "game-grafica"
+    ],
+    "type": "linguaggio",
+    "difficulty": "intermedio",
+    "coverageStatus": "presente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-java",
+    "title": "Java",
+    "slug": "java",
+    "summary": "31 documenti, 8.640 righe, 30 lezioni",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "backend",
+      "database"
+    ],
+    "type": "linguaggio",
+    "difficulty": "intermedio",
+    "coverageStatus": "presente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-kotlin",
+    "title": "Kotlin",
+    "slug": "kotlin",
+    "summary": "9 documenti, 2.954 righe, 8 settimane",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "mobile"
+    ],
+    "type": "linguaggio",
+    "difficulty": "intermedio",
+    "coverageStatus": "presente",
+    "legacyNames": []
+  },
+  {
+    "id": "mobile-jetpack-compose",
+    "title": "Jetpack Compose",
+    "slug": "jetpack-compose",
+    "summary": "7 documenti, 3.832 righe, 6 livelli",
+    "primaryCategory": "mobile",
+    "secondaryCategories": [
+      "web-frontend",
+      "desktop"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "presente",
+    "legacyNames": []
+  },
+  {
+    "id": "mobile-kotlin-multiplatform",
+    "title": "Kotlin Multiplatform",
+    "slug": "kotlin-multiplatform",
+    "summary": "6 documenti, 3.154 righe, piano 90 giorni",
+    "primaryCategory": "mobile",
+    "secondaryCategories": [
+      "backend",
+      "desktop",
+      "cloud"
+    ],
+    "type": "piattaforma",
+    "difficulty": "avanzato",
+    "coverageStatus": "presente",
+    "legacyNames": []
+  },
+  {
+    "id": "web-html",
+    "title": "HTML",
+    "slug": "html",
+    "summary": "Parziale: Solo sezioni dentro React/JS: manca un percorso HTML autonomo (semantica, form, accessibilità).",
+    "primaryCategory": "web-frontend",
+    "secondaryCategories": [],
+    "type": "linguaggio",
+    "difficulty": "base",
+    "coverageStatus": "parziale",
+    "legacyNames": []
+  },
+  {
+    "id": "web-css",
+    "title": "CSS",
+    "slug": "css",
+    "summary": "Parziale: Solo sezioni; mancano layout responsive, Grid/Flex avanzato, accessibilità e design system.",
+    "primaryCategory": "web-frontend",
+    "secondaryCategories": [],
+    "type": "linguaggio",
+    "difficulty": "base",
+    "coverageStatus": "parziale",
+    "legacyNames": []
+  },
+  {
+    "id": "backend-ktor",
+    "title": "Ktor",
+    "slug": "ktor",
+    "summary": "Parziale: Sezioni e progetto dentro Kotlin/KMP; manca un percorso backend Ktor (routing, serializzazione, test).",
+    "primaryCategory": "backend",
+    "secondaryCategories": [
+      "api"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "parziale",
+    "legacyNames": []
+  },
+  {
+    "id": "backend-koin",
+    "title": "Koin",
+    "slug": "koin",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "backend",
+    "secondaryCategories": [
+      "mobile"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "mobile-flutter-e-dart",
+    "title": "Flutter & Dart",
+    "slug": "flutter-e-dart",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "mobile",
+    "secondaryCategories": [],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-typescript",
+    "title": "TypeScript",
+    "slug": "typescript",
+    "summary": "Parziale: Due sezioni dedicate; manca un percorso TypeScript (generics, narrowing, tooling, strict mode).",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "web-frontend"
+    ],
+    "type": "linguaggio",
+    "difficulty": "intermedio",
+    "coverageStatus": "parziale",
+    "legacyNames": [
+      "Typescript"
+    ]
+  },
+  {
+    "id": "fmt-json",
+    "title": "JSON",
+    "slug": "json",
+    "summary": "Parziale: Trattato in più corsi senza una pagina di riferimento: rischio duplicazione e divergenza.",
+    "primaryCategory": "formati",
+    "secondaryCategories": [
+      "database",
+      "api"
+    ],
+    "type": "standard-formato",
+    "difficulty": "base",
+    "coverageStatus": "parziale",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-php",
+    "title": "PHP",
+    "slug": "php",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "backend",
+      "web-frontend"
+    ],
+    "type": "linguaggio",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "db-sql",
+    "title": "SQL",
+    "slug": "sql",
+    "summary": "57 occorrenze in 7 documenti; 3 lezioni",
+    "primaryCategory": "database",
+    "secondaryCategories": [
+      "backend"
+    ],
+    "type": "linguaggio",
+    "difficulty": "base",
+    "coverageStatus": "presente",
+    "legacyNames": []
+  },
+  {
+    "id": "fmt-yaml",
+    "title": "YAML",
+    "slug": "yaml",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "formati",
+    "secondaryCategories": [
+      "devops"
+    ],
+    "type": "standard-formato",
+    "difficulty": "base",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "backend-node-js",
+    "title": "Node.js",
+    "slug": "node-js",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "backend",
+    "secondaryCategories": [
+      "web-frontend",
+      "automazione"
+    ],
+    "type": "ambiente-runtime",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "backend-bun-js",
+    "title": "Bun.js",
+    "slug": "bun-js",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "backend",
+    "secondaryCategories": [
+      "web-frontend",
+      "automazione"
+    ],
+    "type": "ambiente-runtime",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "web-tailwind-css",
+    "title": "Tailwind CSS",
+    "slug": "tailwind-css",
+    "summary": "Parziale: Una sola sezione; manca un percorso CSS moderno e Tailwind avanzato.",
+    "primaryCategory": "web-frontend",
+    "secondaryCategories": [],
+    "type": "framework-libreria",
+    "difficulty": "base",
+    "coverageStatus": "parziale",
+    "legacyNames": [
+      "Tailwindcss"
+    ]
+  },
+  {
+    "id": "backend-servlet",
+    "title": "Servlet",
+    "slug": "servlet",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "backend",
+    "secondaryCategories": [
+      "web-frontend"
+    ],
+    "type": "tecnologia",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "web-jsp",
+    "title": "JSP",
+    "slug": "jsp",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "web-frontend",
+    "secondaryCategories": [
+      "backend"
+    ],
+    "type": "tecnologia",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "devops-docker",
+    "title": "Docker",
+    "slug": "docker",
+    "summary": "Parziale: Singola sezione con Dockerfile/compose; mancano volumi, reti, registry e sicurezza.",
+    "primaryCategory": "devops",
+    "secondaryCategories": [
+      "backend",
+      "server-proxy"
+    ],
+    "type": "strumento",
+    "difficulty": "intermedio",
+    "coverageStatus": "parziale",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-golang",
+    "title": "Golang",
+    "slug": "golang",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "backend",
+      "devops"
+    ],
+    "type": "linguaggio",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-tailscale",
+    "title": "Tailscale",
+    "slug": "tailscale",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [
+      "cybersecurity",
+      "devops"
+    ],
+    "type": "strumento",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-headscale",
+    "title": "Headscale",
+    "slug": "headscale",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [
+      "cybersecurity",
+      "devops"
+    ],
+    "type": "strumento",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-ssh",
+    "title": "SSH",
+    "slug": "ssh",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [
+      "sistemi-operativi",
+      "cybersecurity"
+    ],
+    "type": "protocollo",
+    "difficulty": "base",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "web-angular",
+    "title": "Angular",
+    "slug": "angular",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "web-frontend",
+    "secondaryCategories": [
+      "linguaggi"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "sec-ssl",
+    "title": "SSL",
+    "slug": "ssl",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cybersecurity",
+    "secondaryCategories": [
+      "networking"
+    ],
+    "type": "protocollo",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "sec-tls",
+    "title": "TLS",
+    "slug": "tls",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cybersecurity",
+    "secondaryCategories": [
+      "networking"
+    ],
+    "type": "protocollo",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "devops-kubernetes",
+    "title": "Kubernetes",
+    "slug": "kubernetes",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "devops",
+    "secondaryCategories": [
+      "cloud",
+      "server-proxy"
+    ],
+    "type": "piattaforma",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "com-websocket",
+    "title": "WebSocket",
+    "slug": "websocket",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "api",
+    "secondaryCategories": [
+      "web-frontend"
+    ],
+    "type": "protocollo",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-python",
+    "title": "Python",
+    "slug": "python",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "backend",
+      "ai-data"
+    ],
+    "type": "linguaggio",
+    "difficulty": "base",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "auto-cli",
+    "title": "CLI",
+    "slug": "cli",
+    "summary": "Parziale: CLI usata come progetto, non insegnata come interfaccia (argomenti, exit code, piping, help).",
+    "primaryCategory": "automazione",
+    "secondaryCategories": [
+      "sistemi-operativi"
+    ],
+    "type": "concetto-teoria",
+    "difficulty": "base",
+    "coverageStatus": "parziale",
+    "legacyNames": []
+  },
+  {
+    "id": "auto-powershell",
+    "title": "PowerShell",
+    "slug": "powershell",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "automazione",
+    "secondaryCategories": [
+      "sistemi-operativi"
+    ],
+    "type": "strumento",
+    "difficulty": "base",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "Powershell"
+    ]
+  },
+  {
+    "id": "os-bash",
+    "title": "Bash",
+    "slug": "bash",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "sistemi-operativi",
+    "secondaryCategories": [
+      "automazione"
+    ],
+    "type": "strumento",
+    "difficulty": "base",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "backend-django",
+    "title": "Django",
+    "slug": "django",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "backend",
+    "secondaryCategories": [],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "backend-flask",
+    "title": "Flask",
+    "slug": "flask",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "backend",
+    "secondaryCategories": [
+      "api"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "sec-cybersecurity",
+    "title": "Cybersecurity",
+    "slug": "cybersecurity",
+    "summary": "Parziale: Solo sicurezza applicativa dentro Java/React; manca un percorso cybersecurity.",
+    "primaryCategory": "cybersecurity",
+    "secondaryCategories": [
+      "fondamenti",
+      "devops"
+    ],
+    "type": "disciplina",
+    "difficulty": "intermedio",
+    "coverageStatus": "parziale",
+    "legacyNames": []
+  },
+  {
+    "id": "sec-ethical-hacker",
+    "title": "Ethical Hacker",
+    "slug": "ethical-hacker",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cybersecurity",
+    "secondaryCategories": [
+      "networking"
+    ],
+    "type": "disciplina",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "devops-podman",
+    "title": "Podman",
+    "slug": "podman",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "devops",
+    "secondaryCategories": [
+      "server-proxy"
+    ],
+    "type": "strumento",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "com-http-https",
+    "title": "HTTP/HTTPS",
+    "slug": "http-https",
+    "summary": "Parziale: Insegnato come uso di API; mancano metodi, status, header, caching, TLS e HTTP/2-3.",
+    "primaryCategory": "api",
+    "secondaryCategories": [
+      "networking",
+      "web-frontend"
+    ],
+    "type": "protocollo",
+    "difficulty": "base",
+    "coverageStatus": "parziale",
+    "legacyNames": []
+  },
+  {
+    "id": "com-rest-soap",
+    "title": "REST/SOAP",
+    "slug": "rest-soap",
+    "summary": "Parziale: REST presente in contesti applicativi; SOAP assente.",
+    "primaryCategory": "api",
+    "secondaryCategories": [
+      "backend"
+    ],
+    "type": "architettura",
+    "difficulty": "intermedio",
+    "coverageStatus": "parziale",
+    "legacyNames": []
+  },
+  {
+    "id": "com-api",
+    "title": "API",
+    "slug": "api",
+    "summary": "Parziale: Molte sezioni applicative; mancano teoria, versioning, autenticazione, OpenAPI e gestione errori.",
+    "primaryCategory": "api",
+    "secondaryCategories": [
+      "backend",
+      "web-frontend"
+    ],
+    "type": "concetto-teoria",
+    "difficulty": "intermedio",
+    "coverageStatus": "parziale",
+    "legacyNames": []
+  },
+  {
+    "id": "com-client-server",
+    "title": "Client/Server",
+    "slug": "client-server",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "api",
+    "secondaryCategories": [
+      "backend",
+      "networking"
+    ],
+    "type": "architettura",
+    "difficulty": "base",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-ruby",
+    "title": "Ruby",
+    "slug": "ruby",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "backend",
+      "web-frontend"
+    ],
+    "type": "linguaggio",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-zig",
+    "title": "Zig",
+    "slug": "zig",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-lua",
+    "title": "Lua",
+    "slug": "lua",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "game-grafica",
+      "automazione"
+    ],
+    "type": "linguaggio",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-r",
+    "title": "R",
+    "slug": "r",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "ai-data"
+    ],
+    "type": "linguaggio",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-starlark",
+    "title": "Starlark",
+    "slug": "starlark",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "devops",
+      "automazione"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-ocaml",
+    "title": "OCaml",
+    "slug": "ocaml",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "fondamenti"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-erlang",
+    "title": "Erlang",
+    "slug": "erlang",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "cloud"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-elixir",
+    "title": "Elixir",
+    "slug": "elixir",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "backend",
+      "cloud"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-perl",
+    "title": "Perl",
+    "slug": "perl",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "automazione"
+    ],
+    "type": "linguaggio",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-fortran",
+    "title": "Fortran",
+    "slug": "fortran",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "ai-data"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-pascal",
+    "title": "Pascal",
+    "slug": "pascal",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "fondamenti"
+    ],
+    "type": "linguaggio",
+    "difficulty": "base",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "Pascal(informatica)"
+    ]
+  },
+  {
+    "id": "ling-objective-c",
+    "title": "Objective-C",
+    "slug": "objective-c",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "mobile"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-objective-cpp",
+    "title": "Objective-C++",
+    "slug": "objective-cpp",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "mobile",
+      "game-grafica"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-scala",
+    "title": "Scala",
+    "slug": "scala",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "cloud",
+      "ai-data"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-f-sharp",
+    "title": "F#",
+    "slug": "f-sharp",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "ai-data",
+      "backend"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "devops-podman-compose",
+    "title": "Podman Compose",
+    "slug": "podman-compose",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "devops",
+    "secondaryCategories": [
+      "server-proxy"
+    ],
+    "type": "strumento",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "desktop-qt",
+    "title": "Qt",
+    "slug": "qt",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "desktop",
+    "secondaryCategories": [
+      "linguaggi"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "QT"
+    ]
+  },
+  {
+    "id": "cloud-bunny-net",
+    "title": "Bunny.net",
+    "slug": "bunny-net",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cloud",
+    "secondaryCategories": [
+      "server-proxy"
+    ],
+    "type": "servizio-cloud",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "devops-docker-compose",
+    "title": "Docker Compose",
+    "slug": "docker-compose",
+    "summary": "Parziale: Uso in un esempio; manca un trattamento autonomo di servizi, volumi, reti e ambienti.",
+    "primaryCategory": "devops",
+    "secondaryCategories": [
+      "server-proxy"
+    ],
+    "type": "strumento",
+    "difficulty": "intermedio",
+    "coverageStatus": "parziale",
+    "legacyNames": []
+  },
+  {
+    "id": "cloud-cloudflare",
+    "title": "Cloudflare",
+    "slug": "cloudflare",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cloud",
+    "secondaryCategories": [
+      "networking",
+      "server-proxy",
+      "cybersecurity"
+    ],
+    "type": "servizio-cloud",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "desktop-tauri",
+    "title": "Tauri",
+    "slug": "tauri",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "desktop",
+    "secondaryCategories": [
+      "linguaggi",
+      "web-frontend"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "desktop-electron",
+    "title": "Electron",
+    "slug": "electron",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "desktop",
+    "secondaryCategories": [
+      "web-frontend"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "mobile-nativewind",
+    "title": "NativeWind",
+    "slug": "nativewind",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "mobile",
+    "secondaryCategories": [
+      "web-frontend"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "os-linux",
+    "title": "Linux",
+    "slug": "linux",
+    "summary": "Parziale: Solo setup ambiente; mancano filesystem, permessi, processi, systemd, pacchetti.",
+    "primaryCategory": "sistemi-operativi",
+    "secondaryCategories": [
+      "devops"
+    ],
+    "type": "sistema-operativo",
+    "difficulty": "base",
+    "coverageStatus": "parziale",
+    "legacyNames": []
+  },
+  {
+    "id": "net-vpn",
+    "title": "VPN",
+    "slug": "vpn",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [
+      "cybersecurity"
+    ],
+    "type": "tecnologia",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-ccna",
+    "title": "CCNA",
+    "slug": "ccna",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [
+      "sistemi-operativi"
+    ],
+    "type": "disciplina",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "srv-apache-http-server",
+    "title": "Apache HTTP Server",
+    "slug": "apache-http-server",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "server-proxy",
+    "secondaryCategories": [],
+    "type": "server-proxy",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "Apache"
+    ]
+  },
+  {
+    "id": "sec-crittografia",
+    "title": "Crittografia",
+    "slug": "crittografia",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cybersecurity",
+    "secondaryCategories": [
+      "fondamenti",
+      "api"
+    ],
+    "type": "disciplina",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "cloud-cloud",
+    "title": "Cloud",
+    "slug": "cloud",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cloud",
+    "secondaryCategories": [
+      "devops"
+    ],
+    "type": "concetto-teoria",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "srv-nginx",
+    "title": "Nginx",
+    "slug": "nginx",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "server-proxy",
+    "secondaryCategories": [
+      "devops"
+    ],
+    "type": "server-proxy",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-rust",
+    "title": "Rust",
+    "slug": "rust",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "fondamenti",
+      "desktop"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "devops-terraform",
+    "title": "Terraform",
+    "slug": "terraform",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "devops",
+    "secondaryCategories": [
+      "cloud",
+      "formati"
+    ],
+    "type": "strumento",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "auto-gherkin",
+    "title": "Gherkin",
+    "slug": "gherkin",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "automazione",
+    "secondaryCategories": [
+      "fondamenti"
+    ],
+    "type": "strumento",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "game-ffmpeg",
+    "title": "FFmpeg",
+    "slug": "ffmpeg",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "game-grafica",
+    "secondaryCategories": [
+      "automazione"
+    ],
+    "type": "strumento",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "FFMPEG"
+    ]
+  },
+  {
+    "id": "ling-clojure",
+    "title": "Clojure",
+    "slug": "clojure",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "fondamenti"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "backend-1c-enterprise",
+    "title": "1C:Enterprise",
+    "slug": "1c-enterprise",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "backend",
+    "secondaryCategories": [
+      "linguaggi",
+      "database"
+    ],
+    "type": "piattaforma",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "auto-yt-dlp",
+    "title": "yt-dlp",
+    "slug": "yt-dlp",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "automazione",
+    "secondaryCategories": [
+      "game-grafica"
+    ],
+    "type": "strumento",
+    "difficulty": "base",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-fennel",
+    "title": "Fennel",
+    "slug": "fennel",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "automazione"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-emacs-lisp",
+    "title": "Emacs Lisp",
+    "slug": "emacs-lisp",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "automazione"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "Emacs-Lisp"
+    ]
+  },
+  {
+    "id": "os-os",
+    "title": "OS",
+    "slug": "os",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "sistemi-operativi",
+    "secondaryCategories": [],
+    "type": "concetto-teoria",
+    "difficulty": "base",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-reason",
+    "title": "Reason",
+    "slug": "reason",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "web-frontend"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "auto-yasnippet",
+    "title": "YASnippet",
+    "slug": "yasnippet",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "automazione",
+    "secondaryCategories": [
+      "linguaggi"
+    ],
+    "type": "strumento",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-systemverilog",
+    "title": "SystemVerilog",
+    "slug": "systemverilog",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "game-grafica"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "web-astro",
+    "title": "Astro",
+    "slug": "astro",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "web-frontend",
+    "secondaryCategories": [
+      "devops"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "web-mdx",
+    "title": "MDX",
+    "slug": "mdx",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "web-frontend",
+    "secondaryCategories": [
+      "formati"
+    ],
+    "type": "standard-formato",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "web-svelte",
+    "title": "Svelte",
+    "slug": "svelte",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "web-frontend",
+    "secondaryCategories": [],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "devops-bicep",
+    "title": "Bicep",
+    "slug": "bicep",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "devops",
+    "secondaryCategories": [
+      "cloud"
+    ],
+    "type": "strumento",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "web-scss",
+    "title": "SCSS",
+    "slug": "scss",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "web-frontend",
+    "secondaryCategories": [],
+    "type": "linguaggio",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-swift",
+    "title": "Swift",
+    "slug": "swift",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "mobile"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-haskell",
+    "title": "Haskell",
+    "slug": "haskell",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "fondamenti"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "devops-nix",
+    "title": "Nix",
+    "slug": "nix",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "devops",
+    "secondaryCategories": [
+      "sistemi-operativi",
+      "formati"
+    ],
+    "type": "strumento",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "game-shaderlab",
+    "title": "ShaderLab",
+    "slug": "shaderlab",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "game-grafica",
+    "secondaryCategories": [
+      "linguaggi"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-tcl",
+    "title": "Tcl",
+    "slug": "tcl",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "automazione"
+    ],
+    "type": "linguaggio",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "fmt-hcl",
+    "title": "HCL",
+    "slug": "hcl",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "formati",
+    "secondaryCategories": [
+      "devops"
+    ],
+    "type": "linguaggio",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-julia",
+    "title": "Julia",
+    "slug": "julia",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "ai-data"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-matlab",
+    "title": "MATLAB",
+    "slug": "matlab",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "ai-data"
+    ],
+    "type": "linguaggio",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "fmt-tex",
+    "title": "TeX",
+    "slug": "tex",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "formati",
+    "secondaryCategories": [
+      "linguaggi"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-cobol",
+    "title": "COBOL",
+    "slug": "cobol",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "database"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "devops-devops",
+    "title": "DevOps",
+    "slug": "devops",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "devops",
+    "secondaryCategories": [
+      "automazione"
+    ],
+    "type": "disciplina",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "fmt-roff",
+    "title": "Roff",
+    "slug": "roff",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "formati",
+    "secondaryCategories": [
+      "sistemi-operativi"
+    ],
+    "type": "standard-formato",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-solidity",
+    "title": "Solidity",
+    "slug": "solidity",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "cloud"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-koka",
+    "title": "Koka",
+    "slug": "koka",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "fondamenti"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "db-cql",
+    "title": "CQL",
+    "slug": "cql",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "database",
+    "secondaryCategories": [
+      "linguaggi"
+    ],
+    "type": "linguaggio",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-batchfile",
+    "title": "Batchfile",
+    "slug": "batchfile",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "sistemi-operativi",
+      "automazione"
+    ],
+    "type": "linguaggio",
+    "difficulty": "base",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "devops-istio",
+    "title": "Istio",
+    "slug": "istio",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "devops",
+    "secondaryCategories": [
+      "cloud",
+      "server-proxy"
+    ],
+    "type": "piattaforma",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "auto-github-actions",
+    "title": "GitHub Actions",
+    "slug": "github-actions",
+    "summary": "Parziale: Confermato GitHub Actions. Configurazione reale ma nessuna lezione dedicata; chiarire se assorbito in CI/CD.",
+    "primaryCategory": "automazione",
+    "secondaryCategories": [
+      "devops"
+    ],
+    "type": "pratica-metodologia",
+    "difficulty": "intermedio",
+    "coverageStatus": "parziale",
+    "legacyNames": [
+      "Workflow"
+    ]
+  },
+  {
+    "id": "backend-multer",
+    "title": "Multer",
+    "slug": "multer",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "backend",
+    "secondaryCategories": [
+      "web-frontend"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "web-redux",
+    "title": "Redux",
+    "slug": "redux",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "web-frontend",
+    "secondaryCategories": [
+      "fondamenti"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "fmt-markdown",
+    "title": "Markdown",
+    "slug": "markdown",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "formati",
+    "secondaryCategories": [
+      "automazione"
+    ],
+    "type": "standard-formato",
+    "difficulty": "base",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "srv-varnish",
+    "title": "Varnish",
+    "slug": "varnish",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "server-proxy",
+    "secondaryCategories": [
+      "web-frontend"
+    ],
+    "type": "server-proxy",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "db-redis",
+    "title": "Redis",
+    "slug": "redis",
+    "summary": "Parziale: Sezione breve e documentazione tecnica; mancano dati, TTL, persistenza, pub/sub e clustering.",
+    "primaryCategory": "database",
+    "secondaryCategories": [
+      "devops",
+      "backend"
+    ],
+    "type": "database-orm",
+    "difficulty": "intermedio",
+    "coverageStatus": "parziale",
+    "legacyNames": []
+  },
+  {
+    "id": "devops-ci-cd",
+    "title": "CI/CD",
+    "slug": "ci-cd",
+    "summary": "Parziale: Un esempio GitHub Actions; mancano pipeline, artefatti, ambienti, segreti e release.",
+    "primaryCategory": "devops",
+    "secondaryCategories": [
+      "automazione"
+    ],
+    "type": "pratica-metodologia",
+    "difficulty": "intermedio",
+    "coverageStatus": "parziale",
+    "legacyNames": []
+  },
+  {
+    "id": "ai-ai",
+    "title": "AI",
+    "slug": "ai",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "ai-data",
+    "secondaryCategories": [
+      "fondamenti"
+    ],
+    "type": "disciplina",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "auto-github",
+    "title": "GitHub",
+    "slug": "github",
+    "summary": "33 occorrenze in 9 documenti + 3 workflow",
+    "primaryCategory": "automazione",
+    "secondaryCategories": [
+      "devops",
+      "fondamenti"
+    ],
+    "type": "piattaforma",
+    "difficulty": "base",
+    "coverageStatus": "presente",
+    "legacyNames": [
+      "Github"
+    ]
+  },
+  {
+    "id": "sec-gdpr",
+    "title": "GDPR",
+    "slug": "gdpr",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cybersecurity",
+    "secondaryCategories": [
+      "fondamenti",
+      "formati"
+    ],
+    "type": "normativa",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "fond-ottimizzazione-codice",
+    "title": "Ottimizzazione Codice",
+    "slug": "ottimizzazione-codice",
+    "summary": "Parziale: Performance applicativa sparsa; manca un metodo su misura, profiling e complessità.",
+    "primaryCategory": "fondamenti",
+    "secondaryCategories": [
+      "linguaggi",
+      "web-frontend"
+    ],
+    "type": "pratica-metodologia",
+    "difficulty": "avanzato",
+    "coverageStatus": "parziale",
+    "legacyNames": []
+  },
+  {
+    "id": "fond-algoritmi",
+    "title": "Algoritmi",
+    "slug": "algoritmi",
+    "summary": "Parziale: Solo algoritmi STL e menzioni; mancano complessità, ordinamento, ricerca e strutture dati.",
+    "primaryCategory": "fondamenti",
+    "secondaryCategories": [
+      "linguaggi"
+    ],
+    "type": "disciplina",
+    "difficulty": "intermedio",
+    "coverageStatus": "parziale",
+    "legacyNames": []
+  },
+  {
+    "id": "sec-xss",
+    "title": "XSS",
+    "slug": "xss",
+    "summary": "Parziale: Una sezione; mancano CSRF, CSP, sanificazione server-side e test di sicurezza.",
+    "primaryCategory": "cybersecurity",
+    "secondaryCategories": [
+      "web-frontend"
+    ],
+    "type": "vulnerabilita",
+    "difficulty": "intermedio",
+    "coverageStatus": "parziale",
+    "legacyNames": []
+  },
+  {
+    "id": "sec-csrf",
+    "title": "CSRF",
+    "slug": "csrf",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cybersecurity",
+    "secondaryCategories": [
+      "web-frontend"
+    ],
+    "type": "vulnerabilita",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-dns",
+    "title": "DNS",
+    "slug": "dns",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [],
+    "type": "protocollo",
+    "difficulty": "base",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "DSN"
+    ]
+  },
+  {
+    "id": "net-dhcp",
+    "title": "DHCP",
+    "slug": "dhcp",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [],
+    "type": "protocollo",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-nat-pat",
+    "title": "NAT/PAT",
+    "slug": "nat-pat",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [],
+    "type": "tecnologia",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "sec-kerberos",
+    "title": "Kerberos",
+    "slug": "kerberos",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cybersecurity",
+    "secondaryCategories": [
+      "networking"
+    ],
+    "type": "protocollo",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "sec-aes",
+    "title": "AES",
+    "slug": "aes",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cybersecurity",
+    "secondaryCategories": [
+      "networking"
+    ],
+    "type": "concetto-teoria",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "os-freebsd",
+    "title": "FreeBSD",
+    "slug": "freebsd",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "sistemi-operativi",
+    "secondaryCategories": [
+      "networking"
+    ],
+    "type": "sistema-operativo",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "sec-firewall",
+    "title": "Firewall",
+    "slug": "firewall",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cybersecurity",
+    "secondaryCategories": [
+      "networking",
+      "server-proxy"
+    ],
+    "type": "tecnologia",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "sec-brute-force",
+    "title": "Brute-Force",
+    "slug": "brute-force",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cybersecurity",
+    "secondaryCategories": [
+      "networking"
+    ],
+    "type": "pratica-metodologia",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-icmp",
+    "title": "ICMP",
+    "slug": "icmp",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [],
+    "type": "protocollo",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "sec-x-509",
+    "title": "X.509",
+    "slug": "x-509",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cybersecurity",
+    "secondaryCategories": [
+      "networking"
+    ],
+    "type": "standard-formato",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "X509"
+    ]
+  },
+  {
+    "id": "sec-rsa",
+    "title": "RSA",
+    "slug": "rsa",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cybersecurity",
+    "secondaryCategories": [
+      "networking"
+    ],
+    "type": "concetto-teoria",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-smtp",
+    "title": "SMTP",
+    "slug": "smtp",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [
+      "api",
+      "cybersecurity"
+    ],
+    "type": "protocollo",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "sec-ed25519",
+    "title": "Ed25519",
+    "slug": "ed25519",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cybersecurity",
+    "secondaryCategories": [
+      "networking"
+    ],
+    "type": "concetto-teoria",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "ED25519"
+    ]
+  },
+  {
+    "id": "net-atm",
+    "title": "ATM",
+    "slug": "atm",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [],
+    "type": "tecnologia",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "ATM(informatica)"
+    ]
+  },
+  {
+    "id": "net-ipsec",
+    "title": "IPSec",
+    "slug": "ipsec",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [
+      "cybersecurity"
+    ],
+    "type": "protocollo",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-cisco-ios",
+    "title": "Cisco IOS",
+    "slug": "cisco-ios",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [],
+    "type": "sistema-operativo",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "IOS Cisco"
+    ]
+  },
+  {
+    "id": "net-gre",
+    "title": "GRE",
+    "slug": "gre",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [],
+    "type": "protocollo",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-proxy",
+    "title": "Proxy",
+    "slug": "proxy",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [
+      "server-proxy",
+      "cybersecurity"
+    ],
+    "type": "tecnologia",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-ping",
+    "title": "Ping",
+    "slug": "ping",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [],
+    "type": "strumento",
+    "difficulty": "base",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-snmp",
+    "title": "SNMP",
+    "slug": "snmp",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [],
+    "type": "protocollo",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-voip",
+    "title": "VoIP",
+    "slug": "voip",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [
+      "api"
+    ],
+    "type": "tecnologia",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-toip",
+    "title": "ToIP",
+    "slug": "toip",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [
+      "api"
+    ],
+    "type": "tecnologia",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-qos",
+    "title": "QoS",
+    "slug": "qos",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [],
+    "type": "concetto-teoria",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-pstn",
+    "title": "PSTN",
+    "slug": "pstn",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [
+      "api"
+    ],
+    "type": "tecnologia",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-rtp-e-rtcp",
+    "title": "RTP e RTCP",
+    "slug": "rtp-e-rtcp",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [
+      "api"
+    ],
+    "type": "protocollo",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-sip",
+    "title": "SIP",
+    "slug": "sip",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [
+      "api"
+    ],
+    "type": "protocollo",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-h-323",
+    "title": "H.323",
+    "slug": "h-323",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [
+      "api"
+    ],
+    "type": "protocollo",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-vlan",
+    "title": "VLAN",
+    "slug": "vlan",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [],
+    "type": "tecnologia",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-sdn",
+    "title": "SDN",
+    "slug": "sdn",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [
+      "devops",
+      "cloud"
+    ],
+    "type": "architettura",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-mpls",
+    "title": "MPLS",
+    "slug": "mpls",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [],
+    "type": "tecnologia",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "web-inertia-js",
+    "title": "Inertia.js",
+    "slug": "inertia-js",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "web-frontend",
+    "secondaryCategories": [
+      "backend"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "backend-livewire",
+    "title": "Livewire",
+    "slug": "livewire",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "backend",
+    "secondaryCategories": [
+      "web-frontend"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "web-vue",
+    "title": "Vue",
+    "slug": "vue",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "web-frontend",
+    "secondaryCategories": [],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "ling-javascript",
+    "title": "JavaScript",
+    "slug": "javascript",
+    "summary": "11 documenti, 2.890 righe; 186 occorrenze come JavaScript/Next.js",
+    "primaryCategory": "linguaggi",
+    "secondaryCategories": [
+      "web-frontend"
+    ],
+    "type": "linguaggio",
+    "difficulty": "base",
+    "coverageStatus": "presente",
+    "legacyNames": [
+      "js"
+    ]
+  },
+  {
+    "id": "backend-nest-js",
+    "title": "Nest.js",
+    "slug": "nest-js",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "backend",
+    "secondaryCategories": [
+      "web-frontend",
+      "api"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "web-next-js",
+    "title": "Next.js",
+    "slug": "next-js",
+    "summary": "Parziale: Una sezione didattica; il progetto usa Next ma non lo documenta come topic.",
+    "primaryCategory": "web-frontend",
+    "secondaryCategories": [
+      "backend"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "parziale",
+    "legacyNames": []
+  },
+  {
+    "id": "web-nuxt-js",
+    "title": "Nuxt.js",
+    "slug": "nuxt-js",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "web-frontend",
+    "secondaryCategories": [
+      "backend"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "game-vulkan",
+    "title": "Vulkan",
+    "slug": "vulkan",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "game-grafica",
+    "secondaryCategories": [
+      "linguaggi",
+      "fondamenti"
+    ],
+    "type": "api-interfaccia",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "game-opengl",
+    "title": "OpenGL",
+    "slug": "opengl",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "game-grafica",
+    "secondaryCategories": [
+      "linguaggi"
+    ],
+    "type": "api-interfaccia",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "game-unity",
+    "title": "Unity",
+    "slug": "unity",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "game-grafica",
+    "secondaryCategories": [
+      "linguaggi",
+      "mobile"
+    ],
+    "type": "piattaforma",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "backend-jakarta-ee",
+    "title": "Jakarta EE",
+    "slug": "jakarta-ee",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "backend",
+    "secondaryCategories": [
+      "database",
+      "api"
+    ],
+    "type": "piattaforma",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "JakartaEE"
+    ]
+  },
+  {
+    "id": "backend-spring-boot",
+    "title": "Spring Boot",
+    "slug": "spring-boot",
+    "summary": "70 occorrenze in 12 documenti; 2 lezioni",
+    "primaryCategory": "backend",
+    "secondaryCategories": [
+      "api",
+      "database"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "avanzato",
+    "coverageStatus": "presente",
+    "legacyNames": []
+  },
+  {
+    "id": "desktop-javafx",
+    "title": "JavaFX",
+    "slug": "javafx",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "desktop",
+    "secondaryCategories": [
+      "linguaggi"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "cloud-saga",
+    "title": "Saga",
+    "slug": "saga",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cloud",
+    "secondaryCategories": [
+      "backend",
+      "database"
+    ],
+    "type": "concetto-teoria",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "desktop-dioxus",
+    "title": "Dioxus",
+    "slug": "dioxus",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "desktop",
+    "secondaryCategories": [
+      "linguaggi",
+      "web-frontend"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "auto-autoit",
+    "title": "AutoIt",
+    "slug": "autoit",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "automazione",
+    "secondaryCategories": [
+      "sistemi-operativi"
+    ],
+    "type": "strumento",
+    "difficulty": "base",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "Autolt"
+    ]
+  },
+  {
+    "id": "web-qwik",
+    "title": "Qwik",
+    "slug": "qwik",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "web-frontend",
+    "secondaryCategories": [
+      "devops"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "Qwik(informatica)"
+    ]
+  },
+  {
+    "id": "auto-trunk-build-tool",
+    "title": "Trunk (build tool)",
+    "slug": "trunk-build-tool",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "automazione",
+    "secondaryCategories": [
+      "devops",
+      "web-frontend"
+    ],
+    "type": "strumento",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "Trunk(informatica)"
+    ]
+  },
+  {
+    "id": "web-leptos",
+    "title": "Leptos",
+    "slug": "leptos",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "web-frontend",
+    "secondaryCategories": [
+      "linguaggi",
+      "desktop"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "fmt-velocity-template-language",
+    "title": "Velocity Template Language",
+    "slug": "velocity-template-language",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "formati",
+    "secondaryCategories": [
+      "backend"
+    ],
+    "type": "linguaggio",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "VTL"
+    ]
+  },
+  {
+    "id": "backend-velocity",
+    "title": "Velocity",
+    "slug": "velocity",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "backend",
+    "secondaryCategories": [
+      "formati"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "db-prisma",
+    "title": "Prisma",
+    "slug": "prisma",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "database",
+    "secondaryCategories": [
+      "backend"
+    ],
+    "type": "database-orm",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "db-neon",
+    "title": "Neon",
+    "slug": "neon",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "database",
+    "secondaryCategories": [
+      "cloud"
+    ],
+    "type": "servizio-cloud",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "auto-n8n",
+    "title": "n8n",
+    "slug": "n8n",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "automazione",
+    "secondaryCategories": [
+      "backend"
+    ],
+    "type": "strumento",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "backend-uploadthing",
+    "title": "UploadThing",
+    "slug": "uploadthing",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "backend",
+    "secondaryCategories": [
+      "web-frontend"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "com-stripe",
+    "title": "Stripe",
+    "slug": "stripe",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "api",
+    "secondaryCategories": [
+      "backend",
+      "web-frontend"
+    ],
+    "type": "api-interfaccia",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "db-drizzle",
+    "title": "Drizzle",
+    "slug": "drizzle",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "database",
+    "secondaryCategories": [
+      "backend"
+    ],
+    "type": "database-orm",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "srv-haproxy",
+    "title": "HAProxy",
+    "slug": "haproxy",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "server-proxy",
+    "secondaryCategories": [
+      "devops",
+      "networking"
+    ],
+    "type": "server-proxy",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "srv-traefik",
+    "title": "Traefik",
+    "slug": "traefik",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "server-proxy",
+    "secondaryCategories": [
+      "devops"
+    ],
+    "type": "server-proxy",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "srv-kong",
+    "title": "Kong",
+    "slug": "kong",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "server-proxy",
+    "secondaryCategories": [
+      "api",
+      "cloud"
+    ],
+    "type": "server-proxy",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "srv-apisix",
+    "title": "APISIX",
+    "slug": "apisix",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "server-proxy",
+    "secondaryCategories": [
+      "api"
+    ],
+    "type": "server-proxy",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "Apisix"
+    ]
+  },
+  {
+    "id": "srv-caddy",
+    "title": "Caddy",
+    "slug": "caddy",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "server-proxy",
+    "secondaryCategories": [
+      "cybersecurity"
+    ],
+    "type": "server-proxy",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "srv-bunkerweb",
+    "title": "BunkerWeb",
+    "slug": "bunkerweb",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "server-proxy",
+    "secondaryCategories": [
+      "cybersecurity"
+    ],
+    "type": "strumento",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "Bunkerweb"
+    ]
+  },
+  {
+    "id": "sec-modsecurity",
+    "title": "ModSecurity",
+    "slug": "modsecurity",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cybersecurity",
+    "secondaryCategories": [
+      "server-proxy"
+    ],
+    "type": "strumento",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "devops-linkerd",
+    "title": "Linkerd",
+    "slug": "linkerd",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "devops",
+    "secondaryCategories": [
+      "server-proxy",
+      "cloud"
+    ],
+    "type": "piattaforma",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "Linkered"
+    ]
+  },
+  {
+    "id": "srv-openresty",
+    "title": "OpenResty",
+    "slug": "openresty",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "server-proxy",
+    "secondaryCategories": [
+      "backend"
+    ],
+    "type": "server-proxy",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "sec-wasp-crs",
+    "title": "WASP CRS",
+    "slug": "wasp-crs",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cybersecurity",
+    "secondaryCategories": [
+      "server-proxy"
+    ],
+    "type": "standard-formato",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "sec-sso",
+    "title": "SSO",
+    "slug": "sso",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cybersecurity",
+    "secondaryCategories": [
+      "api"
+    ],
+    "type": "tecnologia",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "srv-envoy-proxy",
+    "title": "Envoy Proxy",
+    "slug": "envoy-proxy",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "server-proxy",
+    "secondaryCategories": [
+      "devops",
+      "cloud"
+    ],
+    "type": "server-proxy",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "sec-yubikey",
+    "title": "YubiKey",
+    "slug": "yubikey",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cybersecurity",
+    "secondaryCategories": [
+      "networking"
+    ],
+    "type": "hardware",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "Yubikey"
+    ]
+  },
+  {
+    "id": "sec-mtls",
+    "title": "mTLS",
+    "slug": "mtls",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cybersecurity",
+    "secondaryCategories": [
+      "networking",
+      "api"
+    ],
+    "type": "tecnologia",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "devops-helm",
+    "title": "Helm",
+    "slug": "helm",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "devops",
+    "secondaryCategories": [
+      "server-proxy"
+    ],
+    "type": "strumento",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-quic",
+    "title": "QUIC",
+    "slug": "quic",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [
+      "api"
+    ],
+    "type": "protocollo",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "Quic(informatica)"
+    ]
+  },
+  {
+    "id": "db-newsql",
+    "title": "NewSQL",
+    "slug": "newsql",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "database",
+    "secondaryCategories": [
+      "cloud"
+    ],
+    "type": "tecnologia",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "cloud-redpanda",
+    "title": "Redpanda",
+    "slug": "redpanda",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cloud",
+    "secondaryCategories": [
+      "database",
+      "devops"
+    ],
+    "type": "piattaforma",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "RedPanda"
+    ]
+  },
+  {
+    "id": "cloud-raft",
+    "title": "Raft",
+    "slug": "raft",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cloud",
+    "secondaryCategories": [
+      "fondamenti"
+    ],
+    "type": "concetto-teoria",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "cloud-paxos",
+    "title": "Paxos",
+    "slug": "paxos",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cloud",
+    "secondaryCategories": [
+      "fondamenti"
+    ],
+    "type": "concetto-teoria",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "com-webtransport",
+    "title": "WebTransport",
+    "slug": "webtransport",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "api",
+    "secondaryCategories": [
+      "web-frontend"
+    ],
+    "type": "protocollo",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "sec-coraza",
+    "title": "Coraza",
+    "slug": "coraza",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "cybersecurity",
+    "secondaryCategories": [
+      "server-proxy"
+    ],
+    "type": "strumento",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-vrrp",
+    "title": "VRRP",
+    "slug": "vrrp",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [
+      "cloud"
+    ],
+    "type": "protocollo",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "srv-consul",
+    "title": "Consul",
+    "slug": "consul",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "server-proxy",
+    "secondaryCategories": [
+      "devops",
+      "cloud"
+    ],
+    "type": "strumento",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "Consult(informatica)"
+    ]
+  },
+  {
+    "id": "devops-fluent-bit",
+    "title": "Fluent Bit",
+    "slug": "fluent-bit",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "devops",
+    "secondaryCategories": [
+      "automazione"
+    ],
+    "type": "strumento",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "Fluentbit"
+    ]
+  },
+  {
+    "id": "devops-ansible",
+    "title": "Ansible",
+    "slug": "ansible",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "devops",
+    "secondaryCategories": [
+      "automazione"
+    ],
+    "type": "strumento",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "devops-corosync",
+    "title": "Corosync",
+    "slug": "corosync",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "devops",
+    "secondaryCategories": [
+      "cloud"
+    ],
+    "type": "strumento",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "devops-pacemaker",
+    "title": "Pacemaker",
+    "slug": "pacemaker",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "devops",
+    "secondaryCategories": [
+      "cloud"
+    ],
+    "type": "strumento",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "mobile-ionic",
+    "title": "Ionic",
+    "slug": "ionic",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "mobile",
+    "secondaryCategories": [
+      "web-frontend"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "web-meteor-js",
+    "title": "Meteor.js",
+    "slug": "meteor-js",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "web-frontend",
+    "secondaryCategories": [
+      "backend"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "Meteorjs"
+    ]
+  },
+  {
+    "id": "devops-harness",
+    "title": "Harness",
+    "slug": "harness",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "devops",
+    "secondaryCategories": [
+      "automazione"
+    ],
+    "type": "piattaforma",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": []
+  },
+  {
+    "id": "net-netbird",
+    "title": "NetBird",
+    "slug": "netbird",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "networking",
+    "secondaryCategories": [
+      "devops"
+    ],
+    "type": "strumento",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "NetBird(informatica)"
+    ]
+  },
+  {
+    "id": "srv-pangolin",
+    "title": "Pangolin",
+    "slug": "pangolin",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "server-proxy",
+    "secondaryCategories": [
+      "networking",
+      "devops"
+    ],
+    "type": "server-proxy",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "Pangolin(informatica)"
+    ]
+  },
+  {
+    "id": "ai-frigate",
+    "title": "Frigate",
+    "slug": "frigate",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "ai-data",
+    "secondaryCategories": [
+      "game-grafica",
+      "automazione"
+    ],
+    "type": "applicazione",
+    "difficulty": "avanzato",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "Frigate(informatica)"
+    ]
+  },
+  {
+    "id": "devops-dozzle",
+    "title": "Dozzle",
+    "slug": "dozzle",
+    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "primaryCategory": "devops",
+    "secondaryCategories": [
+      "server-proxy",
+      "automazione"
+    ],
+    "type": "strumento",
+    "difficulty": "intermedio",
+    "coverageStatus": "assente",
+    "legacyNames": [
+      "Dozzle(informatica)"
+    ]
+  },
+  {
+    "id": "web-react",
+    "title": "React",
+    "slug": "react",
+    "summary": "8 documenti, 2.691 righe",
+    "primaryCategory": "web-frontend",
+    "secondaryCategories": [
+      "linguaggi",
+      "backend"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "presente",
+    "legacyNames": []
+  },
+  {
+    "id": "mobile-react-native",
+    "title": "React Native",
+    "slug": "react-native",
+    "summary": "9 documenti, 3.290 righe",
+    "primaryCategory": "mobile",
+    "secondaryCategories": [
+      "linguaggi",
+      "web-frontend"
+    ],
+    "type": "framework-libreria",
+    "difficulty": "intermedio",
+    "coverageStatus": "presente",
+    "legacyNames": []
+  }
+]

@@ -13,13 +13,14 @@ import "highlight.js/styles/github.css";
 import SectionBar from "@/components/SectionBar";
 
 interface DocViewerProps {
-    // Percorso aperto, eventuale pagina iniziale e ritorno alla home.
+    // Percorso aperto, eventuale pagina iniziale, ritorno alla home e cambio pagina via rotta.
     section: Section;
     initialPage?: SubSection;
     onBack: () => void;
+    onPageSelect?: (subsection: SubSection) => void;
 }
 
-export default function DocViewer({ section, initialPage, onBack }: DocViewerProps) {
+export default function DocViewer({ section, initialPage, onBack, onPageSelect }: DocViewerProps) {
     // Pagina corrente: quella richiesta oppure la prima del percorso.
     const [currentPage, setCurrentPage] = useState<SubSection | null>(initialPage || getSortedPages(section)[0]);
     const [content, setContent] = useState<string>("");
@@ -78,8 +79,12 @@ export default function DocViewer({ section, initialPage, onBack }: DocViewerPro
         });
     }, []);
 
-    // Cambia la pagina mostrata nella sidebar.
+    // Cambia la pagina mostrata: rotta dedicata se il chiamante la gestisce.
     const handlePage = (subsection: SubSection) => {
+        if (onPageSelect) {
+            onPageSelect(subsection);
+            return;
+        }
         setCurrentPage(subsection)
     }
 

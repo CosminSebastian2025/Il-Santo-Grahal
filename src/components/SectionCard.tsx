@@ -1,16 +1,17 @@
 // Scheda cliccabile che rappresenta un percorso nella home.
+import Link from "next/link";
 import type { Section } from "@/lib/sections";
 
 interface SectionCardProps {
-    // Dati del percorso e gestore del click.
+    // Dati del percorso e rotta della prima guida.
     section: Section;
-    onClick: (section: Section) => void;
+    href: string;
 }
 
-export default function SectionCard({ section, onClick }: SectionCardProps) {
+export default function SectionCard({ section, href }: SectionCardProps) {
     return (
-        <button
-            onClick={() => onClick(section)}
+        <Link
+            href={href}
             className="group relative flex min-h-56 w-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 text-left shadow-sm transition duration-200 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl hover:shadow-slate-900/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
             aria-label={`Apri il percorso ${section.title}`}
         >
@@ -37,6 +38,6 @@ export default function SectionCard({ section, onClick }: SectionCardProps) {
                 <span>{section.pages.length} {section.pages.length === 1 ? "guida" : "guide"}</span>
                 <span className="text-blue-700">Esplora percorso</span>
             </div>
-        </button>
+        </Link>
     );
 }
