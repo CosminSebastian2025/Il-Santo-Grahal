@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import {
 	APP_VERSION,
+	RELEASE_REFRESH_MS,
 	RELEASES_LATEST_URL,
 	buildOsDownloads,
 	detectOperatingSystem,
@@ -61,6 +62,8 @@ export default function DownloadPage() {
 	// Release letta da GitHub e relativo stato di caricamento.
 	const [release, setRelease] = useState<LatestRelease | null>(null);
 	const [releaseStatus, setReleaseStatus] = useState<ReleaseStatus>("loading");
+	// Ora dell'ultima verifica riuscita: rende visibile l'aggiornamento automatico.
+	const [lastChecked, setLastChecked] = useState<Date | null>(null);
 	// Il SO scelto manualmente vince sul rilevamento automatico.
 	const [manualOs, setManualOs] = useState<OperatingSystem | null>(null);
 	const [formatId, setFormatId] = useState("");
@@ -77,30 +80,73 @@ export default function DownloadPage() {
 	// Fallback a Windows se il browser non espone un SO riconoscibile.
 	const selectedOs = manualOs ?? detectedOs ?? "windows";
 
-	// Carica l'ultima release; se fallisce restano i link della versione in package.json.
+	// Carica l'ultima release e la ricontrolla mentre la pagina resta aperta:
+	// così versione e dimensioni seguono una release pubblicata dopo l'apertura.
 	useEffect(() => {
 		const controller = new AbortController();
 		let cancelled = false;
+		let inFlight = false;
+		let lastAttempt = 0;
 
-		loadLatestRelease(controller.signal)
-			.then((latest) => {
+		const refresh = async (initial: boolean) => {
+			if (cancelled || inFlight) {
+				return;
+			}
+			// I controlli periodici si fermano quando la scheda non è visibile.
+			if (!initial && document.hidden) {
+				return;
+			}
+
+			inFlight = true;
+			lastAttempt = Date.now();
+
+			try {
+				const latest = await loadLatestRelease(controller.signal);
 				if (cancelled) {
 					return;
 				}
 				setRelease(latest);
 				setReleaseStatus("ready");
-			})
-			.catch((error: unknown) => {
+				setLastChecked(new Date());
+			} catch (error: unknown) {
 				if (cancelled || (error instanceof DOMException && error.name === "AbortError")) {
 					return;
 				}
-				setReleaseStatus("error");
-			});
+				// Un errore di rete non cancella la release già mostrata.
+				if (initial) {
+					setReleaseStatus("error");
+				}
+			} finally {
+				inFlight = false;
+			}
+		};
+
+		void refresh(true);
+
+		const interval = window.setInterval(() => void refresh(false), RELEASE_REFRESH_MS);
+
+		// Al ritorno sulla scheda si ricontrolla subito, ma non più spesso del refresh periodico.
+		const onFocus = () => {
+			if (Date.now() - lastAttempt >= RELEASE_REFRESH_MS) {
+				void refresh(false);
+			}
+		};
+		const onVisibilityChange = () => {
+			if (!document.hidden) {
+				void refresh(false);
+			}
+		};
+
+		window.addEventListener("focus", onFocus);
+		document.addEventListener("visibilitychange", onVisibilityChange);
 
 		return () => {
-			// Annulla la richiesta se il componente viene smontato.
+			// Annulla richieste e timer se il componente viene smontato.
 			cancelled = true;
 			controller.abort();
+			window.clearInterval(interval);
+			window.removeEventListener("focus", onFocus);
+			document.removeEventListener("visibilitychange", onVisibilityChange);
 		};
 	}, []);
 
@@ -178,6 +224,15 @@ export default function DownloadPage() {
 						{releaseStatus === "error" && (
 							<span className="text-xs font-medium text-amber-700">
 								Ultima release non raggiungibile: uso la versione {APP_VERSION}.
+							</span>
+						)}
+						{lastChecked && (
+							<span className="text-xs text-slate-500">
+								Ultima verifica:{" "}
+								{lastChecked.toLocaleTimeString("it-IT", {
+									hour: "2-digit",
+									minute: "2-digit",
+								})}
 							</span>
 						)}
 					</div>

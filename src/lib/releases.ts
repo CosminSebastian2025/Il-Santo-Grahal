@@ -8,6 +8,8 @@ export const RELEASES_LATEST_URL = `https://github.com/${REPO_OWNER}/${REPO_NAME
 export const LATEST_RELEASE_API = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/releases/latest`;
 // Versione dell'app usata come fallback quando GitHub non è raggiungibile.
 export const APP_VERSION = packageJson.version;
+// Ogni quanto la pagina aperta ricontrolla l'ultima release (2 minuti).
+export const RELEASE_REFRESH_MS = 120_000;
 
 export type OperatingSystem = "windows" | "macos" | "linux";
 export type Architecture = "x64" | "arm64" | "any";
@@ -243,6 +245,8 @@ export async function loadLatestRelease(
 ): Promise<LatestRelease> {
 	const response = await fetch(LATEST_RELEASE_API, {
 		signal,
+		// Nessuna cache HTTP: una release appena pubblicata deve comparire subito.
+		cache: "no-store",
 		headers: {
 			Accept: "application/vnd.github+json",
 		},
