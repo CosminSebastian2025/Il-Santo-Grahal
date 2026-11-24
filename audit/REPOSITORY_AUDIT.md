@@ -298,7 +298,7 @@ Con 137 documenti e una crescita prevista a 218+ argomenti, l'assenza di validaz
 | 10 | Contenuti senza `lastReviewed` | Rischio di obsolescenza tecnica | P1 |
 | 11 | CSP assente | Superficie di rischio se cambia il modello di fiducia | P1 |
 | 12 | Nessun glossario | La visione "enciclopedia" non è rappresentata | P2 |
-| 13 | Modifiche non committate | Il working tree contiene 3 file modificati e 3 nuove cartelle docs | P1 |
+| 13 | Modifiche non committate | Il working tree conteneva 3 file modificati e 3 nuove cartelle docs | P1, risolta il 24 novembre 2026 |
 | 14 | Node 20 in CI vs Node 24 locale | Possibili differenze di build | P2 |
 
 ### Stato del working tree
@@ -313,6 +313,8 @@ Al momento dell'audit il repository presenta modifiche **preesistenti** a questa
 - `?? public/docs/9-React/`
 
 L'audit **non ha modificato** questi file né ne ha creati di nuovi fuori da `audit/`.
+
+**Aggiornamento del 24 novembre 2026:** queste modifiche e le tre cartelle sono state consolidate insieme alla migrazione in tre commit separati; il working tree è pulito (P7 risolta).
 
 ---
 
@@ -397,6 +399,8 @@ Alla fine dell'audit `git status` mostra:
 
 Nessun file in `src/`, `public/`, `src-tauri/`, `.github/` o nella root è stato toccato.
 
+**Aggiornamento del 24 novembre 2026:** dopo la migrazione il working tree è pulito; le modifiche sopra sono state incluse nei commit `5ea1625`, `cf96d2a` e `66eb728`.
+
 ### 12.2 Limiti del controllo
 
 - La verifica di copertura è testuale: dimostra che ogni voce è citata nei rapporti, non che ogni giudizio sia corretto al 100%. I giudizi si basano su occorrenze, titoli e lettura dei documenti chiave.
@@ -413,7 +417,8 @@ Dopo l'approvazione dell'autore è stata realizzata la prima migrazione tecnica 
 - Script di manutenzione: `npm run catalog:generate` (rigenera dal CSV) e `npm run validate:content` (unicità, vocabolari, correlati, collegamenti ai documenti, conteggi 13/21/184 e sincronizzazione dell'indice di ricerca).
 - Decisioni A2–A6 chiuse e registrate in `PROPOSED_ARCHITECTURE.md` §13; lo stato delle fasi è in `MIGRATION_PLAN.md` §3.3.
 - Verifiche eseguite: validazione contenuti riuscita, `tsc --noEmit` pulito, ESLint pulito, build statica riuscita con 374 pagine generate. Sul build esportato sono stati provati in browser ricerca e filtri del catalogo, scheda argomento, percorso, glossario, copertura e navigazione tra le pagine di un documento, con cambio URL.
-- Vincoli rispettati: nessun file in `public/docs/` modificato, nessuna modifica a cache/updater Tauri, nessun commit o push.
+- P7 risolta: modifiche preesistenti e migrazione consolidate in tre commit separati (`5ea1625` aggiornamento release, `cf96d2a` nuovi percorsi JS/React/React Native, `66eb728` catalogo e rotte); working tree pulito.
+- Vincoli rispettati: nessun documento di `public/docs/` modificato dalla migrazione, nessuna modifica a cache/updater Tauri, nessun push, tag o rilascio.
 
 ---
 

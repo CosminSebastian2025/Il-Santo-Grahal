@@ -1,7 +1,7 @@
 # Piano di migrazione
 
 **Rapporto:** `audit/MIGRATION_PLAN.md`
-**Stato:** Fasi 1–4 implementate il 24 novembre 2026; Fasi 5–8 non avviate. Decisioni A1–A6 chiuse. Restano il consolidamento del working tree e il test Tauri.
+**Stato:** Fasi 1–4 implementate e consolidate il 24 novembre 2026; Fasi 5–8 non avviate. Decisioni A1–A6 chiuse e working tree pulito. Resta il test Tauri delle nuove rotte.
 **Data:** 24 novembre 2026
 
 ---
@@ -31,9 +31,9 @@ Prima della Fase 1 servono:
 | P4 | Decisione su Git come argomento | **Risolta**: non aggiunto, resta documentato come contenuto non dichiarato |
 | P5 | Scelta catalogo TypeScript vs JSON | **Risolta**: TypeScript |
 | P6 | Decisione su rotte reali | **Risolta**: rotte implementate e verificate sul build statico |
-| P7 | Working tree pulito o modifiche preesistenti messe al sicuro | **Aperta**: le modifiche preesistenti (`DownloadPage.tsx`, `releases.ts`, `sections.ts` e le tre cartelle docs) non sono ancora consolidate; serve una decisione dell'autore prima di un rilascio |
+| P7 | Working tree pulito o modifiche preesistenti messe al sicuro | **Risolta**: modifiche preesistenti e migrazione consolidate in tre commit separati (`5ea1625`, `cf96d2a`, `66eb728`) il 24 novembre 2026; working tree pulito |
 
-**Nota sul working tree:** la migrazione è stata eseguita senza toccare le modifiche preesistenti, ma un rilascio resta sospeso finché l'autore non decide se committarle o metterle da parte. Il piano non tocca questo stato.
+**Nota sul working tree:** la migrazione è stata eseguita senza toccare i contenuti. Al termine, le modifiche preesistenti e il lavoro della migrazione sono stati consolidati in tre commit distinti; l'albero è pulito e un rilascio non è più sospeso da P7. Restano da eseguire il test Tauri e, solo su richiesta esplicita, push, tag e rilascio.
 
 ---
 
@@ -95,7 +95,7 @@ Rollback: non necessario.
 
 Gate: decisioni scritte e approvate. **Superato il 24 novembre 2026.**
 
-**Esito:** decisioni A2–A6 chiuse con la revisione registrata in `PROPOSED_ARCHITECTURE.md` §13; il working tree resta da consolidare (P7).
+**Esito:** decisioni A2–A6 chiuse con la revisione registrata in `PROPOSED_ARCHITECTURE.md` §13; il working tree è stato consolidato (P7) il 24 novembre 2026.
 
 ---
 
@@ -406,7 +406,7 @@ Le fasi 2–4 sono sequenziali per una sola persona, ma la Fase 8 (contenuti) pu
 
 Le decisioni D1–D12 e A1–A6 sono tutte chiuse. Per procedere oltre la Fase 4 serve:
 
-- la decisione dell'autore sul consolidamento del working tree (commit o stash delle modifiche preesistenti);
+- il test Tauri delle nuove rotte (gate della Settimana 9);
 - la conferma che la Fase 7 (spostamento) resta opzionale e fuori dai primi 90 giorni;
 - l'autorizzazione esplicita per un eventuale commit, tag o rilascio.
 

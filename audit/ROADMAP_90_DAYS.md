@@ -57,7 +57,7 @@ Il lavoro editoriale P0/P1 non è iniziato: la piattaforma è pronta, i contenut
 Attività:
 
 - chiudere le decisioni D1–D12 e A1–A6 (tutte risolte il 24 novembre 2026);
-- congelare lo stato del working tree (commit o stash deciso dall'autore);
+- consolidare il working tree (tre commit separati, 24 novembre 2026);
 - definire `types.ts`, le 18 categorie, i 21 tipi, gli enum di stato;
 - creare lo scheletro `src/content/` e lo script di validazione.
 
@@ -69,7 +69,7 @@ Risultato verificabile:
 
 Dipendenze: autore.
 
-Rischi: nessuno sulle decisioni, che sono chiuse. Resta la decisione dell'autore sul working tree.
+Rischi: nessuno; decisioni chiuse e working tree consolidato il 24 novembre 2026.
 
 Test: typecheck, unit test del validatore.
 
@@ -438,7 +438,7 @@ Regole:
 
 | Rischio | Probabilità | Impatto | Mitigazione |
 |---|---|---|---|
-| Le decisioni slittano | Bassa | Alto | A1–A6 sono chiuse; restano da consolidare il working tree e il test Tauri |
+| Le decisioni slittano | Bassa | Alto | A1–A6 sono chiuse e il working tree è consolidato; resta il test Tauri |
 | Una settimana tecnica ne occupa due | Alta | Medio | Tagliare P1, non i gate |
 | I contenuti P0 richiedono più tempo del previsto | Alta | Alto | Moduli minimi, non corsi enciclopedici |
 | Tauri rompe le rotte statiche | Media | Alto | Test in S4 e S9, non solo alla fine |
@@ -457,7 +457,7 @@ Regole:
 - decisioni registrate;
 - modifiche applicative limitate a home, card, `DocViewer` e script, come registrato in `MIGRATION_PLAN.md` §5.
 
-**Esito:** superato il 24 novembre 2026. Le settimane 3–5 sono state completate nello stesso blocco; il working tree resta da consolidare.
+**Esito:** superato il 24 novembre 2026. Le settimane 3–5 sono state completate nello stesso blocco e il working tree è stato consolidato in tre commit.
 
 Se fallisce: non si parte con le rotte; si riduce lo scope del catalogo a 18 categorie + 30 argomenti prioritari.
 

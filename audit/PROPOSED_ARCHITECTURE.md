@@ -594,7 +594,7 @@ Note operative:
 
 | Fase | Stato al 24 novembre 2026 | Note |
 |---|---|---|
-| 0 — Baseline e decisioni | **Completata** | A1–A6 chiuse; resta la decisione dell'autore sul consolidamento del working tree |
+| 0 — Baseline e decisioni | **Completata** | A1–A6 chiuse; working tree consolidato in tre commit il 24 novembre 2026 |
 | 1 — Catalogo | **Completata** | 218 schede in `src/content/topics/`; validatore in `scripts/validate-content.mjs` (Node ESM, nessuna dipendenza nuova) |
 | 2 — Rotte | **Completata** | `/argomenti/`, schede, `/documenti/[section]/[page]/`; `DocViewer` esteso con `onPageSelect` |
 | 3 — Percorsi | **Completata con scope ridotto** | 10 percorsi curati; collegamento documento↔argomento a livello di corso (12 schede); mappatura lezione→argomento rinviata |
