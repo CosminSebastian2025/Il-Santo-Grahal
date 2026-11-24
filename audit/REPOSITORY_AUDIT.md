@@ -418,6 +418,8 @@ Dopo l'approvazione dell'autore è stata realizzata la prima migrazione tecnica 
 - Decisioni A2–A6 chiuse e registrate in `PROPOSED_ARCHITECTURE.md` §13; lo stato delle fasi è in `MIGRATION_PLAN.md` §3.3.
 - Verifiche eseguite: validazione contenuti riuscita, `tsc --noEmit` pulito, ESLint pulito, build statica riuscita con 374 pagine generate. Sul build esportato sono stati provati in browser ricerca e filtri del catalogo, scheda argomento, percorso, glossario, copertura e navigazione tra le pagine di un documento, con cambio URL.
 - P7 risolta: modifiche preesistenti e migrazione consolidate in tre commit separati (`5ea1625` aggiornamento release, `cf96d2a` nuovi percorsi JS/React/React Native, `66eb728` catalogo e rotte); working tree pulito.
+- Smoke test Tauri (24 novembre 2026): build debug, WebView2 Edge 158, origine `http://tauri.localhost`. Verificati home, catalogo (218 schede, ricerca "docker" = 2 e "tls" = 3), scheda argomento, documento (8.853 caratteri), cambio pagina e indietro, 10 percorsi, glossario (55 termini) e copertura (13/21/184). Con rete WebView2 disattivata: documento ricaricato, ricerca nel catalogo e documento C++ mai aperto (2.331 caratteri) funzionanti; asset locale 200, richiesta esterna `ERR_INTERNET_DISCONNECTED`, cache in memoria da 3 a 4 voci, 0 errori console.
+- Updater e riavvio post-aggiornamento non esercitati: manca una release firmata nuova. Restano per la Settimana 10.
 - Vincoli rispettati: nessun documento di `public/docs/` modificato dalla migrazione, nessuna modifica a cache/updater Tauri, nessun push, tag o rilascio.
 
 ---

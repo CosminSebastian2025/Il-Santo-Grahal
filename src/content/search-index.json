@@ -105,38 +105,38 @@
     "id": "web-html",
     "title": "HTML",
     "slug": "html",
-    "summary": "Parziale: Solo sezioni dentro React/JS: manca un percorso HTML autonomo (semantica, form, accessibilità).",
+    "summary": "3 lezioni in public/docs/argomenti/html/ con esercizi e fonti ufficiali.",
     "primaryCategory": "web-frontend",
     "secondaryCategories": [],
     "type": "linguaggio",
     "difficulty": "base",
-    "coverageStatus": "parziale",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "web-css",
     "title": "CSS",
     "slug": "css",
-    "summary": "Parziale: Solo sezioni; mancano layout responsive, Grid/Flex avanzato, accessibilità e design system.",
+    "summary": "3 lezioni in public/docs/argomenti/css/ con esercizi e fonti ufficiali.",
     "primaryCategory": "web-frontend",
     "secondaryCategories": [],
     "type": "linguaggio",
     "difficulty": "base",
-    "coverageStatus": "parziale",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "backend-ktor",
     "title": "Ktor",
     "slug": "ktor",
-    "summary": "Parziale: Sezioni e progetto dentro Kotlin/KMP; manca un percorso backend Ktor (routing, serializzazione, test).",
+    "summary": "3 lezioni in public/docs/argomenti/ktor/ con esercizi e fonti ufficiali.",
     "primaryCategory": "backend",
     "secondaryCategories": [
       "api"
     ],
     "type": "framework-libreria",
     "difficulty": "intermedio",
-    "coverageStatus": "parziale",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -169,14 +169,14 @@
     "id": "ling-typescript",
     "title": "TypeScript",
     "slug": "typescript",
-    "summary": "Parziale: Due sezioni dedicate; manca un percorso TypeScript (generics, narrowing, tooling, strict mode).",
+    "summary": "3 lezioni in public/docs/argomenti/typescript/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "web-frontend"
     ],
     "type": "linguaggio",
     "difficulty": "intermedio",
-    "coverageStatus": "parziale",
+    "coverageStatus": "presente",
     "legacyNames": [
       "Typescript"
     ]
@@ -185,7 +185,7 @@
     "id": "fmt-json",
     "title": "JSON",
     "slug": "json",
-    "summary": "Parziale: Trattato in più corsi senza una pagina di riferimento: rischio duplicazione e divergenza.",
+    "summary": "3 lezioni in public/docs/argomenti/json/ con esercizi e fonti ufficiali.",
     "primaryCategory": "formati",
     "secondaryCategories": [
       "database",
@@ -193,7 +193,7 @@
     ],
     "type": "standard-formato",
     "difficulty": "base",
-    "coverageStatus": "parziale",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -229,14 +229,14 @@
     "id": "fmt-yaml",
     "title": "YAML",
     "slug": "yaml",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "4 lezioni in public/docs/argomenti/yaml/ con esercizi e fonti ufficiali.",
     "primaryCategory": "formati",
     "secondaryCategories": [
       "devops"
     ],
     "type": "standard-formato",
     "difficulty": "base",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -273,12 +273,12 @@
     "id": "web-tailwind-css",
     "title": "Tailwind CSS",
     "slug": "tailwind-css",
-    "summary": "Parziale: Una sola sezione; manca un percorso CSS moderno e Tailwind avanzato.",
+    "summary": "3 lezioni in public/docs/argomenti/tailwind-css/ con esercizi e fonti ufficiali.",
     "primaryCategory": "web-frontend",
     "secondaryCategories": [],
     "type": "framework-libreria",
     "difficulty": "base",
-    "coverageStatus": "parziale",
+    "coverageStatus": "presente",
     "legacyNames": [
       "Tailwindcss"
     ]
@@ -315,7 +315,7 @@
     "id": "devops-docker",
     "title": "Docker",
     "slug": "docker",
-    "summary": "Parziale: Singola sezione con Dockerfile/compose; mancano volumi, reti, registry e sicurezza.",
+    "summary": "3 lezioni in public/docs/argomenti/docker/ con esercizi e fonti ufficiali.",
     "primaryCategory": "devops",
     "secondaryCategories": [
       "backend",
@@ -323,7 +323,7 @@
     ],
     "type": "strumento",
     "difficulty": "intermedio",
-    "coverageStatus": "parziale",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -375,7 +375,7 @@
     "id": "net-ssh",
     "title": "SSH",
     "slug": "ssh",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "4 lezioni in public/docs/argomenti/ssh/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [
       "sistemi-operativi",
@@ -383,7 +383,7 @@
     ],
     "type": "protocollo",
     "difficulty": "base",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -404,28 +404,28 @@
     "id": "sec-ssl",
     "title": "SSL",
     "slug": "ssl",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "4 lezioni in public/docs/argomenti/ssl/ con esercizi e fonti ufficiali.",
     "primaryCategory": "cybersecurity",
     "secondaryCategories": [
       "networking"
     ],
     "type": "protocollo",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "sec-tls",
     "title": "TLS",
     "slug": "tls",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "4 lezioni in public/docs/argomenti/tls/ con esercizi e fonti ufficiali.",
     "primaryCategory": "cybersecurity",
     "secondaryCategories": [
       "networking"
     ],
     "type": "protocollo",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -476,14 +476,14 @@
     "id": "auto-cli",
     "title": "CLI",
     "slug": "cli",
-    "summary": "Parziale: CLI usata come progetto, non insegnata come interfaccia (argomenti, exit code, piping, help).",
+    "summary": "3 lezioni in public/docs/argomenti/cli/ con esercizi e fonti ufficiali.",
     "primaryCategory": "automazione",
     "secondaryCategories": [
       "sistemi-operativi"
     ],
     "type": "concetto-teoria",
     "difficulty": "base",
-    "coverageStatus": "parziale",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -506,14 +506,14 @@
     "id": "os-bash",
     "title": "Bash",
     "slug": "bash",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "4 lezioni in public/docs/argomenti/bash/ con esercizi e fonti ufficiali.",
     "primaryCategory": "sistemi-operativi",
     "secondaryCategories": [
       "automazione"
     ],
     "type": "strumento",
     "difficulty": "base",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -546,7 +546,7 @@
     "id": "sec-cybersecurity",
     "title": "Cybersecurity",
     "slug": "cybersecurity",
-    "summary": "Parziale: Solo sicurezza applicativa dentro Java/React; manca un percorso cybersecurity.",
+    "summary": "3 lezioni in public/docs/argomenti/cybersecurity/ con esercizi e fonti ufficiali.",
     "primaryCategory": "cybersecurity",
     "secondaryCategories": [
       "fondamenti",
@@ -554,7 +554,7 @@
     ],
     "type": "disciplina",
     "difficulty": "intermedio",
-    "coverageStatus": "parziale",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -589,7 +589,7 @@
     "id": "com-http-https",
     "title": "HTTP/HTTPS",
     "slug": "http-https",
-    "summary": "Parziale: Insegnato come uso di API; mancano metodi, status, header, caching, TLS e HTTP/2-3.",
+    "summary": "3 lezioni in public/docs/argomenti/http-https/ con esercizi e fonti ufficiali.",
     "primaryCategory": "api",
     "secondaryCategories": [
       "networking",
@@ -597,28 +597,28 @@
     ],
     "type": "protocollo",
     "difficulty": "base",
-    "coverageStatus": "parziale",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "com-rest-soap",
     "title": "REST/SOAP",
     "slug": "rest-soap",
-    "summary": "Parziale: REST presente in contesti applicativi; SOAP assente.",
+    "summary": "3 lezioni in public/docs/argomenti/rest-soap/ con esercizi e fonti ufficiali.",
     "primaryCategory": "api",
     "secondaryCategories": [
       "backend"
     ],
     "type": "architettura",
     "difficulty": "intermedio",
-    "coverageStatus": "parziale",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "com-api",
     "title": "API",
     "slug": "api",
-    "summary": "Parziale: Molte sezioni applicative; mancano teoria, versioning, autenticazione, OpenAPI e gestione errori.",
+    "summary": "3 lezioni in public/docs/argomenti/api/ con esercizi e fonti ufficiali.",
     "primaryCategory": "api",
     "secondaryCategories": [
       "backend",
@@ -626,14 +626,14 @@
     ],
     "type": "concetto-teoria",
     "difficulty": "intermedio",
-    "coverageStatus": "parziale",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "com-client-server",
     "title": "Client/Server",
     "slug": "client-server",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "4 lezioni in public/docs/argomenti/client-server/ con esercizi e fonti ufficiali.",
     "primaryCategory": "api",
     "secondaryCategories": [
       "backend",
@@ -641,7 +641,7 @@
     ],
     "type": "architettura",
     "difficulty": "base",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -909,14 +909,14 @@
     "id": "devops-docker-compose",
     "title": "Docker Compose",
     "slug": "docker-compose",
-    "summary": "Parziale: Uso in un esempio; manca un trattamento autonomo di servizi, volumi, reti e ambienti.",
+    "summary": "3 lezioni in public/docs/argomenti/docker-compose/ con esercizi e fonti ufficiali.",
     "primaryCategory": "devops",
     "secondaryCategories": [
       "server-proxy"
     ],
     "type": "strumento",
     "difficulty": "intermedio",
-    "coverageStatus": "parziale",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -982,14 +982,14 @@
     "id": "os-linux",
     "title": "Linux",
     "slug": "linux",
-    "summary": "Parziale: Solo setup ambiente; mancano filesystem, permessi, processi, systemd, pacchetti.",
+    "summary": "3 lezioni in public/docs/argomenti/linux/ con esercizi e fonti ufficiali.",
     "primaryCategory": "sistemi-operativi",
     "secondaryCategories": [
       "devops"
     ],
     "type": "sistema-operativo",
     "difficulty": "base",
-    "coverageStatus": "parziale",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -1038,7 +1038,7 @@
     "id": "sec-crittografia",
     "title": "Crittografia",
     "slug": "crittografia",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "4 lezioni in public/docs/argomenti/crittografia/ con esercizi e fonti ufficiali.",
     "primaryCategory": "cybersecurity",
     "secondaryCategories": [
       "fondamenti",
@@ -1046,7 +1046,7 @@
     ],
     "type": "disciplina",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -1214,12 +1214,12 @@
     "id": "os-os",
     "title": "OS",
     "slug": "os",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "4 lezioni in public/docs/argomenti/os/ con esercizi e fonti ufficiali.",
     "primaryCategory": "sistemi-operativi",
     "secondaryCategories": [],
     "type": "concetto-teoria",
     "difficulty": "base",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -1575,14 +1575,14 @@
     "id": "auto-github-actions",
     "title": "GitHub Actions",
     "slug": "github-actions",
-    "summary": "Parziale: Confermato GitHub Actions. Configurazione reale ma nessuna lezione dedicata; chiarire se assorbito in CI/CD.",
+    "summary": "3 lezioni in public/docs/argomenti/github-actions/ con esercizi e fonti ufficiali.",
     "primaryCategory": "automazione",
     "secondaryCategories": [
       "devops"
     ],
     "type": "pratica-metodologia",
     "difficulty": "intermedio",
-    "coverageStatus": "parziale",
+    "coverageStatus": "presente",
     "legacyNames": [
       "Workflow"
     ]
@@ -1619,14 +1619,14 @@
     "id": "fmt-markdown",
     "title": "Markdown",
     "slug": "markdown",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "4 lezioni in public/docs/argomenti/markdown/ con esercizi e fonti ufficiali.",
     "primaryCategory": "formati",
     "secondaryCategories": [
       "automazione"
     ],
     "type": "standard-formato",
     "difficulty": "base",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -1647,7 +1647,7 @@
     "id": "db-redis",
     "title": "Redis",
     "slug": "redis",
-    "summary": "Parziale: Sezione breve e documentazione tecnica; mancano dati, TTL, persistenza, pub/sub e clustering.",
+    "summary": "3 lezioni in public/docs/argomenti/redis/ con esercizi e fonti ufficiali.",
     "primaryCategory": "database",
     "secondaryCategories": [
       "devops",
@@ -1655,21 +1655,21 @@
     ],
     "type": "database-orm",
     "difficulty": "intermedio",
-    "coverageStatus": "parziale",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "devops-ci-cd",
     "title": "CI/CD",
     "slug": "ci-cd",
-    "summary": "Parziale: Un esempio GitHub Actions; mancano pipeline, artefatti, ambienti, segreti e release.",
+    "summary": "3 lezioni in public/docs/argomenti/ci-cd/ con esercizi e fonti ufficiali.",
     "primaryCategory": "devops",
     "secondaryCategories": [
       "automazione"
     ],
     "type": "pratica-metodologia",
     "difficulty": "intermedio",
-    "coverageStatus": "parziale",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -1722,7 +1722,7 @@
     "id": "fond-ottimizzazione-codice",
     "title": "Ottimizzazione Codice",
     "slug": "ottimizzazione-codice",
-    "summary": "Parziale: Performance applicativa sparsa; manca un metodo su misura, profiling e complessità.",
+    "summary": "3 lezioni in public/docs/argomenti/ottimizzazione-codice/ con esercizi e fonti ufficiali.",
     "primaryCategory": "fondamenti",
     "secondaryCategories": [
       "linguaggi",
@@ -1730,35 +1730,35 @@
     ],
     "type": "pratica-metodologia",
     "difficulty": "avanzato",
-    "coverageStatus": "parziale",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "fond-algoritmi",
     "title": "Algoritmi",
     "slug": "algoritmi",
-    "summary": "Parziale: Solo algoritmi STL e menzioni; mancano complessità, ordinamento, ricerca e strutture dati.",
+    "summary": "3 lezioni in public/docs/argomenti/algoritmi/ con esercizi e fonti ufficiali.",
     "primaryCategory": "fondamenti",
     "secondaryCategories": [
       "linguaggi"
     ],
     "type": "disciplina",
     "difficulty": "intermedio",
-    "coverageStatus": "parziale",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "sec-xss",
     "title": "XSS",
     "slug": "xss",
-    "summary": "Parziale: Una sezione; mancano CSRF, CSP, sanificazione server-side e test di sicurezza.",
+    "summary": "3 lezioni in public/docs/argomenti/xss/ con esercizi e fonti ufficiali.",
     "primaryCategory": "cybersecurity",
     "secondaryCategories": [
       "web-frontend"
     ],
     "type": "vulnerabilita",
     "difficulty": "intermedio",
-    "coverageStatus": "parziale",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -1779,12 +1779,12 @@
     "id": "net-dns",
     "title": "DNS",
     "slug": "dns",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "4 lezioni in public/docs/argomenti/dns/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [],
     "type": "protocollo",
     "difficulty": "base",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": [
       "DSN"
     ]
@@ -2260,14 +2260,14 @@
     "id": "web-next-js",
     "title": "Next.js",
     "slug": "next-js",
-    "summary": "Parziale: Una sezione didattica; il progetto usa Next ma non lo documenta come topic.",
+    "summary": "3 lezioni in public/docs/argomenti/next-js/ con esercizi e fonti ufficiali.",
     "primaryCategory": "web-frontend",
     "secondaryCategories": [
       "backend"
     ],
     "type": "framework-libreria",
     "difficulty": "intermedio",
-    "coverageStatus": "parziale",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {

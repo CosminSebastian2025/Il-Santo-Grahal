@@ -3,7 +3,7 @@
 **Rapporto:** `audit/ROADMAP_90_DAYS.md`
 **Orizzonte:** 12 settimane (25 novembre 2026 – 16 febbraio 2027)
 **Vincolo:** una sola persona; il piano distingue ciò che è obbligatorio da ciò che è sacrificabile.
-**Stato:** revisionata il 24 novembre 2026. Settimane 1–5 completate, 6–7 parziali, 8–12 non avviate.
+**Stato:** revisionata il 24 novembre 2026. Settimane 1–5 completate, 6–7 parziali, 9 parziale (rotte e offline verificati), 8 e 10–12 non avviate.
 
 ---
 
@@ -42,7 +42,9 @@ Non deve essere: tutti i 218 argomenti scritti. Sarebbe irrealistico e distoglie
 | 5 — Ricerca | **Completata** | Indice 85 KB, filtri client-side |
 | 6 — Glossario e riferimenti | **Parziale** | 55 termini fatti; fonti e riferimenti mancanti |
 | 7 — Copertura e dashboard | **Parziale** | `/copertura/` fatta; elenco assenti tramite filtro; link al report mancante |
-| 8–12 | **Non avviate** | Qualità, Tauri, rilascio, contenuti, buffer |
+| 8 — Qualità | **Non avviata** | Accessibilità, performance, mobile |
+| 9 — Tauri e offline | **Parziale** | Rotte e offline verificati il 24/11/2026; mancano updater e riavvio |
+| 10–12 | **Non avviate** | Rilascio, contenuti P0, buffer |
 
 Il lavoro editoriale P0/P1 non è iniziato: la piattaforma è pronta, i contenuti no.
 
@@ -438,7 +440,7 @@ Regole:
 
 | Rischio | Probabilità | Impatto | Mitigazione |
 |---|---|---|---|
-| Le decisioni slittano | Bassa | Alto | A1–A6 sono chiuse e il working tree è consolidato; resta il test Tauri |
+| Le decisioni slittano | Bassa | Alto | A1–A6 sono chiuse, il working tree è consolidato e lo smoke Tauri di rotte e offline è superato |
 | Una settimana tecnica ne occupa due | Alta | Medio | Tagliare P1, non i gate |
 | I contenuti P0 richiedono più tempo del previsto | Alta | Alto | Moduli minimi, non corsi enciclopedici |
 | Tauri rompe le rotte statiche | Media | Alto | Test in S4 e S9, non solo alla fine |
@@ -474,6 +476,8 @@ Se fallisce: si taglia la dashboard (S7) e si anticipa il consolidamento.
 - Tauri e offline verificati;
 - nessun blocco al rilascio;
 - P0 a metà.
+
+**Esito parziale (24 novembre 2026):** rotte e offline superati in build Tauri debug; restano updater con release firmata, P0 e verifica del rilascio. Il checkpoint resta aperto.
 
 Se fallisce: si rinvia il rilascio alla S11 e si concentrano le risorse sul fix.
 

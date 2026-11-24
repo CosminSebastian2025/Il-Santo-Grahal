@@ -578,7 +578,7 @@ Le decisioni A2–A6 sono state chiuse dopo l'implementazione delle Fasi 1–4. 
 |---|---|---|---|---|
 | **A1** | Catalogo in TypeScript o JSON? | **TypeScript** (deciso dall'autore) | Tipi condivisi con le rotte, nessun runtime di validazione aggiuntivo | Se servisse un catalogo editabile da non sviluppatori |
 | **A2** | Documenti in `public/docs` o `content/`? | **Restano in `public/docs`** per i primi 90 giorni (Fase A) | Il fetch statico, la cache `doc:v2` e l'asset protocol di Tauri funzionano già; spostare 137 file invaliderebbe cache e URL senza un beneficio concreto finché non esiste una pipeline di frontmatter/MDX | Solo se si adotta A5 o se serve co-locare metadati e Markdown (Fase 7) |
-| **A3** | Rotte reali o stato React? | **Rotte reali**, implementate | Deep link, URL condivisibili e 374 pagine statiche generate; `/documenti/[section]/[page]/` sostituisce la navigazione a stato per i documenti | Se Tauri webview mostrasse problemi con le rotte (test ancora da fare) |
+| **A3** | Rotte reali o stato React? | **Rotte reali**, implementate e verificate anche in Tauri | Deep link, URL condivisibili e 374 pagine statiche generate; `/documenti/[section]/[page]/` sostituisce la navigazione a stato per i documenti. Smoke Tauri del 24 novembre 2026 superato | Se Tauri webview mostrasse regressioni sulle rotte |
 | **A4** | Ricerca client-side con indice precompilato? | **Sì**, implementata | `search-index.json` con 218 voci (85 KB su disco), filtri per area/tipo/livello/stato, nessuna chiamata di rete; il validatore controlla che l'indice resti sincronizzato con il catalogo | Se servisse ricerca full-text nei documenti: indice più ricco a build-time, mai un server |
 | **A5** | MDX subito o dopo? | **Rinviato** | I 137 documenti sono Markdown e `react-markdown` copre il fabbisogno attuale; MDX richiede pipeline, migrazione e test, senza un caso d'uso approvato | Quando servono componenti interattivi nelle lezioni o frontmatter generato automaticamente; è il prerequisito della Fase 7 |
 | **A6** | Glossario nuova fonte o derivato dai documenti? | **Nuova fonte**, implementata | `src/content/glossary.ts` con 55 termini e `relatedTopicIds`; definizioni brevi, nessuna estrazione automatica che produrrebbe rumore | Se il glossario supera ~120 voci o servono pagine dedicate per termine |
@@ -586,7 +586,7 @@ Le decisioni A2–A6 sono state chiuse dopo l'implementazione delle Fasi 1–4. 
 Note operative:
 
 - **A2 + A5 sono accoppiate:** `content/` diventa sensato solo con una pipeline che legga i Markdown a build-time (MDX o frontmatter). Fino ad allora `public/docs` è la fonte dei contenuti e `src/content/` contiene solo metadati.
-- **A3 è verificata sul web**, non ancora nella webview Tauri: il test in app resta un gate della Settimana 9, non una decisione aperta.
+- **A3 è verificata sul web e nella webview Tauri:** lo smoke test del 24 novembre 2026 ha coperto home, catalogo, argomento, documento, percorsi, glossario, copertura e funzionamento offline.
 - **A4 è vincolata al generatore:** `npm run catalog:generate` produce sia le schede sia `search-index.json`; `npm run validate:content` fallisce se l'indice è vecchio.
 - **A6 non introduce pagine `/glossario/[slug]/`:** i collegamenti usano anchor e rimandi alle schede; la pagina dedicata resta opzionale.
 
@@ -607,7 +607,7 @@ Note operative:
 ### 13.3 Revisione dei rischi
 
 - **Doppia fonte di verità:** il rischio è ridotto perché i metadati restano nel catalogo TS e i documenti in `public/docs`; il frontmatter non esiste. Resta valido il divieto di introdurlo prima della Fase 7.
-- **Rotte in Tauri:** non è più un rischio di design, ma un test da eseguire. La build statica include `docs/` e tutte le rotte con trailing slash.
+- **Rotte in Tauri:** rischio chiuso dal test del 24 novembre 2026 su build debug (`http://tauri.localhost`): tutte le rotte e i documenti si aprono, anche con rete WebView2 disattivata.
 - **Ricerca lenta:** il target di 500 KB è rispettato (85 KB su disco); l'indice contiene solo titolo, sintesi, categorie, tipo, livello e stato.
 - **Catalogo divergente dal CSV:** mitigato da `catalog:generate` e `validate:content`, che confrontano conteggi e riferimenti.
 

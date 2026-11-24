@@ -2,6 +2,7 @@
 // Uso: node scripts/generate-catalog.mjs
 import fs from "node:fs";
 import path from "node:path";
+import { lessonsByTopic } from "../src/content/topic-docs.ts";
 
 const ROOT = process.cwd();
 const CSV_PATH = path.join(ROOT, "audit", "CONTENT_INVENTORY.csv");
@@ -215,9 +216,14 @@ const topics = rows.map((row) => {
 		.filter((value) => value && value.toLowerCase() !== "nessuna");
 
 	const legacyNames = row.nome_originale.trim() === title ? [] : [row.nome_originale.trim()];
+	const id = `${meta.prefix}-${slug}`;
+	const estimatedMinutes = (lessonsByTopic[id] ?? []).reduce(
+		(total, lesson) => total + lesson.estimatedMinutes,
+		0,
+	);
 
 	return {
-		id: `${meta.prefix}-${slug}`,
+		id,
 		title,
 		slug,
 		legacyNames,
@@ -233,6 +239,7 @@ const topics = rows.map((row) => {
 		problems,
 		evidence,
 		lastReviewed: LAST_REVIEWED,
+		...(estimatedMinutes > 0 ? { estimatedMinutes } : {}),
 		rawRelated: row.argomenti_correlati,
 		categoryNumber,
 	};

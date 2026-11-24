@@ -1,19 +1,21 @@
 {
-  "generatedAt": "2026-11-24T12:31:12.877Z",
+  "generatedAt": "2026-11-24T14:14:27.361Z",
   "topics": 218,
   "coverage": {
-    "presente": 13,
-    "parziale": 21,
-    "assente": 184
+    "presente": 44,
+    "parziale": 0,
+    "assente": 174
   },
   "categories": 18,
   "documentSections": 10,
   "documentPages": 137,
   "learningPaths": 10,
-  "glossaryTerms": 55,
+  "glossaryTerms": 144,
   "topicsWithDocuments": 12,
   "topicsWithoutDocuments": 206,
-  "searchIndexBytes": 85383,
+  "topicsWithLessons": 31,
+  "topicLessons": 103,
+  "searchIndexBytes": 84883,
   "errors": [],
   "warnings": []
 }

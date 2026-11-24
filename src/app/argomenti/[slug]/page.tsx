@@ -15,6 +15,7 @@ import {
   DIFFICULTY_LABELS,
   TYPE_LABELS,
 } from "@/content/labels";
+import { getTopicLessonMinutes, getTopicLessons } from "@/content/topic-docs";
 
 interface TopicPageProps {
   params: Promise<{ slug: string }>;
@@ -48,6 +49,8 @@ export default async function TopicPage({ params }: TopicPageProps) {
   const category = categoriesById.get(topic.primaryCategory);
   const related = getRelatedTopics(topic);
   const docLinks = getDocumentLinks(topic.id);
+  const lessons = getTopicLessons(topic.id);
+  const lessonMinutes = getTopicLessonMinutes(topic.id);
   const secondary = topic.secondaryCategories
     .map((id) => categoriesById.get(id))
     .filter((item) => item !== undefined);
@@ -106,6 +109,44 @@ export default async function TopicPage({ params }: TopicPageProps) {
 
           <div className="grid gap-8 py-8 sm:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
             <div className="space-y-8">
+              {lessons.length > 0 && (
+                <section aria-labelledby="lezioni-title">
+                  <div className="flex flex-wrap items-baseline justify-between gap-2">
+                    <h2 id="lezioni-title" className="text-lg font-bold text-slate-900">
+                      Lezioni
+                    </h2>
+                    <p className="text-xs font-medium text-slate-400">
+                      {lessons.length} lezioni · {lessonMinutes} minuti
+                    </p>
+                  </div>
+                  <ol className="mt-3 space-y-2">
+                    {lessons.map((lesson, index) => (
+                      <li key={lesson.slug}>
+                        <Link
+                          href={`/argomenti/${topic.slug}/${lesson.slug}/`}
+                          className="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition-colors hover:border-blue-200 hover:bg-blue-50/40"
+                        >
+                          <span className="mt-0.5 font-mono text-xs font-semibold text-slate-400">
+                            {String(index + 1).padStart(2, "0")}
+                          </span>
+                          <span className="min-w-0">
+                            <span className="block font-semibold text-slate-900">
+                              {lesson.title}
+                            </span>
+                            <span className="mt-0.5 block text-sm leading-6 text-slate-600">
+                              {lesson.description}
+                            </span>
+                            <span className="mt-1 block text-xs text-slate-400">
+                              {lesson.estimatedMinutes} minuti
+                            </span>
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ol>
+                </section>
+              )}
+
               <section aria-labelledby="stato-title">
                 <h2 id="stato-title" className="text-lg font-bold text-slate-900">
                   Stato nel repository
@@ -189,7 +230,9 @@ export default async function TopicPage({ params }: TopicPageProps) {
                   </ul>
                 ) : (
                   <p className="mt-3 text-sm leading-6 text-slate-500">
-                    Nessun documento dedicato: questo argomento è nella roadmap editoriale.
+                    {lessons.length > 0
+                      ? "Nessun corso collegato: le lezioni dedicate sono nella colonna principale."
+                      : "Nessun documento dedicato: questo argomento è nella roadmap editoriale."}
                   </p>
                 )}
               </section>
@@ -211,6 +254,12 @@ export default async function TopicPage({ params }: TopicPageProps) {
                       {DIFFICULTY_LABELS[topic.difficulty]}
                     </dd>
                   </div>
+                  {lessonMinutes > 0 && (
+                    <div className="flex justify-between gap-3">
+                      <dt className="text-slate-500">Studio stimato</dt>
+                      <dd className="text-right text-slate-700">{lessonMinutes} minuti</dd>
+                    </div>
+                  )}
                 </dl>
               </section>
             </aside>

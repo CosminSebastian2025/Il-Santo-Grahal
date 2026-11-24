@@ -80,6 +80,16 @@ export interface Topic {
 	problems: string;
 	evidence: string;
 	lastReviewed: string;
+	/** Minuti stimati delle lezioni dedicate, quando esistono. */
+	estimatedMinutes?: number;
+}
+
+export interface TopicLesson {
+	slug: string;
+	title: string;
+	description: string;
+	filePath: string;
+	estimatedMinutes: number;
 }
 
 /** Versione compatta usata dalla ricerca client-side e dalle card. */

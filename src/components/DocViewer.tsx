@@ -5,11 +5,7 @@ import { useEffect, useState } from "react";
 import { Section, SubSection, getSortedPages } from "@/lib/sections";
 import { loadDocument } from "@/lib/docs";
 import { getCacheHealth } from "@/lib/cache";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
-import rehypeHighlight from "rehype-highlight";
-import rehypeRaw from "rehype-raw";
-import "highlight.js/styles/github.css";
+import MarkdownArticle from "@/components/MarkdownArticle";
 import SectionBar from "@/components/SectionBar";
 
 interface DocViewerProps {
@@ -142,16 +138,7 @@ export default function DocViewer({ section, initialPage, onBack, onPageSelect }
                             </div>
                         )}
 
-                        {content && (
-                            <article className="prose prose-lg max-w-none">
-                                <ReactMarkdown
-                                    remarkPlugins={[remarkGfm]}
-                                    rehypePlugins={[rehypeRaw, rehypeHighlight]}
-                                >
-                                    {content}
-                                </ReactMarkdown>
-                            </article>
-                        )}
+                        {content && <MarkdownArticle content={content} />}
                     </div>
                 </div>
             </div>

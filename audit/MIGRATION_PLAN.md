@@ -1,7 +1,7 @@
 # Piano di migrazione
 
 **Rapporto:** `audit/MIGRATION_PLAN.md`
-**Stato:** Fasi 1–4 implementate e consolidate il 24 novembre 2026; Fasi 5–8 non avviate. Decisioni A1–A6 chiuse e working tree pulito. Resta il test Tauri delle nuove rotte.
+**Stato:** Fasi 1–4 implementate e consolidate il 24 novembre 2026; Fasi 5–8 non avviate. Decisioni A1–A6 chiuse, working tree pulito e smoke test Tauri di rotte e offline superato.
 **Data:** 24 novembre 2026
 
 ---
@@ -33,7 +33,7 @@ Prima della Fase 1 servono:
 | P6 | Decisione su rotte reali | **Risolta**: rotte implementate e verificate sul build statico |
 | P7 | Working tree pulito o modifiche preesistenti messe al sicuro | **Risolta**: modifiche preesistenti e migrazione consolidate in tre commit separati (`5ea1625`, `cf96d2a`, `66eb728`) il 24 novembre 2026; working tree pulito |
 
-**Nota sul working tree:** la migrazione è stata eseguita senza toccare i contenuti. Al termine, le modifiche preesistenti e il lavoro della migrazione sono stati consolidati in tre commit distinti; l'albero è pulito e un rilascio non è più sospeso da P7. Restano da eseguire il test Tauri e, solo su richiesta esplicita, push, tag e rilascio.
+**Nota sul working tree:** la migrazione è stata eseguita senza toccare i contenuti. Al termine, le modifiche preesistenti e il lavoro della migrazione sono stati consolidati in tre commit distinti; l'albero è pulito e un rilascio non è più sospeso da P7. Il test Tauri di rotte e offline è stato superato il 24 novembre 2026; restano, solo su richiesta esplicita, push, tag e rilascio.
 
 ---
 
@@ -355,6 +355,19 @@ Nessuna fase si considera conclusa se uno dei gate fallisce.
 | Avviare un aggiornamento | Comportamento invariato |
 | Aprire un documento con cache piena | Nessun errore, cache riutilizzata |
 
+### 7.1 Esito dello smoke test Tauri (24 novembre 2026)
+
+Build debug (`tauri build --debug --no-bundle`), WebView2 Edge 158, origine `http://tauri.localhost`, guida via CDP.
+
+- Rotta home con 10 card; catalogo con 218 schede e 4 filtri; ricerca "docker" → 2 risultati, "tls" → 3.
+- Scheda C con link a `/documenti/c/c-introduction/`; documento renderizzato con 8.853 caratteri; cambio pagina dal documento e ritorno indietro funzionanti.
+- 10 percorsi, glossario con 55 termini e 98 link, copertura con 13/21/184.
+- Offline (`Network.emulateNetworkConditions`, rete WebView2 disattivata): documento già aperto ricaricato con 8.853 caratteri, ricerca "tls" → 3 risultati, documento C++ mai aperto in sessione caricato con 2.331 caratteri; cache Tauri in memoria passata da 3 a 4 voci.
+- Richiesta esterna fallita con `net::ERR_INTERNET_DISCONNECTED`, asset locale `/docs/1-C/lezione_1.MD` risposto 200.
+- Nessun errore console e nessuna richiesta fallita durante lo smoke test.
+
+Non esercitati: installazione di un aggiornamento firmato e riavvio post-aggiornamento, perché non esiste una release nuova da installare. Restano per la Settimana 10.
+
 ---
 
 ## 8. Rischi e mitigazioni
@@ -406,7 +419,7 @@ Le fasi 2–4 sono sequenziali per una sola persona, ma la Fase 8 (contenuti) pu
 
 Le decisioni D1–D12 e A1–A6 sono tutte chiuse. Per procedere oltre la Fase 4 serve:
 
-- il test Tauri delle nuove rotte (gate della Settimana 9);
+- il test Tauri di rotte e offline è superato (24 novembre 2026); la prova dell'updater con una release firmata resta per la Settimana 10;
 - la conferma che la Fase 7 (spostamento) resta opzionale e fuori dai primi 90 giorni;
 - l'autorizzazione esplicita per un eventuale commit, tag o rilascio.
 

@@ -16,19 +16,83 @@ async function importTs(relativePath) {
 	return import(pathToFileURL(path.join(ROOT, relativePath)).href);
 }
 
-const [{ sections }, categoriesModule, docLinksModule, pathsModule, glossaryModule] =
-	await Promise.all([
-		importTs("src/lib/sections.ts"),
-		importTs("src/content/categories.ts"),
-		importTs("src/content/doc-links.ts"),
-		importTs("src/content/paths.ts"),
-		importTs("src/content/glossary.ts"),
-	]);
+// Il CSV è la fonte dei conteggi attesi: lo stato può avanzare senza hardcode.
+function parseCsv(text) {
+	const rows = [];
+	let field = [];
+	let quoted = false;
+	let current = "";
+	for (let i = 0; i < text.length; i += 1) {
+		const ch = text[i];
+		if (quoted) {
+			if (ch === '"') {
+				if (text[i + 1] === '"') {
+					current += '"';
+					i += 1;
+				} else {
+					quoted = false;
+				}
+			} else {
+				current += ch;
+			}
+		} else if (ch === '"') {
+			quoted = true;
+		} else if (ch === ",") {
+			field.push(current);
+			current = "";
+		} else if (ch === "\n") {
+			field.push(current.replace(/\r$/, ""));
+			rows.push(field);
+			field = [];
+			current = "";
+		} else {
+			current += ch;
+		}
+	}
+	if (current.length > 0 || field.length > 0) {
+		field.push(current.replace(/\r$/, ""));
+		rows.push(field);
+	}
+	const header = rows.shift();
+	return rows
+		.filter((row) => row.length === header.length && row[0] !== "")
+		.map((row) => Object.fromEntries(header.map((key, index) => [key, row[index]])));
+}
+
+function readCsvCoverage() {
+	const raw = fs
+		.readFileSync(path.join(ROOT, "audit", "CONTENT_INVENTORY.csv"), "utf8")
+		.replace(/^\uFEFF/, "");
+	const rows = parseCsv(raw);
+	const counts = { presente: 0, parziale: 0, assente: 0 };
+	for (const row of rows) {
+		const status = (row.stato ?? "").trim().toLowerCase();
+		if (status in counts) counts[status] += 1;
+	}
+	return { total: rows.length, counts };
+}
+
+const [
+	{ sections },
+	categoriesModule,
+	docLinksModule,
+	pathsModule,
+	glossaryModule,
+	topicDocsModule,
+] = await Promise.all([
+	importTs("src/lib/sections.ts"),
+	importTs("src/content/categories.ts"),
+	importTs("src/content/doc-links.ts"),
+	importTs("src/content/paths.ts"),
+	importTs("src/content/glossary.ts"),
+	importTs("src/content/topic-docs.ts"),
+]);
 
 const { categories } = categoriesModule;
 const { docLinksByTopic } = docLinksModule;
 const { learningPaths } = pathsModule;
 const { glossary } = glossaryModule;
+const { lessonsByTopic } = topicDocsModule;
 
 const topicFiles = fs
 	.readdirSync(path.join(ROOT, "src", "content", "topics"))
@@ -123,6 +187,69 @@ for (const [topicId, links] of Object.entries(docLinksByTopic)) {
 		if (!fs.existsSync(file)) {
 			fail(`doc-links ${topicId}: file mancante ${page.filePath}`);
 		}
+	}
+}
+
+const topicsById = new Map(topics.map((topic) => [topic.id, topic]));
+let topicsWithLessons = 0;
+let topicLessonsTotal = 0;
+
+for (const [topicId, lessons] of Object.entries(lessonsByTopic)) {
+	const topic = topicsById.get(topicId);
+	if (!topic) {
+		fail(`lezioni: scheda inesistente (${topicId})`);
+		continue;
+	}
+	if (!Array.isArray(lessons) || lessons.length === 0) {
+		fail(`lezioni ${topicId}: elenco vuoto`);
+		continue;
+	}
+	topicsWithLessons += 1;
+	topicLessonsTotal += lessons.length;
+	const lessonSlugs = new Set();
+	let minutes = 0;
+
+	for (const lesson of lessons) {
+		if (!lesson.slug || !/^[a-z0-9-]+$/.test(lesson.slug)) {
+			fail(`lezioni ${topicId}: slug non valido (${lesson.slug})`);
+		}
+		if (lessonSlugs.has(lesson.slug)) {
+			fail(`lezioni ${topicId}: slug duplicato (${lesson.slug})`);
+		}
+		lessonSlugs.add(lesson.slug);
+		if (!lesson.title || !lesson.description) {
+			fail(`lezioni ${topicId}/${lesson.slug}: titolo o descrizione mancante`);
+		}
+		if (!Number.isInteger(lesson.estimatedMinutes) || lesson.estimatedMinutes <= 0) {
+			fail(`lezioni ${topicId}/${lesson.slug}: minuti non validi`);
+		}
+		minutes += lesson.estimatedMinutes;
+		if (!lesson.filePath.startsWith("/docs/")) {
+			fail(`lezioni ${topicId}/${lesson.slug}: percorso fuori da /docs/`);
+			continue;
+		}
+		const file = path.join(ROOT, "public", decodeURIComponent(lesson.filePath));
+		if (!fs.existsSync(file)) {
+			fail(`lezioni ${topicId}/${lesson.slug}: file mancante ${lesson.filePath}`);
+		}
+	}
+
+	if (topic.estimatedMinutes !== minutes) {
+		fail(`lezioni ${topicId}: minuti in catalogo ${topic.estimatedMinutes}, attesi ${minutes}`);
+	}
+
+	const glossaryLinks = glossary.filter((term) =>
+		term.relatedTopicIds.includes(topicId),
+	).length;
+	if (glossaryLinks < 3) {
+		fail(`lezioni ${topicId}: ${glossaryLinks} termini di glossario collegati (minimo 3)`);
+	}
+
+	const pathLinks = learningPaths.filter((learningPath) =>
+		learningPath.modules.some((module) => module.topicIds.includes(topicId)),
+	).length;
+	if (pathLinks === 0) {
+		fail(`lezioni ${topicId}: nessun percorso collega l'argomento`);
 	}
 }
 
@@ -223,10 +350,17 @@ const coverage = topics.reduce(
 	{ presente: 0, parziale: 0, assente: 0 },
 );
 
-if (topics.length !== 218) fail(`attese 218 schede, trovate ${topics.length}`);
-if (coverage.presente !== 13) fail(`attesi 13 presenti, trovati ${coverage.presente}`);
-if (coverage.parziale !== 21) fail(`attesi 21 parziali, trovati ${coverage.parziale}`);
-if (coverage.assente !== 184) fail(`attesi 184 assenti, trovati ${coverage.assente}`);
+const csvCoverage = readCsvCoverage();
+if (topics.length !== csvCoverage.total) {
+	fail(`attese ${csvCoverage.total} schede dal CSV, trovate ${topics.length}`);
+}
+for (const status of Object.keys(csvCoverage.counts)) {
+	if (coverage[status] !== csvCoverage.counts[status]) {
+		fail(
+			`conteggio ${status}: CSV ${csvCoverage.counts[status]}, catalogo ${coverage[status]}`,
+		);
+	}
+}
 
 const totalPages = sections.reduce((total, section) => total + section.pages.length, 0);
 const searchIndexBytes = fs.existsSync(searchIndexPath)
@@ -247,6 +381,8 @@ const report = {
 	glossaryTerms: glossary.length,
 	topicsWithDocuments: Object.keys(docLinksByTopic).length,
 	topicsWithoutDocuments: docLinkMissing,
+	topicsWithLessons,
+	topicLessons: topicLessonsTotal,
 	searchIndexBytes,
 	errors,
 	warnings,
