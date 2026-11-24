@@ -777,6 +777,263 @@ export const sections: Section[] = [
 				order: 6
 			}
 		]
+	},
+	// Percorso JavaScript.
+	{
+		id: "javascript",
+		title: "Imparare JavaScript",
+		description: "Percorso di 90 giorni per imparare JavaScript da zero: dalla console al DOM, dalle API ai progetti completi.",
+		icon: "JS",
+		color: "blue",
+		filePath: "/docs/8-JS",
+		pages: [
+			{
+				id: "javascript-introduction",
+				title: "Introduzione a JavaScript",
+				description: "Obiettivo del percorso, metodo, strumenti, convenzioni e ragionamento da seguire.",
+				icon: "javascript-introduction",
+				filePath: "/docs/8-JS/intro_javascript.MD",
+				order: 1
+			},
+			{
+				id: "javascript-laboratorio",
+				title: "Laboratorio di ragionamento",
+				description: "Cinque contesti reali, tre casi guidati e otto esercizi per capire dove e perché si applicano gli argomenti.",
+				icon: "laboratorio",
+				filePath: "/docs/8-JS/laboratorio_ragionamento.MD",
+				order: 2
+			},
+			{
+				id: "javascript-settimana-1",
+				title: "Settimana 1: Fondamenti",
+				description: "Console, let e const, tipi, stringhe, operatori, condizioni e 10 esercizi progressivi.",
+				icon: "settimana_01",
+				filePath: "/docs/8-JS/settimana_01.MD",
+				order: 3
+			},
+			{
+				id: "javascript-settimana-2",
+				title: "Settimana 2: Funzioni, array e cicli",
+				description: "Funzioni, arrow, scope, array, cicli e statistiche numeriche con 10 esercizi.",
+				icon: "settimana_02",
+				filePath: "/docs/8-JS/settimana_02.MD",
+				order: 4
+			},
+			{
+				id: "javascript-settimana-3",
+				title: "Settimana 3: Oggetti e logica",
+				description: "Oggetti, metodi, stringhe, Math, map/filter/reduce e inventario con 10 esercizi.",
+				icon: "settimana_03",
+				filePath: "/docs/8-JS/settimana_03.MD",
+				order: 5
+			},
+			{
+				id: "javascript-settimana-4",
+				title: "Settimana 4: DOM ed eventi",
+				description: "Selezione, classList, elementi dinamici, click, input, form e calcolatrice con 10 esercizi.",
+				icon: "settimana_04",
+				filePath: "/docs/8-JS/settimana_04.MD",
+				order: 6
+			},
+			{
+				id: "javascript-settimana-5",
+				title: "Settimana 5: Storage e qualità",
+				description: "Callback, errori, Date, timer, localStorage, JSON, debugging e tema persistente.",
+				icon: "settimana_05",
+				filePath: "/docs/8-JS/settimana_05.MD",
+				order: 7
+			},
+			{
+				id: "javascript-settimana-6",
+				title: "Settimana 6: Asincrono e API",
+				description: "Promise, async/await, fetch, stati di caricamento, ricerca, POST e mini app.",
+				icon: "settimana_06",
+				filePath: "/docs/8-JS/settimana_06.MD",
+				order: 8
+			},
+			{
+				id: "javascript-settimana-7",
+				title: "Settimana 7: Organizzazione e app",
+				description: "Moduli, stato e render, event delegation, validazione, accessibilità e todo list.",
+				icon: "settimana_07",
+				filePath: "/docs/8-JS/settimana_07.MD",
+				order: 9
+			},
+			{
+				id: "javascript-settimana-8",
+				title: "Settimana 8: Progetti complessi",
+				description: "Quiz, mini shop, carrello, persistenza, ricerca e ordinamento con 10 esercizi.",
+				icon: "settimana_08",
+				filePath: "/docs/8-JS/settimana_08.MD",
+				order: 10
+			},
+			{
+				id: "javascript-settimana-9",
+				title: "Settimana 9: Progetto finale",
+				description: "Dalla scelta del progetto alla pubblicazione, con criteri di verifica e README.",
+				icon: "settimana_09",
+				filePath: "/docs/8-JS/settimana_09.MD",
+				order: 11
+			}
+		]
+	},
+	// Percorso React.
+	{
+		id: "react",
+		title: "Imparare React",
+		description: "Percorso di 90 giorni per costruire interfacce con React: componenti, stato, API, TypeScript, test e Next.js.",
+		icon: "R",
+		color: "blue",
+		filePath: "/docs/9-React",
+		pages: [
+			{
+				id: "react-introduction",
+				title: "Introduzione a React",
+				description: "Obiettivo del percorso, metodo, strumenti, convenzioni e ragionamento da seguire.",
+				icon: "react-introduction",
+				filePath: "/docs/9-React/intro_react.MD",
+				order: 1
+			},
+			{
+				id: "react-laboratorio",
+				title: "Laboratorio di ragionamento",
+				description: "Dove vive lo stato, come si valida un form e come si ragiona su un caricamento, con tre casi guidati e otto esercizi.",
+				icon: "laboratorio",
+				filePath: "/docs/9-React/laboratorio_ragionamento.MD",
+				order: 2
+			},
+			{
+				id: "react-settimana-1",
+				title: "Settimana 1: Fondamenta web",
+				description: "HTML, CSS, JavaScript, DOM, ES6 e fetch con tre progetti e 15 esercizi progressivi.",
+				icon: "settimana_01",
+				filePath: "/docs/9-React/settimana_01.MD",
+				order: 3
+			},
+			{
+				id: "react-settimana-2",
+				title: "Settimana 2: React fondamentale",
+				description: "Componenti, JSX, props, stato, eventi, liste, effetti e todo list con 15 esercizi.",
+				icon: "settimana_02",
+				filePath: "/docs/9-React/settimana_02.MD",
+				order: 4
+			},
+			{
+				id: "react-settimana-3",
+				title: "Settimana 3: Router, API e dati",
+				description: "React Router, hook personalizzati, localStorage, accessibilità e app meteo con 15 esercizi.",
+				icon: "settimana_03",
+				filePath: "/docs/9-React/settimana_03.MD",
+				order: 5
+			},
+			{
+				id: "react-settimana-4",
+				title: "Settimana 4: Stato, stile e TypeScript",
+				description: "Context, useReducer, Zustand, Tailwind, form e TypeScript con 15 esercizi.",
+				icon: "settimana_04",
+				filePath: "/docs/9-React/settimana_04.MD",
+				order: 6
+			},
+			{
+				id: "react-settimana-5",
+				title: "Settimana 5: Test, performance e Next.js",
+				description: "Vitest, Testing Library, memoizzazione, error boundary, sicurezza e Next.js con 15 esercizi.",
+				icon: "settimana_05",
+				filePath: "/docs/9-React/settimana_05.MD",
+				order: 7
+			},
+			{
+				id: "react-settimana-6",
+				title: "Settimana 6: Progetto finale e oltre",
+				description: "Server Components, deploy, progetto finale in 15 tappe con criteri di verifica.",
+				icon: "settimana_06",
+				filePath: "/docs/9-React/settimana_06.MD",
+				order: 8
+			}
+		]
+	},
+	// Percorso React Native.
+	{
+		id: "react-native",
+		title: "Imparare React Native",
+		description: "Percorso di 120 giorni per costruire app mobile con Expo: JavaScript, React, navigazione, API, storage, dispositivo, test e pubblicazione.",
+		icon: "RN",
+		color: "blue",
+		filePath: "/docs/10-ReactNative",
+		pages: [
+			{
+				id: "react-native-introduction",
+				title: "Introduzione a React Native",
+				description: "Obiettivo del percorso, metodo, strumenti, convenzioni e ragionamento da seguire.",
+				icon: "react-native-introduction",
+				filePath: "/docs/10-ReactNative/intro_react_native.MD",
+				order: 1
+			},
+			{
+				id: "react-native-fase-1",
+				title: "Fase 1: Fondamenta JavaScript e ambiente",
+				description: "Ambiente Expo, variabili, funzioni, array, oggetti, moduli, async e API con 15 esercizi.",
+				icon: "fase_01",
+				filePath: "/docs/10-ReactNative/fase_01.MD",
+				order: 2
+			},
+			{
+				id: "react-native-fase-2",
+				title: "Fase 2: React base",
+				description: "Componenti, JSX, props, stato, effetti, liste, form e custom hook con 15 esercizi.",
+				icon: "fase_02",
+				filePath: "/docs/10-ReactNative/fase_02.MD",
+				order: 3
+			},
+			{
+				id: "react-native-fase-3",
+				title: "Fase 3: React Native base",
+				description: "View, Text, stili, flexbox, Pressable, TextInput, immagini, liste e persistenza.",
+				icon: "fase_03",
+				filePath: "/docs/10-ReactNative/fase_03.MD",
+				order: 4
+			},
+			{
+				id: "react-native-fase-4",
+				title: "Fase 4: Navigazione, API e dati",
+				description: "Expo Router, parametri, tab, liste remote, caricamento, errori e ricerca.",
+				icon: "fase_04",
+				filePath: "/docs/10-ReactNative/fase_04.MD",
+				order: 5
+			},
+			{
+				id: "react-native-fase-5",
+				title: "Fase 5: Stato, storage e form",
+				description: "Context, reducer, Zustand, note offline, validazione e login mock.",
+				icon: "fase_05",
+				filePath: "/docs/10-ReactNative/fase_05.MD",
+				order: 6
+			},
+			{
+				id: "react-native-fase-6",
+				title: "Fase 6: Fotocamera, posizione e animazioni",
+				description: "Permessi, galleria, fotocamera, posizione, notifiche, animazioni e dark mode.",
+				icon: "fase_06",
+				filePath: "/docs/10-ReactNative/fase_06.MD",
+				order: 7
+			},
+			{
+				id: "react-native-fase-7",
+				title: "Fase 7: TypeScript, test e performance",
+				description: "Tipi, architettura, Jest, Testing Library, mock e ottimizzazione delle liste.",
+				icon: "fase_07",
+				filePath: "/docs/10-ReactNative/fase_07.MD",
+				order: 8
+			},
+			{
+				id: "react-native-fase-8",
+				title: "Fase 8: Progetto finale e pubblicazione",
+				description: "Dalla scelta del progetto al build, con criteri di verifica, README e retrospettiva.",
+				icon: "fase_08",
+				filePath: "/docs/10-ReactNative/fase_08.MD",
+				order: 9
+			}
+		]
 	}
 ]
 
