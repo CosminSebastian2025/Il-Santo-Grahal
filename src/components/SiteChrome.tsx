@@ -31,7 +31,7 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <nav aria-label="Navigazione principale">
+        <nav aria-label="Navigazione principale" className="w-full sm:w-auto">
           <ul className="flex flex-wrap items-center gap-1 text-sm font-medium text-slate-600">
             {navigation.map((item) => (
               <li key={item.href}>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import DocumentRouteView from "@/components/DocumentRouteView";
+import { SiteHeader } from "@/components/SiteChrome";
 import { getSectionById, sections } from "@/lib/sections";
 
 interface DocumentPageProps {
@@ -38,8 +39,11 @@ export default async function DocumentPage({ params }: DocumentPageProps) {
   }
 
   return (
-    <main className="min-h-screen bg-slate-50">
-      <DocumentRouteView section={section} initialPage={page} />
-    </main>
+    <div className="flex h-screen flex-col bg-slate-50">
+      <SiteHeader />
+      <main className="min-h-0 flex-1">
+        <DocumentRouteView section={section} initialPage={page} />
+      </main>
+    </div>
   );
 }

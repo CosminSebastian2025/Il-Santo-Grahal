@@ -1,8 +1,8 @@
 "use client";
 
 // Pagina pubblica di download: rileva il sistema operativo, elenca i formati e genera i link diretti.
-import Link from "next/link";
 import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
+import { SiteHeader } from "@/components/SiteChrome";
 import {
 	APP_VERSION,
 	RELEASE_REFRESH_MS,
@@ -172,30 +172,7 @@ export default function DownloadPage() {
 
 	return (
 		<main className="min-h-screen bg-slate-50">
-			{/* Intestazione con logo e ritorno ai percorsi */}
-			<header className="border-b border-slate-200/80 bg-white/80 backdrop-blur-sm">
-				<div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4 sm:px-8">
-					<Link
-						href="/"
-						className="flex items-center gap-3 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600"
-					>
-						<span className="flex size-10 items-center justify-center rounded-xl bg-slate-900 text-white shadow-sm" aria-hidden="true">
-							<svg viewBox="0 0 24 24" fill="none" className="size-5" stroke="currentColor" strokeWidth="1.8">
-								<path d="M4.75 5.75A2.75 2.75 0 0 1 7.5 3h12v15h-12a2.75 2.75 0 0 0-2.75 2.75V5.75Z" />
-								<path d="M4.75 18A2.75 2.75 0 0 1 7.5 15.25h12M9 7h6m-6 3h6" />
-							</svg>
-						</span>
-						<span className="text-base font-bold tracking-tight text-slate-900">Il Santo Grahal</span>
-					</Link>
-
-					<Link
-						href="/"
-						className="rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-					>
-						Torna ai percorsi
-					</Link>
-				</div>
-			</header>
+			<SiteHeader />
 
 			<div className="mx-auto w-full max-w-6xl px-5 pb-16 pt-12 sm:px-8 sm:pt-16">
 				<section className="max-w-3xl" aria-labelledby="download-title">

@@ -122,13 +122,14 @@ export const formati: Topic[] = [
     secondaryCategories: ["backend"],
     type: "linguaggio",
     difficulty: "intermedio",
-    coverageStatus: "assente",
+    coverageStatus: "presente",
     publicationStatus: "published",
-    summary: "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    summary: "3 lezioni in public/docs/argomenti/velocity-template-language/ con esercizi e fonti ufficiali.",
     prerequisites: ["Nessuna (concetti di base)"],
     relatedTopics: ["backend-velocity", "ling-java"],
-    problems: "Confermato VTL = Velocity Template Language. Nessun contenuto didattico.",
-    evidence: "0 occorrenze nei 137 documenti",
+    problems: "",
+    evidence: "3 lezioni in public/docs/argomenti/velocity-template-language/ con esercizi e fonti ufficiali.",
     lastReviewed: "2026-11-24",
+    estimatedMinutes: 53,
   }
 ];

@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-11-24T14:14:27.361Z",
+  "generatedAt": "2026-11-25T20:57:27.838Z",
   "topics": 218,
   "coverage": {
-    "presente": 44,
+    "presente": 175,
     "parziale": 0,
-    "assente": 174
+    "assente": 43
   },
   "categories": 18,
   "documentSections": 10,
   "documentPages": 137,
-  "learningPaths": 10,
-  "glossaryTerms": 144,
+  "learningPaths": 16,
+  "glossaryTerms": 482,
   "topicsWithDocuments": 12,
   "topicsWithoutDocuments": 206,
-  "topicsWithLessons": 31,
-  "topicLessons": 103,
-  "searchIndexBytes": 84883,
+  "topicsWithLessons": 162,
+  "topicLessons": 496,
+  "searchIndexBytes": 84008,
   "errors": [],
   "warnings": []
 }

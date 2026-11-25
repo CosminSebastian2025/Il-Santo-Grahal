@@ -74,7 +74,7 @@ export default function Home() {
                             Argomenti
                         </Link>
                         <Link href="/percorsi/" className="rounded-lg px-3 py-2 transition-colors hover:bg-slate-100 hover:text-slate-900">
-                            Percorsi guidati
+                            Percorsi
                         </Link>
                         <Link href="/glossario/" className="rounded-lg px-3 py-2 transition-colors hover:bg-slate-100 hover:text-slate-900">
                             Glossario

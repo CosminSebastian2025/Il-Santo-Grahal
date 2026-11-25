@@ -85,7 +85,7 @@ export default function DocViewer({ section, initialPage, onBack, onPageSelect }
     }
 
     return (
-        <div className="flex h-screen bg-white">
+        <div className="flex h-full bg-white">
             {/* Barra laterale con gli argomenti del percorso */}
             <SectionBar
                 section={section}

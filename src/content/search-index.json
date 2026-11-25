@@ -143,26 +143,26 @@
     "id": "backend-koin",
     "title": "Koin",
     "slug": "koin",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/koin/ con esercizi e fonti ufficiali.",
     "primaryCategory": "backend",
     "secondaryCategories": [
       "mobile"
     ],
     "type": "framework-libreria",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "mobile-flutter-e-dart",
     "title": "Flutter & Dart",
     "slug": "flutter-e-dart",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/flutter-e-dart/ con esercizi e fonti ufficiali.",
     "primaryCategory": "mobile",
     "secondaryCategories": [],
     "type": "framework-libreria",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -200,7 +200,7 @@
     "id": "ling-php",
     "title": "PHP",
     "slug": "php",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/php/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "backend",
@@ -208,7 +208,7 @@
     ],
     "type": "linguaggio",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -243,7 +243,7 @@
     "id": "backend-node-js",
     "title": "Node.js",
     "slug": "node-js",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/node-js/ con esercizi e fonti ufficiali.",
     "primaryCategory": "backend",
     "secondaryCategories": [
       "web-frontend",
@@ -251,14 +251,14 @@
     ],
     "type": "ambiente-runtime",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "backend-bun-js",
     "title": "Bun.js",
     "slug": "bun-js",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/bun-js/ con esercizi e fonti ufficiali.",
     "primaryCategory": "backend",
     "secondaryCategories": [
       "web-frontend",
@@ -266,7 +266,7 @@
     ],
     "type": "ambiente-runtime",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -287,28 +287,28 @@
     "id": "backend-servlet",
     "title": "Servlet",
     "slug": "servlet",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/servlet/ con esercizi e fonti ufficiali.",
     "primaryCategory": "backend",
     "secondaryCategories": [
       "web-frontend"
     ],
     "type": "tecnologia",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "web-jsp",
     "title": "JSP",
     "slug": "jsp",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/jsp/ con esercizi e fonti ufficiali.",
     "primaryCategory": "web-frontend",
     "secondaryCategories": [
       "backend"
     ],
     "type": "tecnologia",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -330,7 +330,7 @@
     "id": "ling-golang",
     "title": "Golang",
     "slug": "golang",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/golang/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "backend",
@@ -338,14 +338,14 @@
     ],
     "type": "linguaggio",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "net-tailscale",
     "title": "Tailscale",
     "slug": "tailscale",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/tailscale/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [
       "cybersecurity",
@@ -353,14 +353,14 @@
     ],
     "type": "strumento",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "net-headscale",
     "title": "Headscale",
     "slug": "headscale",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/headscale/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [
       "cybersecurity",
@@ -368,7 +368,7 @@
     ],
     "type": "strumento",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -390,14 +390,14 @@
     "id": "web-angular",
     "title": "Angular",
     "slug": "angular",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/angular/ con esercizi e fonti ufficiali.",
     "primaryCategory": "web-frontend",
     "secondaryCategories": [
       "linguaggi"
     ],
     "type": "framework-libreria",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -432,7 +432,7 @@
     "id": "devops-kubernetes",
     "title": "Kubernetes",
     "slug": "kubernetes",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/kubernetes/ con esercizi e fonti ufficiali.",
     "primaryCategory": "devops",
     "secondaryCategories": [
       "cloud",
@@ -440,28 +440,28 @@
     ],
     "type": "piattaforma",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "com-websocket",
     "title": "WebSocket",
     "slug": "websocket",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/websocket/ con esercizi e fonti ufficiali.",
     "primaryCategory": "api",
     "secondaryCategories": [
       "web-frontend"
     ],
     "type": "protocollo",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "ling-python",
     "title": "Python",
     "slug": "python",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/python/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "backend",
@@ -469,7 +469,7 @@
     ],
     "type": "linguaggio",
     "difficulty": "base",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -520,26 +520,26 @@
     "id": "backend-django",
     "title": "Django",
     "slug": "django",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/django/ con esercizi e fonti ufficiali.",
     "primaryCategory": "backend",
     "secondaryCategories": [],
     "type": "framework-libreria",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "backend-flask",
     "title": "Flask",
     "slug": "flask",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/flask/ con esercizi e fonti ufficiali.",
     "primaryCategory": "backend",
     "secondaryCategories": [
       "api"
     ],
     "type": "framework-libreria",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -575,14 +575,14 @@
     "id": "devops-podman",
     "title": "Podman",
     "slug": "podman",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/podman/ con esercizi e fonti ufficiali.",
     "primaryCategory": "devops",
     "secondaryCategories": [
       "server-proxy"
     ],
     "type": "strumento",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -648,7 +648,7 @@
     "id": "ling-ruby",
     "title": "Ruby",
     "slug": "ruby",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/ruby/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "backend",
@@ -656,26 +656,26 @@
     ],
     "type": "linguaggio",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "ling-zig",
     "title": "Zig",
     "slug": "zig",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/zig/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "ling-lua",
     "title": "Lua",
     "slug": "lua",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/lua/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "game-grafica",
@@ -683,28 +683,28 @@
     ],
     "type": "linguaggio",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "ling-r",
     "title": "R",
     "slug": "r",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/r/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "ai-data"
     ],
     "type": "linguaggio",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "ling-starlark",
     "title": "Starlark",
     "slug": "starlark",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/starlark/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "devops",
@@ -712,42 +712,42 @@
     ],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "ling-ocaml",
     "title": "OCaml",
     "slug": "ocaml",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/ocaml/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "fondamenti"
     ],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "ling-erlang",
     "title": "Erlang",
     "slug": "erlang",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/erlang/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "cloud"
     ],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "ling-elixir",
     "title": "Elixir",
     "slug": "elixir",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/elixir/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "backend",
@@ -755,49 +755,49 @@
     ],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "ling-perl",
     "title": "Perl",
     "slug": "perl",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/perl/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "automazione"
     ],
     "type": "linguaggio",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "ling-fortran",
     "title": "Fortran",
     "slug": "fortran",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/fortran/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "ai-data"
     ],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "ling-pascal",
     "title": "Pascal",
     "slug": "pascal",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/pascal/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "fondamenti"
     ],
     "type": "linguaggio",
     "difficulty": "base",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": [
       "Pascal(informatica)"
     ]
@@ -806,21 +806,21 @@
     "id": "ling-objective-c",
     "title": "Objective-C",
     "slug": "objective-c",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/objective-c/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "mobile"
     ],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "ling-objective-cpp",
     "title": "Objective-C++",
     "slug": "objective-cpp",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/objective-cpp/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "mobile",
@@ -828,14 +828,14 @@
     ],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "ling-scala",
     "title": "Scala",
     "slug": "scala",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/scala/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "cloud",
@@ -843,14 +843,14 @@
     ],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "ling-f-sharp",
     "title": "F#",
     "slug": "f-sharp",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/f-sharp/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "ai-data",
@@ -858,35 +858,35 @@
     ],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "devops-podman-compose",
     "title": "Podman Compose",
     "slug": "podman-compose",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/podman-compose/ con esercizi e fonti ufficiali.",
     "primaryCategory": "devops",
     "secondaryCategories": [
       "server-proxy"
     ],
     "type": "strumento",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "desktop-qt",
     "title": "Qt",
     "slug": "qt",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/qt/ con esercizi e fonti ufficiali.",
     "primaryCategory": "desktop",
     "secondaryCategories": [
       "linguaggi"
     ],
     "type": "framework-libreria",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": [
       "QT"
     ]
@@ -939,7 +939,7 @@
     "id": "desktop-tauri",
     "title": "Tauri",
     "slug": "tauri",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/tauri/ con esercizi e fonti ufficiali.",
     "primaryCategory": "desktop",
     "secondaryCategories": [
       "linguaggi",
@@ -947,35 +947,35 @@
     ],
     "type": "framework-libreria",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "desktop-electron",
     "title": "Electron",
     "slug": "electron",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/electron/ con esercizi e fonti ufficiali.",
     "primaryCategory": "desktop",
     "secondaryCategories": [
       "web-frontend"
     ],
     "type": "framework-libreria",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "mobile-nativewind",
     "title": "NativeWind",
     "slug": "nativewind",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/nativewind/ con esercizi e fonti ufficiali.",
     "primaryCategory": "mobile",
     "secondaryCategories": [
       "web-frontend"
     ],
     "type": "framework-libreria",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -996,28 +996,28 @@
     "id": "net-vpn",
     "title": "VPN",
     "slug": "vpn",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/vpn/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [
       "cybersecurity"
     ],
     "type": "tecnologia",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "net-ccna",
     "title": "CCNA",
     "slug": "ccna",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/ccna/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [
       "sistemi-operativi"
     ],
     "type": "disciplina",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -1081,7 +1081,7 @@
     "id": "ling-rust",
     "title": "Rust",
     "slug": "rust",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/rust/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "fondamenti",
@@ -1089,14 +1089,14 @@
     ],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "devops-terraform",
     "title": "Terraform",
     "slug": "terraform",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/terraform/ con esercizi e fonti ufficiali.",
     "primaryCategory": "devops",
     "secondaryCategories": [
       "cloud",
@@ -1104,7 +1104,7 @@
     ],
     "type": "strumento",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -1125,14 +1125,14 @@
     "id": "game-ffmpeg",
     "title": "FFmpeg",
     "slug": "ffmpeg",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/ffmpeg/ con esercizi e fonti ufficiali.",
     "primaryCategory": "game-grafica",
     "secondaryCategories": [
       "automazione"
     ],
     "type": "strumento",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": [
       "FFMPEG"
     ]
@@ -1141,21 +1141,21 @@
     "id": "ling-clojure",
     "title": "Clojure",
     "slug": "clojure",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/clojure/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "fondamenti"
     ],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "backend-1c-enterprise",
     "title": "1C:Enterprise",
     "slug": "1c-enterprise",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/1c-enterprise/ con esercizi e fonti ufficiali.",
     "primaryCategory": "backend",
     "secondaryCategories": [
       "linguaggi",
@@ -1163,7 +1163,7 @@
     ],
     "type": "piattaforma",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -1184,28 +1184,28 @@
     "id": "ling-fennel",
     "title": "Fennel",
     "slug": "fennel",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/fennel/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "automazione"
     ],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "ling-emacs-lisp",
     "title": "Emacs Lisp",
     "slug": "emacs-lisp",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/emacs-lisp/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "automazione"
     ],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": [
       "Emacs-Lisp"
     ]
@@ -1226,14 +1226,14 @@
     "id": "ling-reason",
     "title": "Reason",
     "slug": "reason",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/reason/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "web-frontend"
     ],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -1254,108 +1254,108 @@
     "id": "ling-systemverilog",
     "title": "SystemVerilog",
     "slug": "systemverilog",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/systemverilog/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "game-grafica"
     ],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "web-astro",
     "title": "Astro",
     "slug": "astro",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/astro/ con esercizi e fonti ufficiali.",
     "primaryCategory": "web-frontend",
     "secondaryCategories": [
       "devops"
     ],
     "type": "framework-libreria",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "web-mdx",
     "title": "MDX",
     "slug": "mdx",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/mdx/ con esercizi e fonti ufficiali.",
     "primaryCategory": "web-frontend",
     "secondaryCategories": [
       "formati"
     ],
     "type": "standard-formato",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "web-svelte",
     "title": "Svelte",
     "slug": "svelte",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/svelte/ con esercizi e fonti ufficiali.",
     "primaryCategory": "web-frontend",
     "secondaryCategories": [],
     "type": "framework-libreria",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "devops-bicep",
     "title": "Bicep",
     "slug": "bicep",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/bicep/ con esercizi e fonti ufficiali.",
     "primaryCategory": "devops",
     "secondaryCategories": [
       "cloud"
     ],
     "type": "strumento",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "web-scss",
     "title": "SCSS",
     "slug": "scss",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/scss/ con esercizi e fonti ufficiali.",
     "primaryCategory": "web-frontend",
     "secondaryCategories": [],
     "type": "linguaggio",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "ling-swift",
     "title": "Swift",
     "slug": "swift",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/swift/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "mobile"
     ],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "ling-haskell",
     "title": "Haskell",
     "slug": "haskell",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/haskell/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "fondamenti"
     ],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -1377,28 +1377,28 @@
     "id": "game-shaderlab",
     "title": "ShaderLab",
     "slug": "shaderlab",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/shaderlab/ con esercizi e fonti ufficiali.",
     "primaryCategory": "game-grafica",
     "secondaryCategories": [
       "linguaggi"
     ],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "ling-tcl",
     "title": "Tcl",
     "slug": "tcl",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/tcl/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "automazione"
     ],
     "type": "linguaggio",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -1419,28 +1419,28 @@
     "id": "ling-julia",
     "title": "Julia",
     "slug": "julia",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/julia/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "ai-data"
     ],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "ling-matlab",
     "title": "MATLAB",
     "slug": "matlab",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/matlab/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "ai-data"
     ],
     "type": "linguaggio",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -1461,14 +1461,14 @@
     "id": "ling-cobol",
     "title": "COBOL",
     "slug": "cobol",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/cobol/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "database"
     ],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -1503,49 +1503,49 @@
     "id": "ling-solidity",
     "title": "Solidity",
     "slug": "solidity",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/solidity/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "cloud"
     ],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "ling-koka",
     "title": "Koka",
     "slug": "koka",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/koka/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "fondamenti"
     ],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "db-cql",
     "title": "CQL",
     "slug": "cql",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/cql/ con esercizi e fonti ufficiali.",
     "primaryCategory": "database",
     "secondaryCategories": [
       "linguaggi"
     ],
     "type": "linguaggio",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "ling-batchfile",
     "title": "Batchfile",
     "slug": "batchfile",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/batchfile/ con esercizi e fonti ufficiali.",
     "primaryCategory": "linguaggi",
     "secondaryCategories": [
       "sistemi-operativi",
@@ -1553,7 +1553,7 @@
     ],
     "type": "linguaggio",
     "difficulty": "base",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -1591,28 +1591,28 @@
     "id": "backend-multer",
     "title": "Multer",
     "slug": "multer",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/multer/ con esercizi e fonti ufficiali.",
     "primaryCategory": "backend",
     "secondaryCategories": [
       "web-frontend"
     ],
     "type": "framework-libreria",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "web-redux",
     "title": "Redux",
     "slug": "redux",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/redux/ con esercizi e fonti ufficiali.",
     "primaryCategory": "web-frontend",
     "secondaryCategories": [
       "fondamenti"
     ],
     "type": "framework-libreria",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -1707,7 +1707,7 @@
     "id": "sec-gdpr",
     "title": "GDPR",
     "slug": "gdpr",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/gdpr/ con esercizi e fonti ufficiali.",
     "primaryCategory": "cybersecurity",
     "secondaryCategories": [
       "fondamenti",
@@ -1715,7 +1715,7 @@
     ],
     "type": "normativa",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -1765,14 +1765,14 @@
     "id": "sec-csrf",
     "title": "CSRF",
     "slug": "csrf",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/csrf/ con esercizi e fonti ufficiali.",
     "primaryCategory": "cybersecurity",
     "secondaryCategories": [
       "web-frontend"
     ],
     "type": "vulnerabilita",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -1793,52 +1793,52 @@
     "id": "net-dhcp",
     "title": "DHCP",
     "slug": "dhcp",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/dhcp/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [],
     "type": "protocollo",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "net-nat-pat",
     "title": "NAT/PAT",
     "slug": "nat-pat",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/nat-pat/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [],
     "type": "tecnologia",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "sec-kerberos",
     "title": "Kerberos",
     "slug": "kerberos",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/kerberos/ con esercizi e fonti ufficiali.",
     "primaryCategory": "cybersecurity",
     "secondaryCategories": [
       "networking"
     ],
     "type": "protocollo",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "sec-aes",
     "title": "AES",
     "slug": "aes",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/aes/ con esercizi e fonti ufficiali.",
     "primaryCategory": "cybersecurity",
     "secondaryCategories": [
       "networking"
     ],
     "type": "concetto-teoria",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -1859,7 +1859,7 @@
     "id": "sec-firewall",
     "title": "Firewall",
     "slug": "firewall",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/firewall/ con esercizi e fonti ufficiali.",
     "primaryCategory": "cybersecurity",
     "secondaryCategories": [
       "networking",
@@ -1867,33 +1867,33 @@
     ],
     "type": "tecnologia",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "sec-brute-force",
     "title": "Brute-Force",
     "slug": "brute-force",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/brute-force/ con esercizi e fonti ufficiali.",
     "primaryCategory": "cybersecurity",
     "secondaryCategories": [
       "networking"
     ],
     "type": "pratica-metodologia",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "net-icmp",
     "title": "ICMP",
     "slug": "icmp",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/icmp/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [],
     "type": "protocollo",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -1916,21 +1916,21 @@
     "id": "sec-rsa",
     "title": "RSA",
     "slug": "rsa",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/rsa/ con esercizi e fonti ufficiali.",
     "primaryCategory": "cybersecurity",
     "secondaryCategories": [
       "networking"
     ],
     "type": "concetto-teoria",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "net-smtp",
     "title": "SMTP",
     "slug": "smtp",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/smtp/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [
       "api",
@@ -1938,7 +1938,7 @@
     ],
     "type": "protocollo",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -1961,12 +1961,12 @@
     "id": "net-atm",
     "title": "ATM",
     "slug": "atm",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/atm/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [],
     "type": "tecnologia",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": [
       "ATM(informatica)"
     ]
@@ -1975,26 +1975,26 @@
     "id": "net-ipsec",
     "title": "IPSec",
     "slug": "ipsec",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/ipsec/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [
       "cybersecurity"
     ],
     "type": "protocollo",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "net-cisco-ios",
     "title": "Cisco IOS",
     "slug": "cisco-ios",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/cisco-ios/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [],
     "type": "sistema-operativo",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": [
       "IOS Cisco"
     ]
@@ -2003,19 +2003,19 @@
     "id": "net-gre",
     "title": "GRE",
     "slug": "gre",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/gre/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [],
     "type": "protocollo",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "net-proxy",
     "title": "Proxy",
     "slug": "proxy",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/proxy/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [
       "server-proxy",
@@ -2023,146 +2023,146 @@
     ],
     "type": "tecnologia",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "net-ping",
     "title": "Ping",
     "slug": "ping",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/ping/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [],
     "type": "strumento",
     "difficulty": "base",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "net-snmp",
     "title": "SNMP",
     "slug": "snmp",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/snmp/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [],
     "type": "protocollo",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "net-voip",
     "title": "VoIP",
     "slug": "voip",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/voip/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [
       "api"
     ],
     "type": "tecnologia",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "net-toip",
     "title": "ToIP",
     "slug": "toip",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/toip/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [
       "api"
     ],
     "type": "tecnologia",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "net-qos",
     "title": "QoS",
     "slug": "qos",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/qos/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [],
     "type": "concetto-teoria",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "net-pstn",
     "title": "PSTN",
     "slug": "pstn",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/pstn/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [
       "api"
     ],
     "type": "tecnologia",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "net-rtp-e-rtcp",
     "title": "RTP e RTCP",
     "slug": "rtp-e-rtcp",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/rtp-e-rtcp/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [
       "api"
     ],
     "type": "protocollo",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "net-sip",
     "title": "SIP",
     "slug": "sip",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/sip/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [
       "api"
     ],
     "type": "protocollo",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "net-h-323",
     "title": "H.323",
     "slug": "h-323",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/h-323/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [
       "api"
     ],
     "type": "protocollo",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "net-vlan",
     "title": "VLAN",
     "slug": "vlan",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/vlan/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [],
     "type": "tecnologia",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "net-sdn",
     "title": "SDN",
     "slug": "sdn",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/sdn/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [
       "devops",
@@ -2170,33 +2170,33 @@
     ],
     "type": "architettura",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "net-mpls",
     "title": "MPLS",
     "slug": "mpls",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/mpls/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [],
     "type": "tecnologia",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "web-inertia-js",
     "title": "Inertia.js",
     "slug": "inertia-js",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/inertia-js/ con esercizi e fonti ufficiali.",
     "primaryCategory": "web-frontend",
     "secondaryCategories": [
       "backend"
     ],
     "type": "framework-libreria",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -2217,12 +2217,12 @@
     "id": "web-vue",
     "title": "Vue",
     "slug": "vue",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/vue/ con esercizi e fonti ufficiali.",
     "primaryCategory": "web-frontend",
     "secondaryCategories": [],
     "type": "framework-libreria",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -2274,21 +2274,21 @@
     "id": "web-nuxt-js",
     "title": "Nuxt.js",
     "slug": "nuxt-js",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/nuxt-js/ con esercizi e fonti ufficiali.",
     "primaryCategory": "web-frontend",
     "secondaryCategories": [
       "backend"
     ],
     "type": "framework-libreria",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "game-vulkan",
     "title": "Vulkan",
     "slug": "vulkan",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/vulkan/ con esercizi e fonti ufficiali.",
     "primaryCategory": "game-grafica",
     "secondaryCategories": [
       "linguaggi",
@@ -2296,7 +2296,7 @@
     ],
     "type": "api-interfaccia",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -2332,7 +2332,7 @@
     "id": "backend-jakarta-ee",
     "title": "Jakarta EE",
     "slug": "jakarta-ee",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/jakarta-ee/ con esercizi e fonti ufficiali.",
     "primaryCategory": "backend",
     "secondaryCategories": [
       "database",
@@ -2340,7 +2340,7 @@
     ],
     "type": "piattaforma",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": [
       "JakartaEE"
     ]
@@ -2364,14 +2364,14 @@
     "id": "desktop-javafx",
     "title": "JavaFX",
     "slug": "javafx",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/javafx/ con esercizi e fonti ufficiali.",
     "primaryCategory": "desktop",
     "secondaryCategories": [
       "linguaggi"
     ],
     "type": "framework-libreria",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -2393,7 +2393,7 @@
     "id": "desktop-dioxus",
     "title": "Dioxus",
     "slug": "dioxus",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/dioxus/ con esercizi e fonti ufficiali.",
     "primaryCategory": "desktop",
     "secondaryCategories": [
       "linguaggi",
@@ -2401,7 +2401,7 @@
     ],
     "type": "framework-libreria",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -2424,14 +2424,14 @@
     "id": "web-qwik",
     "title": "Qwik",
     "slug": "qwik",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/qwik/ con esercizi e fonti ufficiali.",
     "primaryCategory": "web-frontend",
     "secondaryCategories": [
       "devops"
     ],
     "type": "framework-libreria",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": [
       "Qwik(informatica)"
     ]
@@ -2457,7 +2457,7 @@
     "id": "web-leptos",
     "title": "Leptos",
     "slug": "leptos",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/leptos/ con esercizi e fonti ufficiali.",
     "primaryCategory": "web-frontend",
     "secondaryCategories": [
       "linguaggi",
@@ -2465,21 +2465,21 @@
     ],
     "type": "framework-libreria",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "fmt-velocity-template-language",
     "title": "Velocity Template Language",
     "slug": "velocity-template-language",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/velocity-template-language/ con esercizi e fonti ufficiali.",
     "primaryCategory": "formati",
     "secondaryCategories": [
       "backend"
     ],
     "type": "linguaggio",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": [
       "VTL"
     ]
@@ -2488,42 +2488,42 @@
     "id": "backend-velocity",
     "title": "Velocity",
     "slug": "velocity",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/velocity/ con esercizi e fonti ufficiali.",
     "primaryCategory": "backend",
     "secondaryCategories": [
       "formati"
     ],
     "type": "framework-libreria",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "db-prisma",
     "title": "Prisma",
     "slug": "prisma",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/prisma/ con esercizi e fonti ufficiali.",
     "primaryCategory": "database",
     "secondaryCategories": [
       "backend"
     ],
     "type": "database-orm",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "db-neon",
     "title": "Neon",
     "slug": "neon",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/neon/ con esercizi e fonti ufficiali.",
     "primaryCategory": "database",
     "secondaryCategories": [
       "cloud"
     ],
     "type": "servizio-cloud",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -2544,21 +2544,21 @@
     "id": "backend-uploadthing",
     "title": "UploadThing",
     "slug": "uploadthing",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/uploadthing/ con esercizi e fonti ufficiali.",
     "primaryCategory": "backend",
     "secondaryCategories": [
       "web-frontend"
     ],
     "type": "framework-libreria",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "com-stripe",
     "title": "Stripe",
     "slug": "stripe",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/stripe/ con esercizi e fonti ufficiali.",
     "primaryCategory": "api",
     "secondaryCategories": [
       "backend",
@@ -2566,21 +2566,21 @@
     ],
     "type": "api-interfaccia",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "db-drizzle",
     "title": "Drizzle",
     "slug": "drizzle",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/drizzle/ con esercizi e fonti ufficiali.",
     "primaryCategory": "database",
     "secondaryCategories": [
       "backend"
     ],
     "type": "database-orm",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -2616,7 +2616,7 @@
     "id": "srv-kong",
     "title": "Kong",
     "slug": "kong",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/kong/ con esercizi e fonti ufficiali.",
     "primaryCategory": "server-proxy",
     "secondaryCategories": [
       "api",
@@ -2624,21 +2624,21 @@
     ],
     "type": "server-proxy",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "srv-apisix",
     "title": "APISIX",
     "slug": "apisix",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/apisix/ con esercizi e fonti ufficiali.",
     "primaryCategory": "server-proxy",
     "secondaryCategories": [
       "api"
     ],
     "type": "server-proxy",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": [
       "Apisix"
     ]
@@ -2647,28 +2647,28 @@
     "id": "srv-caddy",
     "title": "Caddy",
     "slug": "caddy",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/caddy/ con esercizi e fonti ufficiali.",
     "primaryCategory": "server-proxy",
     "secondaryCategories": [
       "cybersecurity"
     ],
     "type": "server-proxy",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "srv-bunkerweb",
     "title": "BunkerWeb",
     "slug": "bunkerweb",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/bunkerweb/ con esercizi e fonti ufficiali.",
     "primaryCategory": "server-proxy",
     "secondaryCategories": [
       "cybersecurity"
     ],
     "type": "strumento",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": [
       "Bunkerweb"
     ]
@@ -2677,14 +2677,14 @@
     "id": "sec-modsecurity",
     "title": "ModSecurity",
     "slug": "modsecurity",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/modsecurity/ con esercizi e fonti ufficiali.",
     "primaryCategory": "cybersecurity",
     "secondaryCategories": [
       "server-proxy"
     ],
     "type": "strumento",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -2708,42 +2708,42 @@
     "id": "srv-openresty",
     "title": "OpenResty",
     "slug": "openresty",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/openresty/ con esercizi e fonti ufficiali.",
     "primaryCategory": "server-proxy",
     "secondaryCategories": [
       "backend"
     ],
     "type": "server-proxy",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "sec-wasp-crs",
     "title": "WASP CRS",
     "slug": "wasp-crs",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/wasp-crs/ con esercizi e fonti ufficiali.",
     "primaryCategory": "cybersecurity",
     "secondaryCategories": [
       "server-proxy"
     ],
     "type": "standard-formato",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "sec-sso",
     "title": "SSO",
     "slug": "sso",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/sso/ con esercizi e fonti ufficiali.",
     "primaryCategory": "cybersecurity",
     "secondaryCategories": [
       "api"
     ],
     "type": "tecnologia",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -2765,14 +2765,14 @@
     "id": "sec-yubikey",
     "title": "YubiKey",
     "slug": "yubikey",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/yubikey/ con esercizi e fonti ufficiali.",
     "primaryCategory": "cybersecurity",
     "secondaryCategories": [
       "networking"
     ],
     "type": "hardware",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": [
       "Yubikey"
     ]
@@ -2781,7 +2781,7 @@
     "id": "sec-mtls",
     "title": "mTLS",
     "slug": "mtls",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/mtls/ con esercizi e fonti ufficiali.",
     "primaryCategory": "cybersecurity",
     "secondaryCategories": [
       "networking",
@@ -2789,35 +2789,35 @@
     ],
     "type": "tecnologia",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "devops-helm",
     "title": "Helm",
     "slug": "helm",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/helm/ con esercizi e fonti ufficiali.",
     "primaryCategory": "devops",
     "secondaryCategories": [
       "server-proxy"
     ],
     "type": "strumento",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "net-quic",
     "title": "QUIC",
     "slug": "quic",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/quic/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [
       "api"
     ],
     "type": "protocollo",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": [
       "Quic(informatica)"
     ]
@@ -2826,21 +2826,21 @@
     "id": "db-newsql",
     "title": "NewSQL",
     "slug": "newsql",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/newsql/ con esercizi e fonti ufficiali.",
     "primaryCategory": "database",
     "secondaryCategories": [
       "cloud"
     ],
     "type": "tecnologia",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "cloud-redpanda",
     "title": "Redpanda",
     "slug": "redpanda",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/redpanda/ con esercizi e fonti ufficiali.",
     "primaryCategory": "cloud",
     "secondaryCategories": [
       "database",
@@ -2848,7 +2848,7 @@
     ],
     "type": "piattaforma",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": [
       "RedPanda"
     ]
@@ -2885,42 +2885,42 @@
     "id": "com-webtransport",
     "title": "WebTransport",
     "slug": "webtransport",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/webtransport/ con esercizi e fonti ufficiali.",
     "primaryCategory": "api",
     "secondaryCategories": [
       "web-frontend"
     ],
     "type": "protocollo",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "sec-coraza",
     "title": "Coraza",
     "slug": "coraza",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/coraza/ con esercizi e fonti ufficiali.",
     "primaryCategory": "cybersecurity",
     "secondaryCategories": [
       "server-proxy"
     ],
     "type": "strumento",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "net-vrrp",
     "title": "VRRP",
     "slug": "vrrp",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/vrrp/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [
       "cloud"
     ],
     "type": "protocollo",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
@@ -2944,14 +2944,14 @@
     "id": "devops-fluent-bit",
     "title": "Fluent Bit",
     "slug": "fluent-bit",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/fluent-bit/ con esercizi e fonti ufficiali.",
     "primaryCategory": "devops",
     "secondaryCategories": [
       "automazione"
     ],
     "type": "strumento",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": [
       "Fluentbit"
     ]
@@ -3002,28 +3002,28 @@
     "id": "mobile-ionic",
     "title": "Ionic",
     "slug": "ionic",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/ionic/ con esercizi e fonti ufficiali.",
     "primaryCategory": "mobile",
     "secondaryCategories": [
       "web-frontend"
     ],
     "type": "framework-libreria",
     "difficulty": "intermedio",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": []
   },
   {
     "id": "web-meteor-js",
     "title": "Meteor.js",
     "slug": "meteor-js",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/meteor-js/ con esercizi e fonti ufficiali.",
     "primaryCategory": "web-frontend",
     "secondaryCategories": [
       "backend"
     ],
     "type": "framework-libreria",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": [
       "Meteorjs"
     ]
@@ -3046,14 +3046,14 @@
     "id": "net-netbird",
     "title": "NetBird",
     "slug": "netbird",
-    "summary": "Argomento dichiarato nell'inventario, non ancora trattato nei contenuti didattici.",
+    "summary": "3 lezioni in public/docs/argomenti/netbird/ con esercizi e fonti ufficiali.",
     "primaryCategory": "networking",
     "secondaryCategories": [
       "devops"
     ],
     "type": "strumento",
     "difficulty": "avanzato",
-    "coverageStatus": "assente",
+    "coverageStatus": "presente",
     "legacyNames": [
       "NetBird(informatica)"
     ]
